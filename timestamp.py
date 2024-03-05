@@ -6,6 +6,25 @@ import sys
 from vosk import Model, KaldiRecognizer, SetLogLevel
 from pydub import AudioSegment
 
+def slice_and_export_audio(audio_path, start_times, end_times):
+    # Load audio file using pydub
+    audio = AudioSegment.from_wav(audio_path)
+
+    i = 0
+    while i < len(start_times) and i < len(end_times):
+        # Get start and end times in milliseconds
+        start_time_ms = start_times[i] * 1000
+        end_time_ms = end_times[i] * 1000
+
+        # Slice the audio
+        sliced_audio = audio[start_time_ms:end_time_ms]
+
+        # Export the sliced audio
+        sliced_audio.export(f"audio/sliced_audio{i}.wav", format="wav")
+
+        i = i + 1
+
+
 # You can set log level to -1 to disable debug messages
 SetLogLevel(0)
 
@@ -53,15 +72,8 @@ while len(data) > 0:
             start_times.append(start_time)
             end_times.append(end_time)
 
-            # Get start and end times in milliseconds
-            start_time_ms = start_time * 1000
-            end_time_ms = end_time * 1000
+            slice_and_export_audio("audio/italianoMono.wav", start_times, end_times)
 
-            # Slice the audio
-            sliced_audio = audio[start_time_ms:end_time_ms]
-
-            # Export the sliced audio
-            sliced_audio.export(f"audio/sliced_audio{i}.wav", format="wav")
 
             i = i + 1
 
@@ -69,8 +81,3 @@ while len(data) > 0:
         print(end_times)
 
     data = wf.readframes(4000)
-
-    '''
-        else:
-            print(rec.PartialResult())
-        '''
