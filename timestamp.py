@@ -6,23 +6,29 @@ import sys
 from vosk import Model, KaldiRecognizer, SetLogLevel
 from pydub import AudioSegment
 
-def slice_and_export_audio(audio_path, start_times, end_times):
+
+def slice_and_export_audio(audio_path, start_times, end_times, number_of_words):
     # Load audio file using pydub
     audio = AudioSegment.from_wav(audio_path)
 
     i = 0
-    while i < len(start_times) and i < len(end_times):
-        # Get start and end times in milliseconds
+    while i < len(start_times):
+        # If there are less than 4 words left, slice until the last word
+        if i + number_of_words >= len(end_times):
+            end_time_ms = end_times[-1] * 1000
+        else:
+            end_time_ms = end_times[i + number_of_words] * 1000
+
+        # Get start time in milliseconds
         start_time_ms = start_times[i] * 1000
-        end_time_ms = end_times[i] * 1000
 
         # Slice the audio
         sliced_audio = audio[start_time_ms:end_time_ms]
 
         # Export the sliced audio
-        sliced_audio.export(f"audio/sliced_audio{i}.wav", format="wav")
+        sliced_audio.export(f"audio/sliced_audio{i // number_of_words}.wav", format="wav")
 
-        i = i + 1
+        i = i + number_of_words
 
 
 # You can set log level to -1 to disable debug messages
@@ -72,8 +78,7 @@ while len(data) > 0:
             start_times.append(start_time)
             end_times.append(end_time)
 
-            slice_and_export_audio("audio/italianoMono.wav", start_times, end_times)
-
+            slice_and_export_audio("audio/italianoMono.wav", start_times, end_times, 6)
 
             i = i + 1
 
