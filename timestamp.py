@@ -13,8 +13,9 @@ def slice_and_export_audio(audio_path, start_times, end_times, number_of_words):
 
     i = 0
     while i < len(start_times):
-        # If there are less than 4 words left, slice until the last word
+        # If there are less than number_of_words left, slice until the last word
         if i + number_of_words >= len(end_times):
+            # Get the last end time if there are less than number_of_words left
             end_time_ms = end_times[-1] * 1000
         else:
             end_time_ms = end_times[i + number_of_words] * 1000
@@ -48,9 +49,6 @@ model = Model(lang="it")
 rec = KaldiRecognizer(model, wf.getframerate())
 rec.SetWords(True)
 rec.SetPartialWords(True)
-
-# Load audio file using pydub
-audio = AudioSegment.from_wav("audio/italianoMono.wav")
 
 start_times = []
 end_times = []
