@@ -32,6 +32,7 @@ def slice_and_export_audio(audio_path, start_times, end_times, number_of_words):
         i = i + number_of_words
 
 
+# Source: https://github.com/alphacep/vosk-api/blob/master/python/example/test_simple.py
 # You can set log level to -1 to disable debug messages
 SetLogLevel(0)
 
