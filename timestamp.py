@@ -2,7 +2,7 @@
 import os
 import json
 import wave
-import sys
+import languageDetection
 
 from vosk import Model, KaldiRecognizer, SetLogLevel
 from pydub import AudioSegment
@@ -82,7 +82,10 @@ if not is_mono_pcm(wf):
 
     # sys.exit(1)
 
-model = Model(lang="it")
+
+lang_id = languageDetection.get_language_id(file_path)
+
+model = Model(lang=lang_id)
 
 # You can also init model by name or with a folder path
 # model = Model(model_name="vosk-model-en-us-0.21")
