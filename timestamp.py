@@ -3,6 +3,8 @@ import os
 import json
 import wave
 import languageDetection
+import numpy as np
+from scipy.io.wavfile import read, write
 
 from vosk import Model, KaldiRecognizer, SetLogLevel
 from pydub import AudioSegment
@@ -32,6 +34,47 @@ def convert_to_mono_pcm(wav_file_path):
 
     # Export as PCM WAV
     mono_audio.export(output_file_name, format="wav")
+
+def trim_on_descending_waveform(audio_path, start_times, end_times, number_of_words, buffer_time=0.00, threshold=0.1, end_buffer=0.075):
+    # Load audio file
+    sample_rate, audio_data = read(audio_path)
+
+    # Convert audio data to numpy array
+    audio_data = np.array(audio_data)
+
+    # Initialize counter
+    i = 0
+
+    # Iterate over start and end times
+    while i < len(start_times):
+        # If there are less than number_of_words left, trim until the last word
+        if i + number_of_words >= len(end_times):
+            # Get the last end time if there are less than number_of_words left
+            end_sample = int((end_times[-1] - buffer_time) * sample_rate + end_buffer * sample_rate)
+        else:
+            end_sample = int((end_times[i + number_of_words - 1] - buffer_time) * sample_rate + end_buffer * sample_rate)
+
+        # Get start sample
+        start_sample = int(start_times[i] * sample_rate)
+
+        # Ensure end_sample doesn't exceed audio length
+        end_sample = min(end_sample, len(audio_data))
+
+        # Get the audio segment
+        segment = audio_data[start_sample:end_sample]
+
+        # Find the points where the amplitude decreases
+        decrease_points = np.where(np.diff(segment) < 0)[0]
+
+        # If there are decrease points, trim the segment at the first decrease point
+        if len(decrease_points) > 0 and decrease_points[0] > threshold * len(segment):
+            segment = segment[:decrease_points[0]]
+
+        # Export the trimmed segment
+        write(f"audio/trimmed_audio{i // number_of_words}.wav", sample_rate, segment)
+
+        # Increment counter
+        i = i + number_of_words
 
 def slice_and_export_audio(audio_path, start_times, end_times, number_of_words):
     # Load audio file using pydub
@@ -121,7 +164,9 @@ while len(data) > 0:
             start_times.append(start_time)
             end_times.append(end_time)
 
-            slice_and_export_audio(file_path, start_times, end_times, 6)
+            # slice_and_export_audio(file_path, start_times, end_times, 1)
+
+            trim_on_descending_waveform(file_path, start_times, end_times, 4)
 
             i = i + 1
 

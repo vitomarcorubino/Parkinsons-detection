@@ -24,3 +24,5 @@ for i, chunk in enumerate(audio_chunks):
     out_file = "audio/chunk{0}.wav".format(i)
     print("exporting", out_file)
     chunk.export(out_file, format="wav")
+
+# LSTM o modelli deep che lavorino su serie temporali
