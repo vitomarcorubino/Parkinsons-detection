@@ -4,6 +4,7 @@ import json
 import wave
 import languageDetection
 import numpy as np
+import matplotlib.pyplot as plt
 from scipy.io.wavfile import read, write
 
 from vosk import Model, KaldiRecognizer, SetLogLevel
@@ -34,6 +35,32 @@ def convert_to_mono_pcm(wav_file_path):
 
     # Export as PCM WAV
     mono_audio.export(output_file_name, format="wav")
+def plot_trimmed_audio(audio_path, start_times, end_times, number_of_words):
+    # Load audio file
+    sample_rate, audio_data = read(audio_path)
+
+    # Normalize audio data
+    audio_data = audio_data / np.max(np.abs(audio_data))
+
+    # Create time array
+    time = np.arange(0, len(audio_data)) / sample_rate
+
+    # Plot original audio waveform
+    plt.figure(figsize=(10, 4))
+    plt.plot(time, audio_data, label='Original Audio')
+
+    # Plot red vertical line for each start and end time of trimming
+    for i in range(0, len(start_times), number_of_words):
+        plt.axvline(x=start_times[i], color='r')  # Start of trimming
+        if i + number_of_words - 1 < len(end_times):
+            plt.axvline(x=end_times[i + number_of_words - 1], color='r')  # End of trimming
+
+    plt.title('Original Audio and Trim Points')
+    plt.xlabel('Time (s)')
+    plt.ylabel('Amplitude')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
 
 def trim_on_descending_waveform(audio_path, start_times, end_times, number_of_words, threshold=0.1, end_buffer=0.075):
     # Load audio file
@@ -76,6 +103,8 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, number_of_wo
         # Increment counter
         i = i + number_of_words
 
+    plot_trimmed_audio(audio_path, start_times, end_times, number_of_words)
+
 def slice_and_export_audio(audio_path, start_times, end_times, number_of_words):
     # Load audio file using pydub
     audio = AudioSegment.from_wav(audio_path)
@@ -103,9 +132,9 @@ def slice_and_export_audio(audio_path, start_times, end_times, number_of_words):
 
 # Source: https://github.com/alphacep/vosk-api/blob/master/python/example/test_simple.py
 # You can set log level to -1 to disable debug messages
-SetLogLevel(0)
+SetLogLevel(-1)
 
-file_path = "audio/english.wav"
+file_path = "audio/italiano.wav"
 
 wf = wave.open(file_path, "rb")
 if not is_mono_pcm(wf):
@@ -123,8 +152,6 @@ if not is_mono_pcm(wf):
     # Open the converted file
     wf = wave.open(file_path, "rb")
 
-    # sys.exit(1)
-
 
 lang_id = languageDetection.get_language_id(file_path)
 
@@ -138,6 +165,8 @@ rec = KaldiRecognizer(model, wf.getframerate())
 rec.SetWords(True)
 rec.SetPartialWords(True)
 
+text = ""
+words = []
 start_times = []
 end_times = []
 
@@ -147,29 +176,32 @@ while len(data) > 0:
     if rec.AcceptWaveform(data):
         result = rec.Result()
 
-        print(result)
-
         # Convert the result to a JSON object
         result_json = json.loads(result)
 
+        text = result_json['text']
         i = 0
         while i < len(result_json['result']):
             # Get the start and end times of the spoken word
             word_info = result_json['result'][i]
 
             # Get the word start and end times
+            word = word_info['word']
             start_time = word_info['start']
             end_time = word_info['end']
 
+            words.append(word)
             start_times.append(start_time)
             end_times.append(end_time)
 
-            # slice_and_export_audio(file_path, start_times, end_times, 1)
-
-            trim_on_descending_waveform(file_path, start_times, end_times, 4)
-
             i = i + 1
 
+        # slice_and_export_audio(file_path, start_times, end_times, 1)
+
+        trim_on_descending_waveform(file_path, start_times, end_times, 4)
+
+        print(text)
+        print(words)
         print(start_times)
         print(end_times)
 
