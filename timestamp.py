@@ -35,7 +35,7 @@ def convert_to_mono_pcm(wav_file_path):
     # Export as PCM WAV
     mono_audio.export(output_file_name, format="wav")
 
-def trim_on_descending_waveform(audio_path, start_times, end_times, number_of_words, buffer_time=0.00, threshold=0.1, end_buffer=0.075):
+def trim_on_descending_waveform(audio_path, start_times, end_times, number_of_words, threshold=0.1, end_buffer=0.075):
     # Load audio file
     sample_rate, audio_data = read(audio_path)
 
@@ -50,9 +50,9 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, number_of_wo
         # If there are less than number_of_words left, trim until the last word
         if i + number_of_words >= len(end_times):
             # Get the last end time if there are less than number_of_words left
-            end_sample = int((end_times[-1] - buffer_time) * sample_rate + end_buffer * sample_rate)
+            end_sample = int((end_times[-1]) * sample_rate + end_buffer * sample_rate)
         else:
-            end_sample = int((end_times[i + number_of_words - 1] - buffer_time) * sample_rate + end_buffer * sample_rate)
+            end_sample = int((end_times[i + number_of_words - 1]) * sample_rate + end_buffer * sample_rate)
 
         # Get start sample
         start_sample = int(start_times[i] * sample_rate)
@@ -105,7 +105,7 @@ def slice_and_export_audio(audio_path, start_times, end_times, number_of_words):
 # You can set log level to -1 to disable debug messages
 SetLogLevel(0)
 
-file_path = "audio/italiano.wav"
+file_path = "audio/english.wav"
 
 wf = wave.open(file_path, "rb")
 if not is_mono_pcm(wf):
