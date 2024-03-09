@@ -1,0 +1,9 @@
+# Fdb version 4
+["pdflatex"] 0 "trimming.tex" "trimming.pdf" "trimming" 0 -1
+  "trimming.aux" 0 -1 0 "pdflatex"
+  "trimming.tex" 0 -1 0 ""
+  (generated)
+  "trimming.aux"
+  "trimming.log"
+  "trimming.pdf"
+  (rewritten before read)
