@@ -15,7 +15,7 @@ file_path = "audio/italiano.wav"
 
 wf = wave.open(file_path, "rb")
 if not audioFileFormat.is_mono_pcm(wf):
-    print("\nAudio file must be WAV format mono PCM.")
+    print("\nhAudio file must be WAV format mono PCM.")
     print("Converting to mono PCM...")
     audioFileFormat.convert_to_mono_pcm(file_path)
 
