@@ -21,10 +21,10 @@ def convert_to_mono_pcm(wav_file_path):
     mono_audio = mono_audio.set_sample_width(2)
 
     # Get the original file name without extension
-    original_file_name = os.path.splitext(wav_file_path)[0]
+    original_file_name = os.path.basename(os.path.splitext(wav_file_path)[0])
 
     # Create the output file name
-    output_file_name = f"{original_file_name}_mono_pcm.wav"
+    output_file_name = f"audio/{original_file_name}_mono_pcm.wav"
 
     # Export as PCM WAV
     mono_audio.export(output_file_name, format="wav")

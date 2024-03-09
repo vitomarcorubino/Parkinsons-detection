@@ -15,16 +15,17 @@ file_path = "audio/italiano.wav"
 
 wf = wave.open(file_path, "rb")
 if not audioFileFormat.is_mono_pcm(wf):
-    print("Audio file must be WAV format mono PCM.")
+    print("\nAudio file must be WAV format mono PCM.")
     print("Converting to mono PCM...")
     audioFileFormat.convert_to_mono_pcm(file_path)
-    print("Conversion completed.")
 
     # Get the original file name without extension
-    original_file_name = os.path.splitext(file_path)[0]
+    original_file_name = os.path.splitext(os.path.basename(file_path))[0]
 
     # Create the output file name
-    file_path = f"{original_file_name}_mono_pcm.wav"
+    file_path = f"audio/{original_file_name}_mono_pcm.wav"
+
+    print("Conversion completed. File stored into: " + file_path)
 
     # Open the converted file
     wf = wave.open(file_path, "rb")
@@ -73,9 +74,13 @@ while len(data) > 0:
 
         trimming.trim_on_descending_waveform(file_path, start_times, end_times, words, 4)
 
+        print("\nTRANSCRIPTED TEXT")
         print(text)
+        print("TOKENIZED WORDS")
         print(words)
+        print("WORDS START TIMES")
         print(start_times)
+        print("WORDS END TIMES")
         print(end_times)
 
     data = wf.readframes(4000)
