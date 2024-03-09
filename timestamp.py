@@ -5,6 +5,7 @@ import wave
 import languageDetection
 import numpy as np
 import matplotlib.pyplot as plt
+import textwrap
 from scipy.io.wavfile import read, write
 
 from vosk import Model, KaldiRecognizer, SetLogLevel
@@ -35,7 +36,8 @@ def convert_to_mono_pcm(wav_file_path):
 
     # Export as PCM WAV
     mono_audio.export(output_file_name, format="wav")
-def plot_trimmed_audio(audio_path, start_times, end_times, number_of_words):
+
+def plot_trimmed_audio(audio_path, start_times, number_of_words, words):
     # Load audio file
     sample_rate, audio_data = read(audio_path)
 
@@ -52,8 +54,21 @@ def plot_trimmed_audio(audio_path, start_times, end_times, number_of_words):
     # Plot red vertical line for each start and end time of trimming
     for i in range(0, len(start_times), number_of_words):
         plt.axvline(x=start_times[i], color='r')  # Start of trimming
-        if i + number_of_words - 1 < len(end_times):
-            plt.axvline(x=end_times[i + number_of_words - 1], color='r')  # End of trimming
+        end_index = i + number_of_words - 1 if i + number_of_words - 1 < len(end_times) else len(end_times) - 1
+        plt.axvline(x=end_times[end_index], color='r')  # End of trimming
+
+        # Calculate the middle of the segment
+        middle_time = (start_times[i] + end_times[end_index]) / 2
+
+        # Get the corresponding words
+        segment_words = ' '.join(words[i:i + number_of_words])
+
+        # Split the words into multiple lines if they are too long
+        wrapped_words = textwrap.wrap(segment_words, width=12)
+
+        # Add the words to the plot
+        for line_num, line in enumerate(wrapped_words):
+            plt.text(middle_time, 0.95 - line_num * 0.1, line, horizontalalignment='center', verticalalignment='top')
 
     plt.title('Original Audio and Trim Points')
     plt.xlabel('Time (s)')
@@ -103,7 +118,7 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, number_of_wo
         # Increment counter
         i = i + number_of_words
 
-    plot_trimmed_audio(audio_path, start_times, end_times, number_of_words)
+    plot_trimmed_audio(audio_path, start_times, 4, words)
 
 def slice_and_export_audio(audio_path, start_times, end_times, number_of_words):
     # Load audio file using pydub
