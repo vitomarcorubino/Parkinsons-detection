@@ -5,12 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6322ae-8cf3-44ec-99c2-748db2316def" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/doctrees/audioFileFormat.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/doctrees/index.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/doctrees/languageDetection.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/doctrees/main.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/doctrees/modules.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/doctrees/plotting.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/doctrees/trimming.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/.buildinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_sources/audioFileFormat.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_sources/index.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_sources/languageDetection.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_sources/main.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_sources/modules.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_sources/plotting.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_sources/trimming.rst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/alabaster.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/basic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/doctools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/documentation_options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/language_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/pygments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/searchtools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/_static/sphinx_highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/audioFileFormat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/genindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/languageDetection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/modules.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/objects.inv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/plotting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/py-modindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/trimming.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/audioFileFormat.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/languageDetection.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/main.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/modules.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/plotting.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/trimming.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/audioFileFormat.py" beforeDir="false" afterPath="$PROJECT_DIR$/audioFileFormat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languageDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/languageDetection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimming.py" beforeDir="false" afterPath="$PROJECT_DIR$/trimming.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +88,11 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.audioFileFormat.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.trimming.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,6 +120,7 @@
       <workItem from="1709984753716" duration="273000" />
       <workItem from="1709989345893" duration="416000" />
       <workItem from="1709989838008" duration="2239000" />
+      <workItem from="1709992117213" duration="2283000" />
     </task>
     <servers />
   </component>
@@ -79,5 +133,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Trimming$audioFileFormat.coverage" NAME="audioFileFormat Coverage Results" MODIFIED="1709991614669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1709992051810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$trimming.coverage" NAME="trimming Coverage Results" MODIFIED="1709993809834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

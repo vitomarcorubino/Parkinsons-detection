@@ -4,24 +4,24 @@ from pydub import AudioSegment
 from pydub.silence import split_on_silence
 import plotting
 
-"""
-Trims an audio file based on the start and end times of spoken words. It iterates over the start and end times, 
-extracts the corresponding audio segment, and trims the segment at the first point where the amplitude decreases. 
-The trimmed segments are then exported as separate audio files.
-
-Parameters:
-- audio_path (str): The path to the audio file to be trimmed.
-- start_times (list): A list of start times for each spoken word in the audio file.
-- end_times (list): A list of end times for each spoken word in the audio file.
-- words (list): A list of the spoken words in the audio file.
-- number_of_words (int): The number of words to consider for each trimming operation.
-- threshold (float, optional): The threshold for determining a decrease in amplitude. Defaults to 0.1.
-- end_buffer (float, optional): The buffer to add to the end time of each segment, in seconds. Defaults to 0.075.
-"""
-
 
 def trim_on_descending_waveform(audio_path, start_times, end_times, words, number_of_words, threshold=0.1,
                                 end_buffer=0.075):
+    """
+    Trims an audio file based on the start and end times of spoken words. It iterates over the start and end times,
+    extracts the corresponding audio segment, and trims the segment at the first point where the amplitude decreases.
+    The trimmed segments are then exported as separate audio files.
+
+    Args:
+        audio_path (str): The path to the audio file to be trimmed.
+        start_times (list): A list of start times for each spoken word in the audio file.
+        end_times (list): A list of end times for each spoken word in the audio file.
+        words (list): A list of the spoken words in the audio file.
+        number_of_words (int): The number of words to consider for each trimming operation.
+        threshold (float, optional): The threshold for determining a decrease in amplitude. Defaults to 0.1.
+        end_buffer (float, optional): The buffer to add to the end time of each segment, in seconds. Defaults to 0.075.
+    """
+
     # Load audio file
     sample_rate, audio_data = read(audio_path)
 
@@ -65,19 +65,17 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, words, numbe
     plotting.plot_trimmed_audio(audio_path, start_times, end_times, 4, words)
 
 
-"""
-Trims an audio file into segments based on the start and end times of spoken words. 
-Each segment is then exported as a separate audio file.
-
-Parameters:
-* audio_path (str): Path to the audio file.
-* start_times (list): Start times of each spoken word.
-* end_times (list): End times of each spoken word.
-* number_of_words (int): Number of words to consider for each slicing operation.
-"""
-
-
 def trim_on_timestamp(audio_path, start_times, end_times, number_of_words):
+    """
+    Trims an audio file into segments based on the start and end times of spoken words.
+    Each segment is then exported as a separate audio file.
+
+    Args:
+        audio_path (str): Path to the audio file.
+        start_times (list): Start times of each spoken word.
+        end_times (list): End times of each spoken word.
+        number_of_words (int): Number of words to consider for each slicing operation.
+    """
     # Load audio file using pydub
     audio = AudioSegment.from_wav(audio_path)
 
@@ -102,15 +100,14 @@ def trim_on_timestamp(audio_path, start_times, end_times, number_of_words):
         i = i + number_of_words
 
 
-"""
-Trims an audio file into chunks based on silence. It uses the 'split_on_silence' function from the 'pydub.silence' module to detect silent parts of the audio and split the audio at these points. Each chunk is then exported as a separate audio file.
-
-Parameters:
-audio_file_path (str): Path to the audio file to be split.
-"""
-
-
 def trim_on_silence(audio_file_path):
+    """
+    Trims an audio file into chunks based on silence. It uses the 'split_on_silence' function from the 'pydub.silence' module to detect silent parts of the audio and split the audio at these points. Each chunk is then exported as a separate audio file.
+
+    Args:
+        audio_file_path (str): Path to the audio file to be split.
+    """
+
     # Load the audio file
     sound_file = AudioSegment.from_wav(audio_file_path)
 
