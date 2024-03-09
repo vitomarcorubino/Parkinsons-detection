@@ -1,6 +1,7 @@
 from pydub import AudioSegment
 import os
 
+
 # check if the audio file is in mono PCM format
 def is_mono_pcm(wav_file):
     if wav_file.getnchannels() == 1 and wav_file.getsampwidth() == 2 and wav_file.getcomptype() == "NONE":

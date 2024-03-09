@@ -1,9 +1,9 @@
 import os
 import json
 import wave
-import audioFileFormat # Module to handle audio file format and conversion to wav mono pcm
-import languageDetection # Module to detect the language of the audio file
-import trimming # Module to trim the audio file
+import audioFileFormat  # Module to handle audio file format and conversion to wav mono pcm
+import languageDetection  # Module to detect the language of the audio file
+import trimming  # Module to trim the audio file
 
 from vosk import Model, KaldiRecognizer, SetLogLevel
 
@@ -37,15 +37,15 @@ model = Model(lang=lang_id)
 
 # Create a recognizer object using the language model and the sample rate of the audio file
 rec = KaldiRecognizer(model, wf.getframerate())
-rec.SetWords(True) # Enable the result to include the words
-rec.SetPartialWords(True) # Enable the result to include the partial words
+rec.SetWords(True)  # Enable the result to include the words
+rec.SetPartialWords(True)  # Enable the result to include the partial words
 
-text = "" # The text of the audio
-words = [] # The tokenized words of the audio
-start_times = [] # The start times of the spoken words
-end_times = [] # The end times of the spoken words
+text = ""  # The text of the audio
+words = []  # The tokenized words of the audio
+start_times = []  # The start times of the spoken words
+end_times = []  # The end times of the spoken words
 
-data = wf.readframes(4000) # Read the audio file in chunks of 4000 frames
+data = wf.readframes(4000)  # Read the audio file in chunks of 4000 frames
 
 while len(data) > 0:
     if rec.AcceptWaveform(data):

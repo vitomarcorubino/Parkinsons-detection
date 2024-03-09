@@ -18,7 +18,10 @@ Parameters:
 - threshold (float, optional): The threshold for determining a decrease in amplitude. Defaults to 0.1.
 - end_buffer (float, optional): The buffer to add to the end time of each segment, in seconds. Defaults to 0.075.
 """
-def trim_on_descending_waveform(audio_path, start_times, end_times, words, number_of_words, threshold=0.1, end_buffer=0.075):
+
+
+def trim_on_descending_waveform(audio_path, start_times, end_times, words, number_of_words, threshold=0.1,
+                                end_buffer=0.075):
     # Load audio file
     sample_rate, audio_data = read(audio_path)
 
@@ -61,6 +64,7 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, words, numbe
 
     plotting.plot_trimmed_audio(audio_path, start_times, end_times, 4, words)
 
+
 """
 Trims an audio file into segments based on the start and end times of spoken words. 
 Each segment is then exported as a separate audio file.
@@ -71,6 +75,8 @@ Parameters:
 * end_times (list): End times of each spoken word.
 * number_of_words (int): Number of words to consider for each slicing operation.
 """
+
+
 def trim_on_timestamp(audio_path, start_times, end_times, number_of_words):
     # Load audio file using pydub
     audio = AudioSegment.from_wav(audio_path)
@@ -95,27 +101,30 @@ def trim_on_timestamp(audio_path, start_times, end_times, number_of_words):
 
         i = i + number_of_words
 
+
 """
 Trims an audio file into chunks based on silence. It uses the 'split_on_silence' function from the 'pydub.silence' module to detect silent parts of the audio and split the audio at these points. Each chunk is then exported as a separate audio file.
 
 Parameters:
 audio_file_path (str): Path to the audio file to be split.
 """
+
+
 def trim_on_silence(audio_file_path):
     # Load the audio file
     sound_file = AudioSegment.from_wav(audio_file_path)
 
     # Split track and get chunks
     audio_chunks = split_on_silence(sound_file,
-        # must be silent for at least 180 ms
-        min_silence_len=180,
+                                    # must be silent for at least 180 ms
+                                    min_silence_len=180,
 
-        # consider it silent if quieter than -30 dBFS
-        silence_thresh=-30,
+                                    # consider it silent if quieter than -30 dBFS
+                                    silence_thresh=-30,
 
-        # keep 100 ms of leading/trailing silence
-        keep_silence=150
-    )
+                                    # keep 100 ms of leading/trailing silence
+                                    keep_silence=150
+                                    )
 
     # Print number of chunks
     print(f"Number of chunks created: {len(audio_chunks)}")

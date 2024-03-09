@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import textwrap
 from scipy.io.wavfile import read
 
+
 # Plot the original audio waveform and the trimming points
 def plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, words):
     # Load audio file
