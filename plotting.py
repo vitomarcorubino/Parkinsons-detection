@@ -4,7 +4,6 @@ import textwrap
 from scipy.io.wavfile import read
 
 
-
 def plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, words):
     """
     This function plots the waveform of an audio file and marks the start and end times of each trimmed segment.
