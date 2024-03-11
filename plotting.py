@@ -2,6 +2,43 @@ import numpy as np
 import matplotlib.pyplot as plt
 import textwrap
 from scipy.io.wavfile import read
+import librosa
+import librosa.display
+
+
+def plot_time_frequency_heatmap(audio_path):
+    # Load the audio file
+    y, sr = librosa.load(audio_path)
+
+    # Compute the STFT of the audio signal
+    D = librosa.stft(y)
+
+    # Convert the amplitude of the STFT to decibels
+    D_db = librosa.amplitude_to_db(abs(D), ref=np.max)
+
+    # Create a new figure
+    plt.figure(figsize=(12, 8))
+
+    # Display the spectrogram as a heatmap
+    librosa.display.specshow(D_db, sr=sr, x_axis='time', y_axis='log')
+
+    # Add a colorbar to the plot
+    plt.colorbar(format='%+2.0f dB')
+
+    # Set the label of the colorbar
+    plt.colorbar(format='%+2.0f dB').set_label('Amplitude (dB)')
+
+    # Set the title of the plot
+    plt.title('Time-Frequency Representation')
+
+    # Set the x-label of the plot
+    plt.xlabel('Time')
+
+    # Set the y-label of the plot
+    plt.ylabel('Frequency')
+
+    # Display the plot
+    plt.show()
 
 
 def plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, words):
@@ -51,6 +88,6 @@ def plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, word
     plt.title('Original Audio and Trim Points')
     plt.xlabel('Time (s)')
     plt.ylabel('Amplitude')
-    plt.legend()
+    plt.legend(loc='upper right')
     plt.grid(True)
     plt.show()

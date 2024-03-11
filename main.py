@@ -11,7 +11,7 @@ from vosk import Model, KaldiRecognizer, SetLogLevel
 # -1 to disable logging messages, 0 to enable them
 SetLogLevel(-1)
 
-file_path = "audio/italiano.wav"
+file_path = "audio/english.wav"
 
 wf = wave.open(file_path, "rb")
 if not audioFileFormat.is_mono_pcm(wf):
@@ -46,9 +46,8 @@ words = []  # The tokenized words of the audio
 start_times = []  # The start times of the spoken words
 end_times = []  # The end times of the spoken words
 
-data = wf.readframes(4000)  # Read the audio file in chunks of 4000 frames
-
-while len(data) > 0:
+data = wf.readframes(wf.getnframes())  # Read the audio file in chunks of 4000 frames
+if len(data) > 0:
     if rec.AcceptWaveform(data):
         result = rec.Result()
 
@@ -74,7 +73,7 @@ while len(data) > 0:
 
         trimming.trim_on_descending_waveform(file_path, start_times, end_times, words, 4)
 
-        print("\nTRANSCRIPTED TEXT")
+        print("\nTRANSCRIBED TEXT")
         print(text)
         print("TOKENIZED WORDS")
         print(words)
@@ -82,5 +81,3 @@ while len(data) > 0:
         print(start_times)
         print("WORDS END TIMES")
         print(end_times)
-
-    data = wf.readframes(4000)

@@ -62,7 +62,9 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, words, numbe
         # Increment counter
         i = i + number_of_words
 
-    plotting.plot_trimmed_audio(audio_path, start_times, end_times, 4, words)
+    plotting.plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, words)
+
+    # plotting.plot_time_frequency_heatmap(audio_path)
 
 
 def trim_on_timestamp(audio_path, start_times, end_times, number_of_words):
