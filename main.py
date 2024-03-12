@@ -1,3 +1,4 @@
+# Source: https://github.com/alphacep/vosk-api/blob/master/python/example/test_simple.py
 import os
 import json
 import wave
@@ -7,11 +8,11 @@ import trimming  # Module to trim the audio file
 
 from vosk import Model, KaldiRecognizer, SetLogLevel
 
-# Source: https://github.com/alphacep/vosk-api/blob/master/python/example/test_simple.py
+file_path = "audio/vocale.wav" # The path to the audio file
+number_of_words = 4 # The number of words to consider for each trimming operation
+
 # -1 to disable logging messages, 0 to enable them
 SetLogLevel(-1)
-
-file_path = "audio/english.wav"
 
 wf = wave.open(file_path, "rb")
 if not audioFileFormat.is_mono_pcm(wf):
@@ -71,7 +72,7 @@ if len(data) > 0:
 
             i = i + 1
 
-        trimming.trim_on_descending_waveform(file_path, start_times, end_times, words, 4)
+        trimming.trim_on_descending_waveform(file_path, start_times, end_times, words, number_of_words)
 
         print("\nTRANSCRIBED TEXT")
         print(text)

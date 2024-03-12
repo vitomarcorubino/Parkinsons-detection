@@ -5,31 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6322ae-8cf3-44ec-99c2-748db2316def" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/audio/english_mono_pcm.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio10.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio11.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio12.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio13.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio14.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio15.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio8.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/trimmed_audio9.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/english_mono_pcm.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_simple.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/plotting.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/plotting.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/modules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/objects.inv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/plotting.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/plotting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/py-modindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/py-modindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languageDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/languageDetection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trimming.py" beforeDir="false" afterPath="$PROJECT_DIR$/trimming.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,25 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.audioFileFormat.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.test_simple.executor": "Run",
-    "Python.trimming.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.audioFileFormat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.languageDetection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_simple.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trimming.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -111,6 +101,11 @@
       <workItem from="1710148949110" duration="607000" />
       <workItem from="1710154812398" duration="1256000" />
       <workItem from="1710178740292" duration="1666000" />
+      <workItem from="1710180808740" duration="355000" />
+      <workItem from="1710181806889" duration="1363000" />
+      <workItem from="1710228226855" duration="370000" />
+      <workItem from="1710228624351" duration="1403000" />
+      <workItem from="1710230150241" duration="363000" />
     </task>
     <servers />
   </component>
@@ -123,7 +118,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Trimming$audioFileFormat.coverage" NAME="audioFileFormat Coverage Results" MODIFIED="1709991614669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$test_simple.coverage" NAME="test_simple Coverage Results" MODIFIED="1710180230176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$languageDetection.coverage" NAME="languageDetection Coverage Results" MODIFIED="1710182856485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$trimming.coverage" NAME="trimming Coverage Results" MODIFIED="1710154819862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1710180336256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1710229988447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
