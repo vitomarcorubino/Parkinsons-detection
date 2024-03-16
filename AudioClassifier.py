@@ -22,9 +22,9 @@ class AudioDataset(Dataset):
 
 def load_data():
     # Define your directories
-    young_healthy_dir = 'dataset/youngHealthyControl/*.wav'
-    elderly_healthy_dir = 'dataset/elderlyHealthyControl/*.wav'
-    parkinsons_dir = 'dataset/peopleWithParkinson/*.wav'
+    young_healthy_dir = 'dataset/youngHealthyControl/trimmed/*.wav'
+    elderly_healthy_dir = 'dataset/elderlyHealthyControl/trimmed/*.wav'
+    parkinsons_dir = 'dataset/peopleWithParkinson/trimmed/*.wav'
 
     # Get all .wav files in the specified directories
     young_healthy_files = glob.glob(young_healthy_dir)

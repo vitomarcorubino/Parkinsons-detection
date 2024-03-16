@@ -43,8 +43,8 @@ def get_supported_languages():
     """
     supported_languages = [
         "en", "en-us", "en-in", "cn", "ru", "fr", "de", "es", "pt", "gr", "tr",
-        "vn", "it", "nl", "ca", "ar", "fa", "tl-ph", "uk", "kz", "sv", "eo",
-        "hi", "pl", "uz", "ko", "br", "gu"
+        "vn", "it", "nl", "ca", "ar", "fa", "tl-ph", "kz", "sv", "eo",
+        "hi", "pl", "uz", "ko", "gu"
     ]
 
     return supported_languages
