@@ -6,7 +6,7 @@ import plotting
 import os
 
 
-def trim_on_descending_waveform(audio_path, start_times, end_times, words, number_of_words, output_folder, threshold=0.1, end_buffer=0.075):
+def trim_on_descending_waveform(audio_path, start_times, end_times, words, number_of_words, output_folder, plot, threshold=0.1, end_buffer=0.075):
     """
     Trims an audio file based on the start and end times of spoken words. It iterates over the start and end times,
     extracts the corresponding audio segment, and trims the segment at the first point where the amplitude decreases.
@@ -19,6 +19,7 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, words, numbe
         words (list): A list of the spoken words in the audio file.
         number_of_words (int): The number of words to consider for each trimming operation.
         output_folder (str): The folder where the trimmed audio files should be stored.
+        plot (bool): A boolean value indicating whether to plot the trimmed audio segments.
         threshold (float, optional): The threshold for determining a decrease in amplitude. Defaults to 0.1.
         end_buffer (float, optional): The buffer to add to the end time of each segment, in seconds. Defaults to 0.075.
     """
@@ -66,7 +67,9 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, words, numbe
         # Increment counter
         i = i + number_of_words
 
-    # plotting.plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, words)
+    # Plot the trimmed audio segments
+    if plot:
+        plotting.plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, words)
 
 
 def trim_on_timestamp(audio_path, start_times, end_times, number_of_words):

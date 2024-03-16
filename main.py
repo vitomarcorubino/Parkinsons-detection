@@ -8,8 +8,8 @@ import trimming  # Module to trim the audio file
 
 from vosk import Model, KaldiRecognizer, SetLogLevel
 
-file_path = "audio/italiano.wav" # The path to the audio file
-number_of_words = 4 # The number of words to consider for each trimming operation
+file_path = "audio/italiano.wav"  # The path to the audio file
+number_of_words = 4  # The number of words to consider for each trimming operation
 
 # -1 to disable logging messages, 0 to enable them
 SetLogLevel(-1)
@@ -74,7 +74,8 @@ if len(data) > 0:
             i = i + 1
 
         output_folder_trimmed = "trimmed"
-        trimming.trim_on_descending_waveform(file_path, start_times, end_times, words, number_of_words, output_folder_trimmed)
+        trimming.trim_on_descending_waveform(file_path, start_times, end_times, words, number_of_words,
+                                             output_folder_trimmed, True)
 
         print("\nTRANSCRIBED TEXT")
         print(text)
@@ -84,3 +85,9 @@ if len(data) > 0:
         print(start_times)
         print("WORDS END TIMES")
         print(end_times)
+
+        # Extract the original file name without extension
+        original_file_name = os.path.splitext(os.path.basename(file_path))[0]
+
+        # Print the location of the trimmed segments
+        print(f"\nTrimming completed. Files stored into: {output_folder_trimmed}/{original_file_name}_trimmed*.wav")

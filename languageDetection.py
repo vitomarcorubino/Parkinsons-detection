@@ -2,6 +2,7 @@
 from speechbrain.inference.classifiers import EncoderClassifier
 import os
 
+
 def get_language_id(file_path):
     """
     This function is used to identify the language of an audio file and return the language id.
