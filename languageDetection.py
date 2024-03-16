@@ -1,6 +1,7 @@
 # Source: https://huggingface.co/speechbrain/lang-id-commonlanguage_ecapa
 from speechbrain.inference.classifiers import EncoderClassifier
 import os
+import torchaudio
 
 
 def get_language_id(file_path):
@@ -14,9 +15,14 @@ def get_language_id(file_path):
         str: The identified language id of the audio file.
     """
     language_id = EncoderClassifier.from_hparams(source="TalTechNLP/voxlingua107-epaca-tdnn", savedir="tmp")
-    savedir = os.path.dirname(file_path)
-    signal = language_id.load_audio(file_path, savedir=savedir)
-    prediction = language_id.classify_batch(signal)
+
+    # Load the audio file using torchaudio
+    waveform, sample_rate = torchaudio.load(file_path)
+
+    # Reshape the waveform for the classify_batch method
+    waveform = waveform.reshape(1, -1)
+
+    prediction = language_id.classify_batch(waveform)
     lang_id = prediction[-1][0]
 
     supported_languages = get_supported_languages()
