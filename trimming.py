@@ -3,10 +3,10 @@ import numpy as np
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
 import plotting
+import os
 
 
-def trim_on_descending_waveform(audio_path, start_times, end_times, words, number_of_words, threshold=0.1,
-                                end_buffer=0.075):
+def trim_on_descending_waveform(audio_path, start_times, end_times, words, number_of_words, output_folder, threshold=0.1, end_buffer=0.075):
     """
     Trims an audio file based on the start and end times of spoken words. It iterates over the start and end times,
     extracts the corresponding audio segment, and trims the segment at the first point where the amplitude decreases.
@@ -18,6 +18,7 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, words, numbe
         end_times (list): A list of end times for each spoken word in the audio file.
         words (list): A list of the spoken words in the audio file.
         number_of_words (int): The number of words to consider for each trimming operation.
+        output_folder (str): The folder where the trimmed audio files should be stored.
         threshold (float, optional): The threshold for determining a decrease in amplitude. Defaults to 0.1.
         end_buffer (float, optional): The buffer to add to the end time of each segment, in seconds. Defaults to 0.075.
     """
@@ -27,6 +28,9 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, words, numbe
 
     # Convert audio data to numpy array
     audio_data = np.array(audio_data)
+
+    # Get the original file name without extension
+    original_file_name = os.path.splitext(os.path.basename(audio_path))[0]
 
     # Initialize counter
     i = 0
@@ -56,15 +60,13 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, words, numbe
         if len(decrease_points) > 0 and decrease_points[0] > threshold * len(segment):
             segment = segment[:decrease_points[0]]
 
-        # Export the trimmed segment
-        write(f"audio/trimmed_audio{i // number_of_words}.wav", sample_rate, segment)
+        # Export the trimmed segment with the original file name
+        write(f"{output_folder}/{original_file_name}_trimmed{i // number_of_words}.wav", sample_rate, segment)
 
         # Increment counter
         i = i + number_of_words
 
-    plotting.plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, words)
-
-    # plotting.plot_time_frequency_heatmap(audio_path)
+    # plotting.plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, words)
 
 
 def trim_on_timestamp(audio_path, start_times, end_times, number_of_words):

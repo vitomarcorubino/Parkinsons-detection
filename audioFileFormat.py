@@ -22,7 +22,7 @@ def is_mono_pcm(wav_file):
 
 
 # convert the audio file to mono PCM format
-def convert_to_mono_pcm(wav_file_path):
+def convert_to_mono_pcm(wav_file_path, output_folder):
     """
     This function converts a given audio file to mono PCM format. It performs two operations on the audio file:
     1. Converts the audio to mono by setting the number of channels to 1.
@@ -32,6 +32,7 @@ def convert_to_mono_pcm(wav_file_path):
 
     Args:
         wav_file_path (str): The path to the audio file that needs to be converted.
+        output_folder (str): The folder where the converted audio file should be stored.
     """
     audio = AudioSegment.from_wav(wav_file_path)
 
@@ -45,7 +46,7 @@ def convert_to_mono_pcm(wav_file_path):
     original_file_name = os.path.basename(os.path.splitext(wav_file_path)[0])
 
     # Create the output file name
-    output_file_name = f"audio/{original_file_name}_mono_pcm.wav"
+    output_file_name = f"{output_folder}/{original_file_name}_mono_pcm.wav"
 
     # Export as PCM WAV
     mono_audio.export(output_file_name, format="wav")

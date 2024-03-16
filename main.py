@@ -8,7 +8,7 @@ import trimming  # Module to trim the audio file
 
 from vosk import Model, KaldiRecognizer, SetLogLevel
 
-file_path = "audio/vocale.wav" # The path to the audio file
+file_path = "audio/italiano.wav" # The path to the audio file
 number_of_words = 4 # The number of words to consider for each trimming operation
 
 # -1 to disable logging messages, 0 to enable them
@@ -16,15 +16,16 @@ SetLogLevel(-1)
 
 wf = wave.open(file_path, "rb")
 if not audioFileFormat.is_mono_pcm(wf):
-    print("\nhAudio file must be WAV format mono PCM.")
+    print("\nAudio file must be WAV format mono PCM.")
     print("Converting to mono PCM...")
-    audioFileFormat.convert_to_mono_pcm(file_path)
+    output_folder_converted = "mono_pcm"
+    audioFileFormat.convert_to_mono_pcm(file_path, output_folder_converted)
 
     # Get the original file name without extension
     original_file_name = os.path.splitext(os.path.basename(file_path))[0]
 
     # Create the output file name
-    file_path = f"audio/{original_file_name}_mono_pcm.wav"
+    file_path = f"{output_folder_converted}/{original_file_name}_mono_pcm.wav"
 
     print("Conversion completed. File stored into: " + file_path)
 
@@ -72,7 +73,8 @@ if len(data) > 0:
 
             i = i + 1
 
-        trimming.trim_on_descending_waveform(file_path, start_times, end_times, words, number_of_words)
+        output_folder_trimmed = "trimmed"
+        trimming.trim_on_descending_waveform(file_path, start_times, end_times, words, number_of_words, output_folder_trimmed)
 
         print("\nTRANSCRIBED TEXT")
         print(text)
