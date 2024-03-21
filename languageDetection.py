@@ -28,7 +28,7 @@ def get_language_id(file_path):
     supported_languages = get_supported_languages()
 
     if lang_id not in supported_languages:
-        lang_id = "en"
+        lang_id = "it"
 
     return lang_id
 

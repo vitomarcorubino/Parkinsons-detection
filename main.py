@@ -8,11 +8,14 @@ import trimming  # Module to trim the audio file
 from vosk import Model, KaldiRecognizer, SetLogLevel
 import shutil
 
-audio_dir = "dataset/youngHealthyControl"  # The directory where the audio files are stored
+audio_dir = "audio"  # The directory where the audio files are stored
+output_folder_converted = "mono_pcm"  # The folder where the converted audio are stored
+output_folder_trimmed = "trimmed"  # The folder where the trimmed audio files are stored
+number_of_words = 4  # The number of words to consider for each trimming operation
+
+
 # Get the list of audio files in the audio directory
 wav_files = [f for f in os.listdir(audio_dir) if f.endswith(".wav")]
-
-number_of_words = 4  # The number of words to consider for each trimming operation
 
 # -1 to disable logging messages, 0 to enable them
 SetLogLevel(-1)
@@ -27,8 +30,6 @@ for wav_file in wav_files:
     if not audioFileFormat.is_mono_pcm(wf):
         print(f"\nAudio file {wav_file} must be WAV format mono PCM.")
         print("Converting to mono PCM...")
-
-        output_folder_converted = "dataset/youngHealthyControl/mono_pcm"
 
         audioFileFormat.convert_to_mono_pcm(file_path, output_folder_converted)
 
@@ -64,7 +65,6 @@ for wav_file in wav_files:
         if rec.AcceptWaveform(data):
             result = rec.Result()
 
-            output_folder_trimmed = "dataset/youngHealthyControl/trimmed"
             # Convert the result to a JSON object
             result_json = json.loads(result)
 
