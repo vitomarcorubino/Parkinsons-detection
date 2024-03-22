@@ -88,22 +88,8 @@ def load_data():
             y.append(0)
         else:
             y.append(1)
-        
 
     return np.array(X), np.array(y)
-
-
-X, y = load_data()
-
-# Split the data
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Create DataLoaders
-train_data = AudioDataset(X_train, y_train)
-test_data = AudioDataset(X_test, y_test)
-
-train_loader = DataLoader(train_data, batch_size=16, shuffle=True)
-test_loader = DataLoader(test_data, batch_size=16, shuffle=True)
 
 
 # Define the model
@@ -149,52 +135,6 @@ class AudioClassifier(nn.Module):
         return x
 
 
-model = AudioClassifier()
-
-# Define loss and optimizer
-criterion = nn.CrossEntropyLoss()
-# Define optimizer with L2 regularization (weight decay)
-optimizer = torch.optim.Adam(model.parameters(), lr=0.0005, weight_decay=0.1)
-
-model.train()
-
-n = 50
-# Training loop
-for epoch in range(n):  # Increase the number of epochs
-    loss = None
-    for i, (inputs, labels) in enumerate(train_loader):
-        outputs = model(inputs.float())
-        labels = labels.long()
-        loss = criterion(outputs, labels)
-
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-
-    if loss is not None:
-        print(f'Epoch {epoch + 1}/{n} Loss: {loss.item()}')
-    else:
-        print(f'Epoch {epoch + 1}/{n} No loss calculated')
-
-model.eval()
-
-# Evaluation
-correct = 0
-total = 0
-
-"""
-This loop evaluates the model on the test data. It iterates over the test data in batches, computes the model outputs
-"""
-with torch.no_grad():
-    for inputs, labels in test_loader:
-        outputs = model(inputs.float())
-        _, predicted = torch.max(outputs.data, 1)
-        total = total + labels.size(0)
-        correct = correct + torch.sum(predicted.eq(labels)).item()
-
-print(f'Accuracy: {100 * correct / total}%')
-
-
 def predict_audio(file_path, model):
     """
     This function predicts the class of an audio file using the trained model.
@@ -237,28 +177,63 @@ def predict_audio(file_path, model):
         return "Not Parkinson's"
 
 
+# Training and evaluation code
+def train_and_evaluate_model():
+    X, y = load_data()
 
-# Use the function
-"""
-file_path = "audio/marcoRamarro.wav"
-prediction = predict_audio(file_path, model)
-print(f"The predicted class for the audio file is: {prediction}")
-"""
-directory_path = "trimmed"
-# Get all .wav files in the directory
-audio_files = glob.glob(directory_path + '/*.wav')
+    # Split the data
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    # Create DataLoaders
+    train_data = AudioDataset(X_train, y_train)
+    test_data = AudioDataset(X_test, y_test)
 
-parkinsonCounter = 0
-notParkinsonCounter = 0
-# Iterate over the audio files and predict each one
-for file_path in audio_files:
-    prediction = predict_audio(file_path, model)
-    print(f"The predicted class for the audio file {file_path} is: {prediction}")
-    if prediction == "Parkinson's":
-        parkinsonCounter += 1
-    else:
-        notParkinsonCounter += 1
+    train_loader = DataLoader(train_data, batch_size=16, shuffle=True)
+    test_loader = DataLoader(test_data, batch_size=16, shuffle=True)
 
-print(f"Parkinson's: {parkinsonCounter}")
-print(f"Not Parkinson's: {notParkinsonCounter}")
+    model = AudioClassifier()
 
+    # Define loss and optimizer
+    criterion = nn.CrossEntropyLoss()
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.0005, weight_decay=0.1)
+
+    model.train()
+
+    n = 50
+    # Training loop
+    for epoch in range(n):  # Increase the number of epochs
+        loss = None
+        for i, (inputs, labels) in enumerate(train_loader):
+            outputs = model(inputs.float())
+            labels = labels.long()
+            loss = criterion(outputs, labels)
+
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+        if loss is not None:
+            print(f'Epoch {epoch + 1}/{n} Loss: {loss.item()}')
+        else:
+            print(f'Epoch {epoch + 1}/{n} No loss calculated')
+
+    # Save the model
+    torch.save(model.state_dict(), 'audio_classifier.pth')
+
+    model.eval()
+
+    # Evaluation
+    correct = 0
+    total = 0
+
+    with torch.no_grad():
+        for inputs, labels in test_loader:
+            outputs = model(inputs.float())
+            _, predicted = torch.max(outputs.data, 1)
+            total = total + labels.size(0)
+            correct = correct + torch.sum(predicted.eq(labels)).item()
+
+    print(f'Accuracy: {100 * correct / total}%')
+
+
+# Call the function to train and evaluate the model
+# train_and_evaluate_model()
