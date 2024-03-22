@@ -73,13 +73,22 @@ def load_data():
         X.append(mfccs_processed)  # Add the features to the list
 
         # Add labels based on the audio file
+        """
         if file in young_healthy_files:
             y.append(0)
         else:
             if file in elderly_healthy_files:
                 y.append(1)
             else:
-                y.append(2)
+                if file in parkinsons_files:
+                    y.append(2)
+        """
+
+        if file in parkinsons_files:
+            y.append(0)
+        else:
+            y.append(1)
+        
 
     return np.array(X), np.array(y)
 
@@ -115,11 +124,11 @@ class AudioClassifier(nn.Module):
         """
         super(AudioClassifier, self).__init__()
         self.layer1 = nn.Linear(40, 128)
-        self.dropout1 = nn.Dropout(0.5)
+        self.dropout1 = nn.Dropout(0.7)
         self.layer2 = nn.Linear(128, 128)
-        self.dropout2 = nn.Dropout(0.5)
+        self.dropout2 = nn.Dropout(0.7)
         self.layer3 = nn.Linear(128, 64)
-        self.dropout3 = nn.Dropout(0.5)
+        self.dropout3 = nn.Dropout(0.7)
         self.layer4 = nn.Linear(64, 3)
 
     def forward(self, x):
@@ -144,12 +153,14 @@ model = AudioClassifier()
 
 # Define loss and optimizer
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=0.0005)  # Decrease the learning rate
+# Define optimizer with L2 regularization (weight decay)
+optimizer = torch.optim.Adam(model.parameters(), lr=0.0005, weight_decay=0.1)
 
 model.train()
 
+n = 50
 # Training loop
-for epoch in range(100):  # Increase the number of epochs
+for epoch in range(n):  # Increase the number of epochs
     loss = None
     for i, (inputs, labels) in enumerate(train_loader):
         outputs = model(inputs.float())
@@ -161,9 +172,9 @@ for epoch in range(100):  # Increase the number of epochs
         optimizer.step()
 
     if loss is not None:
-        print(f'Epoch {epoch + 1}/{100} Loss: {loss.item()}')
+        print(f'Epoch {epoch + 1}/{n} Loss: {loss.item()}')
     else:
-        print(f'Epoch {epoch + 1}/{100} No loss calculated')
+        print(f'Epoch {epoch + 1}/{n} No loss calculated')
 
 model.eval()
 
@@ -209,16 +220,45 @@ def predict_audio(file_path, model):
     _, predicted = torch.max(output.data, 1)
 
     # Interpret the prediction
+    """
     if predicted.item() == 0:
         return "Young Healthy"
     else:
         if predicted.item() == 1:
             return "Elderly Healthy"
         else:
-            return "Parkinson's"
+            if predicted.item() == 2:
+                return "Parkinson's"
+    """
+
+    if predicted.item() == 0:
+        return "Parkinson's"
+    else:
+        return "Not Parkinson's"
+
 
 
 # Use the function
-file_path = "mono_pcm/marcoRamarro_mono_pcm.wav"
+"""
+file_path = "audio/marcoRamarro.wav"
 prediction = predict_audio(file_path, model)
 print(f"The predicted class for the audio file is: {prediction}")
+"""
+directory_path = "trimmed"
+# Get all .wav files in the directory
+audio_files = glob.glob(directory_path + '/*.wav')
+
+parkinsonCounter = 0
+notParkinsonCounter = 0
+# Iterate over the audio files and predict each one
+for file_path in audio_files:
+    prediction = predict_audio(file_path, model)
+    print(f"The predicted class for the audio file {file_path} is: {prediction}")
+    if prediction == "Parkinson's":
+        parkinsonCounter += 1
+    else:
+        notParkinsonCounter += 1
+
+print(f"Parkinson's: {parkinsonCounter}")
+print(f"Not Parkinson's: {notParkinsonCounter}")
+
