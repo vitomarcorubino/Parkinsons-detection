@@ -3,6 +3,8 @@ from AudioClassifier import predict_audio, AudioClassifier, train_and_evaluate_m
 import glob
 import os
 
+train = False
+
 # Load the trained model
 model = AudioClassifier()
 
@@ -12,7 +14,10 @@ if not os.path.isfile('audio_classifier.pth'):
     train_and_evaluate_model()
 else:
     # Load the model from the file
-    model.load_state_dict(torch.load('audio_classifier.pth'))
+    if train:
+        train_and_evaluate_model()
+    else:
+        model.load_state_dict(torch.load('audio_classifier.pth'))
 
 model.eval()
 

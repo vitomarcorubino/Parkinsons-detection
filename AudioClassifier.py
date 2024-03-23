@@ -110,11 +110,11 @@ class AudioClassifier(nn.Module):
         """
         super(AudioClassifier, self).__init__()
         self.layer1 = nn.Linear(40, 128)
-        self.dropout1 = nn.Dropout(0.7)
+        self.dropout1 = nn.Dropout(0.5)
         self.layer2 = nn.Linear(128, 128)
-        self.dropout2 = nn.Dropout(0.7)
+        self.dropout2 = nn.Dropout(0.5)
         self.layer3 = nn.Linear(128, 64)
-        self.dropout3 = nn.Dropout(0.7)
+        self.dropout3 = nn.Dropout(0.5)
         self.layer4 = nn.Linear(64, 3)
 
     def forward(self, x):
@@ -194,7 +194,7 @@ def train_and_evaluate_model():
 
     # Define loss and optimizer
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.0005, weight_decay=0.1)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.0005, weight_decay=2.0)
 
     model.train()
 
