@@ -5,12 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6322ae-8cf3-44ec-99c2-748db2316def" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/newDataset/youngHealthyControl/MireaLuisi/B1.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioClassifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/marcoRamarro.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/youngHealthyControl/VitoMarcoRubino/B1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/marcoWords.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/youngHealthyControl/VitoMarcoRubino/FB2.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/audio_classifier.pth" beforeDir="false" afterPath="$PROJECT_DIR$/audio_classifier.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mono_pcm/marcoRamarro_mono_pcm.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mono_pcm/marcoWords_mono_pcm.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed12.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed13.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed15.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed16.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed18.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed20.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed22.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed23.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed24.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed25.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed26.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed27.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed28.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed30.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed31.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoRamarro_mono_pcm_trimmed9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed12.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trimmed/marcoWords_mono_pcm_trimmed9.wav" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,29 +91,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.AudioClassifier.executor&quot;: &quot;Run&quot;,
-    &quot;Python.audioFileFormat.executor&quot;: &quot;Run&quot;,
-    &quot;Python.languageDetection.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.predict.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_simple.executor&quot;: &quot;Run&quot;,
-    &quot;Python.trimming.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.AudioClassifier.executor": "Run",
+    "Python.audioFileFormat.executor": "Run",
+    "Python.languageDetection.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.predict.executor": "Run",
+    "Python.test_simple.executor": "Run",
+    "Python.trimming.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/rubin/OneDrive/Desktop/Universita/Terzo_anno/Secondo_semestre/Tesi/Trimming/newDataset/youngHealthyControl/MireaLuisi",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\newDataset\youngHealthyControl\MireaLuisi" />
+      <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\newDataset\youngHealthyControl\VitoMarcoRubino" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\audio" />
     </key>
@@ -130,6 +187,10 @@
       <workItem from="1711131062426" duration="3043000" />
       <workItem from="1711180662698" duration="1500000" />
       <workItem from="1711182252986" duration="1435000" />
+      <workItem from="1711183784947" duration="20000" />
+      <workItem from="1711191383895" duration="2262000" />
+      <workItem from="1711208984582" duration="590000" />
+      <workItem from="1711273549048" duration="1838000" />
     </task>
     <servers />
   </component>
@@ -144,8 +205,8 @@
     <SUITE FILE_PATH="coverage/Trimming$test_simple.coverage" NAME="test_simple Coverage Results" MODIFIED="1710180230176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$languageDetection.coverage" NAME="languageDetection Coverage Results" MODIFIED="1710577290939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifier.coverage" NAME="AudioClassifier Coverage Results" MODIFIED="1711097013859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$predict.coverage" NAME="predict Coverage Results" MODIFIED="1711183547597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$predict.coverage" NAME="predict Coverage Results" MODIFIED="1711274202990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$trimming.coverage" NAME="trimming Coverage Results" MODIFIED="1710154819862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1711017783855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1711274084086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

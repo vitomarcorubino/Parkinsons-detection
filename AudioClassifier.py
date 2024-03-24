@@ -11,7 +11,6 @@ class AudioDataset(Dataset):
     """
     Dataset class to be used in a PyTorch DataLoader to create batches.
     """
-
     def __init__(self, X, y):
         """
         This function initializes the dataset with the features and labels.
@@ -179,6 +178,23 @@ def predict_audio(file_path, model):
 
 # Training and evaluation code
 def train_and_evaluate_model():
+    """
+    This function trains and evaluates the audio classifier model.
+
+    The function first loads the audio data and splits it into training and testing sets.
+    It then creates PyTorch DataLoaders for the training and testing sets.
+
+    The model is trained using the Adam optimizer and CrossEntropyLoss as the loss function.
+    The training process involves passing the input through the model, calculating the loss,
+    performing backpropagation, and updating the model parameters.
+
+    After training, the model is saved to a file named 'audio_classifier.pth'.
+
+    The function then evaluates the model on the testing set and prints the accuracy of the model.
+
+    Note: This function does not return anything. It prints the loss for each epoch during training
+    and the accuracy of the model after evaluation.
+    """
     X, y = load_data()
 
     # Split the data
@@ -194,7 +210,7 @@ def train_and_evaluate_model():
 
     # Define loss and optimizer
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.0005, weight_decay=2.0)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.0005, weight_decay=0.2)
 
     model.train()
 
@@ -233,7 +249,3 @@ def train_and_evaluate_model():
             correct = correct + torch.sum(predicted.eq(labels)).item()
 
     print(f'Accuracy: {100 * correct / total}%')
-
-
-# Call the function to train and evaluate the model
-# train_and_evaluate_model()

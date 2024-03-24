@@ -8,14 +8,22 @@ import trimming  # Module to trim the audio file
 from vosk import Model, KaldiRecognizer, SetLogLevel
 import shutil
 
-audio_dir = "audio"  # The directory where the audio files are stored
-output_folder_converted = "mono_pcm"  # The folder where the converted audio are stored
-output_folder_trimmed = "trimmed"  # The folder where the trimmed audio files are stored
+audio_dir = "newDataset/youngHealthyControl/VitoMarcoRubino"  # The directory where the audio files are stored
+output_folder_converted = "newDataset/youngHealthyControl/VitoMarcoRubino/mono_pcm"  # The folder where the converted audio are stored
+output_folder_trimmed = "newDataset/youngHealthyControl/VitoMarcoRubino/trimmed"  # The folder where the trimmed audio files are stored
 number_of_words = 4  # The number of words to consider for each trimming operation
 
-
-# Get the list of audio files in the audio directory
-wav_files = [f for f in os.listdir(audio_dir) if f.endswith(".wav")]
+# Check if audio_dir is a directory or a file
+if os.path.isdir(audio_dir):
+    # If it's a directory, get the list of audio files in the audio directory
+    wav_files = [f for f in os.listdir(audio_dir) if f.endswith(".wav")]
+else:
+    if os.path.isfile(audio_dir):
+        # If it's a file, create a list with the file
+        wav_files = [audio_dir]
+    else:
+        print("The specified path is not a valid file or directory.")
+        wav_files = []
 
 # -1 to disable logging messages, 0 to enable them
 SetLogLevel(-1)
@@ -23,7 +31,10 @@ SetLogLevel(-1)
 # Iterate over the audio files
 for wav_file in wav_files:
     # Construct the full file path
-    file_path = os.path.join(audio_dir, wav_file)
+    if os.path.isdir(audio_dir):
+        file_path = os.path.join(audio_dir, wav_file)
+    else:
+        file_path = audio_dir
 
     # Open the audio file
     wf = wave.open(file_path, "rb")
