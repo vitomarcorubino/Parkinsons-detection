@@ -8,9 +8,9 @@ import trimming  # Module to trim the audio file
 from vosk import Model, KaldiRecognizer, SetLogLevel
 import shutil
 
-audio_dir = "newDataset/youngHealthyControl/VitoMarcoRubino"  # The directory where the audio files are stored
-output_folder_converted = "newDataset/youngHealthyControl/VitoMarcoRubino/mono_pcm"  # The folder where the converted audio are stored
-output_folder_trimmed = "newDataset/youngHealthyControl/VitoMarcoRubino/trimmed"  # The folder where the trimmed audio files are stored
+audio_dir = "newDataset/elderlyHealthyControl/GiovannaAnaclerio"  # The directory where the audio files are stored
+output_folder_converted = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"  # The folder where the converted audio are stored
+output_folder_trimmed = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/trimmed"  # The folder where the trimmed audio files are stored
 number_of_words = 4  # The number of words to consider for each trimming operation
 
 # Check if audio_dir is a directory or a file
