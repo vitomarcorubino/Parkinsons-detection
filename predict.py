@@ -24,7 +24,7 @@ else:
 model.eval()
 
 # Set the directory path of the audio files to predict
-directory_path = "dataset/peopleWithParkinson/trimmed"
+directory_path = "newDataset/youngHealthyControl/VitoMarcoRubino/trimmed"
 # Get all .wav files in the directory
 audio_files = glob.glob(directory_path + '/*.wav')
 
@@ -39,6 +39,11 @@ for file_path in audio_files:
         parkinsonCounter = parkinsonCounter + 1
     else:
         notParkinsonCounter = notParkinsonCounter + 1
+
+if parkinsonCounter + notParkinsonCounter > 0:
+    # Calculate the percentage of Parkinson's predictions
+    parkinsonPercentage = (parkinsonCounter / (parkinsonCounter + notParkinsonCounter)) * 100
+    print(f"The percentage of Parkinson's predictions is: {parkinsonPercentage:.2f}%")
 
 # Print the number of Parkinson's and not Parkinson's predictions
 print(f"Parkinson's: {parkinsonCounter}")

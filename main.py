@@ -8,9 +8,13 @@ import trimming  # Module to trim the audio file
 from vosk import Model, KaldiRecognizer, SetLogLevel
 import shutil
 
-audio_dir = "newDataset/elderlyHealthyControl/GiovannaAnaclerio"  # The directory where the audio files are stored
-output_folder_converted = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"  # The folder where the converted audio are stored
-output_folder_trimmed = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/trimmed"  # The folder where the trimmed audio files are stored
+# The directory where the audio files are stored
+audio_dir = "newDataset/youngHealthyControl/VitoMarcoRubino"
+# The folder where the converted audio are stored
+output_folder_converted = "newDataset/youngHealthyControl/VitoMarcoRubino/mono_pcm"
+# The folder where the trimmed audio files are stored
+output_folder_trimmed = "newDataset/youngHealthyControl/VitoMarcoRubino/trimmed"
+
 number_of_words = 4  # The number of words to consider for each trimming operation
 
 # Check if audio_dir is a directory or a file
@@ -97,9 +101,6 @@ for wav_file in wav_files:
 
                     i = i + 1
 
-                trimming.trim_on_descending_waveform(file_path, start_times, end_times, words, number_of_words,
-                                                     output_folder_trimmed, False)
-
                 print("\nTRANSCRIBED TEXT")
                 print(text)
                 print("TOKENIZED WORDS")
@@ -111,6 +112,11 @@ for wav_file in wav_files:
 
                 # Extract the original file name without extension
                 original_file_name = os.path.splitext(os.path.basename(file_path))[0]
+
+                # Trim the audio file based on the spoken words
+                print(f"\nTrimming the audio file {original_file_name}.wav...")
+                trimming.trim_on_descending_waveform(file_path, start_times, end_times, words, number_of_words,
+                                                     output_folder_trimmed, False)
 
                 # Print the location of the trimmed segments
                 print(f"\nTrimming completed. Files stored into: {output_folder_trimmed}/{original_file_name}_trimmed*.wav")
