@@ -8,12 +8,13 @@ import trimming  # Module to trim the audio file
 from vosk import Model, KaldiRecognizer, SetLogLevel
 import shutil
 
+name = "Sara T"
 # The directory where the audio files are stored
-audio_dir = "newDataset/youngHealthyControl/VitoMarcoRubino"
+audio_dir = "dataset2/validation/youngHealthyControl/" + name
 # The folder where the converted audio are stored
-output_folder_converted = "newDataset/youngHealthyControl/VitoMarcoRubino/mono_pcm"
+output_folder_converted = "dataset2/validation/youngHealthyControl/" + name + "/mono_pcm"
 # The folder where the trimmed audio files are stored
-output_folder_trimmed = "newDataset/youngHealthyControl/VitoMarcoRubino/trimmed"
+output_folder_trimmed = "dataset2/validation/youngHealthyControl/" + name + "/trimmed"
 
 number_of_words = 4  # The number of words to consider for each trimming operation
 
@@ -82,7 +83,6 @@ for wav_file in wav_files:
 
             # Convert the result to a JSON object
             result_json = json.loads(result)
-
             if 'result' in result_json:
                 text = result_json['text']
                 i = 0
@@ -133,3 +133,16 @@ for wav_file in wav_files:
                 shutil.copy2(file_path, output_file_path)
 
                 print(f"File copied to: {output_file_path}")
+        else:
+            print("No result found. Copying the input file to the output directory.")
+
+            # Extract the original file name without extension
+            original_file_name = os.path.splitext(os.path.basename(file_path))[0]
+
+            # Construct the output file path
+            output_file_path = os.path.join(output_folder_trimmed, f"{original_file_name}_trimmed0.wav")
+
+            # Copy the input file to the output directory
+            shutil.copy2(file_path, output_file_path)
+
+            print(f"File copied to: {output_file_path}")

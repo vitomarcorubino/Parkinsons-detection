@@ -4,7 +4,7 @@ import glob
 import os
 
 # Set the train flag to choose whether to train the model or not
-train = False
+train = True
 
 # Load the trained model
 model = AudioClassifier()
@@ -24,7 +24,7 @@ else:
 model.eval()
 
 # Set the directory path of the audio files to predict
-directory_path = "newDataset/youngHealthyControl/VitoMarcoRubino/trimmed"
+directory_path = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/trimmed"
 # Get all .wav files in the directory
 audio_files = glob.glob(directory_path + '/*.wav')
 

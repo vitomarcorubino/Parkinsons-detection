@@ -134,48 +134,6 @@ class AudioClassifier(nn.Module):
         return x
 
 
-def predict_audio(file_path, model):
-    """
-    This function predicts the class of an audio file using the trained model.
-
-    Args:
-        file_path (str): The path to the audio file that needs to be classified.
-        model (AudioClassifier): The trained model.
-    """
-    # Load the audio file
-    audio, sample_rate = librosa.load(file_path, res_type='kaiser_fast')
-
-    # Extract MFCCs
-    mfccs = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=40)
-    mfccs_processed = np.mean(mfccs.T, axis=0)
-
-    # Convert the MFCCs to PyTorch tensor
-    mfccs_tensor = torch.tensor(mfccs_processed).float().unsqueeze(0)
-
-    # Pass the tensor through the model
-    output = model(mfccs_tensor)
-
-    # Get the predicted class
-    _, predicted = torch.max(output.data, 1)
-
-    # Interpret the prediction
-    """
-    if predicted.item() == 0:
-        return "Young Healthy"
-    else:
-        if predicted.item() == 1:
-            return "Elderly Healthy"
-        else:
-            if predicted.item() == 2:
-                return "Parkinson's"
-    """
-
-    if predicted.item() == 0:
-        return "Parkinson's"
-    else:
-        return "Not Parkinson's"
-
-
 # Training and evaluation code
 def train_and_evaluate_model():
     """
@@ -249,3 +207,51 @@ def train_and_evaluate_model():
             correct = correct + torch.sum(predicted.eq(labels)).item()
 
     print(f'Accuracy: {100 * correct / total}%')
+
+
+def predict_audio(file_path, model):
+    """
+    This function predicts the class of an audio file using the trained model.
+
+    Args:
+        file_path (str): The path to the audio file that needs to be classified.
+        model (AudioClassifier): The trained model.
+    """
+    # Load the audio file
+    audio, sample_rate = librosa.load(file_path, res_type='kaiser_fast')
+
+    # Extract MFCCs
+    mfccs = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=40)
+    mfccs_processed = np.mean(mfccs.T, axis=0)
+
+    # Convert the MFCCs to PyTorch tensor
+    mfccs_tensor = torch.tensor(mfccs_processed).float().unsqueeze(0)
+
+    # Pass the tensor through the model
+    output = model(mfccs_tensor)
+
+    # Get the predicted class
+    _, predicted = torch.max(output.data, 1)
+
+    # Interpret the prediction
+    """
+    if predicted.item() == 0:
+        return "Young Healthy"
+    else:
+        if predicted.item() == 1:
+            return "Elderly Healthy"
+        else:
+            if predicted.item() == 2:
+                return "Parkinson's"
+    """
+
+    if predicted.item() == 0:
+        return "Parkinson's"
+    else:
+        return "Not Parkinson's"
+
+"""
+1. Cambiare layer in LSTM 
+2. Dividere il dataset in train validation e test (80% train, 10% validation, 10% test)
+3. Provare con audio interi e audio spezzati
+"""
