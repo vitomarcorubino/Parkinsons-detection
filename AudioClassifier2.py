@@ -7,7 +7,7 @@ import numpy as np
 import librosa  # for audio processing
 import glob  # to retrieve files/pathnames matching a specified pattern
 import matplotlib.pyplot as plt
-
+from sklearn.model_selection import KFold
 
 class AudioDataset(Dataset):
     """
@@ -117,59 +117,78 @@ def train_and_evaluate_model():
     # Create DataLoaders
     train_data = AudioDataset(X_train, y_train)
     test_data = AudioDataset(X_test, y_test)
-    val_data = AudioDataset(X_val, y_val)
 
-    train_loader = DataLoader(train_data, batch_size=32, shuffle=False)
-    test_loader = DataLoader(test_data, batch_size=32, shuffle=True)
-    val_loader = DataLoader(val_data, batch_size=32, shuffle=True)
+    # Define the number of folds
+    n_folds = 3
+    kfold = KFold(n_splits=n_folds, shuffle=True)
 
     model = AudioClassifier()
 
     # Define loss and optimizer
     criterion = nn.CrossEntropyLoss()
-    # optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)  # Using SGD with learning rate 0.01 and momentum 0.9
-    # optimizer = torch.optim.Adam(model.parameters(), lr=0.00005, weight_decay=0.1)
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.000009)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.00003)
 
     model.train()
-    n = 35
+    n = 10
     # Initialize lists to store loss values
     train_losses = []
     val_losses = []
 
     # Training loop
     for epoch in range(n):  # Increase the number of epochs
-        loss = None
-        for i, (inputs, labels) in enumerate(train_loader):
-            outputs = model(inputs.float())
-            labels = labels.long()
-            loss = criterion(outputs, labels)
 
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+        for fold, (train_ids, val_ids) in enumerate(kfold.split(train_data)):
+            print(f'FOLD {fold+1}')
+            # Sample elements randomly from a given list of ids, no replacement.
+            train_subsampler = torch.utils.data.SubsetRandomSampler(train_ids)
+            val_subsampler = torch.utils.data.SubsetRandomSampler(val_ids)
 
-        # Calculate validation loss
-        val_loss = 0
-        model.eval()
-        with torch.no_grad():
-            for inputs, labels in val_loader:
+            # Define data loaders for training and testing data in this fold
+            train_loader = torch.utils.data.DataLoader(
+                              train_data,
+                              batch_size=48, sampler=train_subsampler)
+            val_loader = torch.utils.data.DataLoader(
+                              train_data,
+                              batch_size=48, sampler=val_subsampler)
+
+            loss = None
+            for i, (inputs, labels) in enumerate(train_loader):
+                inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
                 outputs = model(inputs.float())
                 labels = labels.long()
                 loss = criterion(outputs, labels)
-                val_loss += loss.item()
-        val_loss /= len(val_loader)
 
-        # Store loss values
-        train_losses.append(loss.item())
-        val_losses.append(val_loss)
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
 
-        print(f'Epoch {epoch + 1}/{n} Train Loss: {loss.item()} Val Loss: {val_loss}')
+            # Calculate validation loss
+            val_loss = 0
+            model.eval()
+            with torch.no_grad():
+                for inputs, labels in val_loader:
+                    inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
+                    outputs = model(inputs.float())
+                    labels = labels.long()
+                    loss = criterion(outputs, labels)
+                    val_loss += loss.item()
+            val_loss /= len(val_loader)
+
+            # Store loss values
+            train_losses.append(loss.item())
+            val_losses.append(val_loss)
+
+            print(f'Epoch {epoch + 1}/{n} Train Loss: {loss.item()} Val Loss: {val_loss}')
 
     # Save the model
     torch.save(model.state_dict(), 'audio_classifier2.pth')
 
     model.eval()
+
+    test_loader = torch.utils.data.DataLoader(
+        test_data,
+        batch_size=48  # Adjust the batch size according to your needs
+    )
 
     # Evaluation
     correct = 0
@@ -177,6 +196,7 @@ def train_and_evaluate_model():
 
     with torch.no_grad():
         for inputs, labels in test_loader:
+            inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
             outputs = model(inputs.float())
             _, predicted = torch.max(outputs.data, 1)
             total = total + labels.size(0)
@@ -192,7 +212,6 @@ def train_and_evaluate_model():
     plt.ylabel('Loss')
     plt.legend()
     plt.show()
-
 
 def predict_audio(file_path, model):
     """

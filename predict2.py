@@ -24,7 +24,8 @@ else:
 model.eval()
 
 # Set the directory path of the audio files to predict
-directory_path = "newDataset/elderlyHealthyControl/MariangelaColaianni/trimmed"
+# directory_path = "newDataset/elderlyHealthyControl/MariangelaColaianni/trimmed"
+directory_path = "dataset2/test/peopleWithParkinson/Mario B/trimmed"
 # Get all .wav files in the directory
 audio_files = glob.glob(directory_path + '/*.wav')
 
