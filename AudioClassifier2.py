@@ -119,9 +119,9 @@ def train_and_evaluate_model():
     test_data = AudioDataset(X_test, y_test)
     val_data = AudioDataset(X_val, y_val)
 
-    train_loader = DataLoader(train_data, batch_size=16, shuffle=True)
-    test_loader = DataLoader(test_data, batch_size=16, shuffle=True)
-    val_loader = DataLoader(val_data, batch_size=16, shuffle=True)
+    train_loader = DataLoader(train_data, batch_size=32, shuffle=False)
+    test_loader = DataLoader(test_data, batch_size=32, shuffle=True)
+    val_loader = DataLoader(val_data, batch_size=32, shuffle=True)
 
     model = AudioClassifier()
 
@@ -129,7 +129,7 @@ def train_and_evaluate_model():
     criterion = nn.CrossEntropyLoss()
     # optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)  # Using SGD with learning rate 0.01 and momentum 0.9
     # optimizer = torch.optim.Adam(model.parameters(), lr=0.00005, weight_decay=0.1)
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.000008)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.000009)
 
     model.train()
     n = 35

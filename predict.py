@@ -4,7 +4,7 @@ import glob
 import os
 
 # Set the train flag to choose whether to train the model or not
-train = True
+train = False
 
 # Load the trained model
 model = AudioClassifier()
