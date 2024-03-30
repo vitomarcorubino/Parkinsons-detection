@@ -1,9 +1,59 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import textwrap
+
+import torch
 from scipy.io.wavfile import read
 import librosa
 import librosa.display
+
+def plot_heatmap(audio, output, model, mfccs_tensor, sample_rate, file_path, prediction):
+    # Create a time array
+    time = np.arange(0, len(audio)) / sample_rate
+
+    # Get the predicted class
+    _, predicted = torch.max(output.data, 1)
+
+    # Get the gradient of the output with respect to the parameters of the model
+    output[:, predicted.item()].backward()
+
+    # Pull the gradients out of the model
+    gradients = model.get_activations_gradient()
+
+    # Pool the gradients across the channels
+    pooled_gradients = torch.mean(gradients, dim=[0, 2])
+
+    # Get the activations of the last convolutional layer
+    activations = model.get_activations(mfccs_tensor).detach()
+
+    # Weight the channels by corresponding gradients
+    for i in range(128):  # 128 is the number of channels in the last conv layer
+        activations[:, i, :] *= pooled_gradients[i]
+
+    # Average the channels of the activations
+    heatmap = torch.mean(activations, dim=1).squeeze()
+
+    # Normalize the heatmap
+    heatmap = np.maximum(heatmap, 0)
+    heatmap /= torch.max(heatmap)
+
+    # Reshape the heatmap to make it 2-dimensional
+    # Assuming heatmap is a 1D array with shape (20,)
+    heatmap_2d = heatmap.reshape((1, -1))  # Reshape to a 1x20 array or adjust shape accordingly
+
+    # Plot the waveform
+    plt.figure(figsize=(10, 4))
+    plt.plot(time, audio, alpha=0.5, label='Waveform')  # Use time array as x-values
+    plt.imshow(heatmap_2d, cmap='hot', aspect='auto', alpha=0.5, extent=[0, time[-1], -1, 1])  # Use time array as x-values
+    plt.colorbar(label='Activation Strength')  # Add label for the colorbar
+    plt.xlabel('Time (s)')  # Add label for the x-axis
+    plt.ylabel('Amplitude')  # Add label for the y-axis
+    plt.legend()  # Add the legend
+
+    # Add the file path and the prediction to the top left of the plot
+    plt.text(-0.08, 1.135, f'File: {file_path}\nPrediction: {prediction}', horizontalalignment='left',
+             verticalalignment='top', transform=plt.gca().transAxes)
+    plt.show()  # Show the plot
 
 
 def plot_time_frequency_heatmap(audio_path):

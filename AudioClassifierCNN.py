@@ -8,6 +8,7 @@ import librosa  # for audio processing
 import glob  # to retrieve files/pathnames matching a specified pattern
 import matplotlib.pyplot as plt
 from sklearn.model_selection import KFold
+from plotting import plot_heatmap
 
 
 class AudioDataset(Dataset):
@@ -104,6 +105,13 @@ class AudioClassifier(nn.Module):
         self.maxpool2 = nn.MaxPool1d(kernel_size=2)
         self.fc = nn.Linear(128*10, 2)
 
+        # Store the gradients
+        self.gradients = None
+
+    # Hook for the gradients
+    def activations_hook(self, grad):
+        self.gradients = grad
+
     def forward(self, x):
         x = x.unsqueeze(1)
         out = self.conv1(x)
@@ -111,11 +119,23 @@ class AudioClassifier(nn.Module):
         out = self.maxpool1(out)
         out = self.conv2(out)
         out = self.relu2(out)
+
+        # Register the hook
+        h = out.register_hook(self.activations_hook)
+
         out = self.maxpool2(out)
         out = out.view(out.size(0), -1)  # Flatten the output
         out = self.fc(out)
         out = torch.softmax(out, dim=1)
         return out
+
+    # Method for the gradient extraction
+    def get_activations_gradient(self):
+        return self.gradients
+
+    # Method for the activation extraction
+    def get_activations(self, x):
+        return self.relu2(self.conv2(self.maxpool1(self.relu1(self.conv1(x.unsqueeze(1))))))
 
 
 def train_and_evaluate_model():
@@ -223,13 +243,6 @@ def train_and_evaluate_model():
 
 
 def predict_audio(file_path, model):
-    """
-    This function predicts the class of an audio file using the trained model.
-
-    Args:
-        file_path (str): The path to the audio file that needs to be classified.
-        model (AudioClassifier): The trained model.
-    """
     # Load the audio file
     audio, sample_rate = librosa.load(file_path, res_type='kaiser_fast')
 
@@ -242,7 +255,7 @@ def predict_audio(file_path, model):
 
     mfccs_tensor = mfccs_tensor.view(mfccs_tensor.size(0), -1)  # Reshape the input data
 
-    # Pass the tensor through the model
+    # Forward pass
     output = model(mfccs_tensor)
 
     # Get the predicted class
@@ -250,6 +263,11 @@ def predict_audio(file_path, model):
 
     # Interpret the prediction
     if predicted.item() == 0:
-        return "Parkinson's"
+        prediction = "Parkinson's"
     else:
-        return "Not Parkinson's"
+        prediction = "Not Parkinson's"
+
+    # Call the new function to plot the heatmap
+    plot_heatmap(audio, output, model, mfccs_tensor, sample_rate, file_path, prediction)
+
+    return prediction
