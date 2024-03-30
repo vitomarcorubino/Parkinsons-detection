@@ -9,6 +9,7 @@ import glob  # to retrieve files/pathnames matching a specified pattern
 import matplotlib.pyplot as plt
 from sklearn.model_selection import KFold
 
+
 class AudioDataset(Dataset):
     """
     Dataset class to be used in a PyTorch DataLoader to create batches.
@@ -220,6 +221,7 @@ def train_and_evaluate_model():
     plt.legend()
     plt.show()
 
+
 def predict_audio(file_path, model):
     """
     This function predicts the class of an audio file using the trained model.
@@ -247,17 +249,6 @@ def predict_audio(file_path, model):
     _, predicted = torch.max(output.data, 1)
 
     # Interpret the prediction
-    """
-    if predicted.item() == 0:
-        return "Young Healthy"
-    else:
-        if predicted.item() == 1:
-            return "Elderly Healthy"
-        else:
-            if predicted.item() == 2:
-                return "Parkinson's"
-    """
-
     if predicted.item() == 0:
         return "Parkinson's"
     else:
