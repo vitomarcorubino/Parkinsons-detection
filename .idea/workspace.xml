@@ -6,9 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="ca6322ae-8cf3-44ec-99c2-748db2316def" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudioClassifier2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifier2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioClassifierCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifierCNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/plotting.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/plotting.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/modules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/objects.inv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/plotting.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/plotting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictCNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +32,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -37,35 +47,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.AudioClassifier.executor": "Debug",
-    "Python.AudioClassifier2.executor": "Run",
-    "Python.AudioClassifierCNN.executor": "Run",
-    "Python.audioFileFormat.executor": "Run",
-    "Python.languageDetection.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.plotting.executor": "Run",
-    "Python.predict.executor": "Run",
-    "Python.predict2.executor": "Run",
-    "Python.predictCNN.executor": "Run",
-    "Python.predictLSTM.executor": "Run",
-    "Python.test_simple.executor": "Run",
-    "Python.trimming.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/rubin/OneDrive/Desktop/Universita/Terzo_anno/Secondo_semestre/Tesi/Trimming/dataset2/train/peopleWithParkinson/Felicetta C/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.AudioClassifier.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.AudioClassifier2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.AudioClassifierCNN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.audioFileFormat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.languageDetection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.plotting.executor&quot;: &quot;Run&quot;,
+    &quot;Python.predict.executor&quot;: &quot;Run&quot;,
+    &quot;Python.predict2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.predictCNN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.predictLSTM.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_simple.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trimming.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rubin/OneDrive/Desktop/Universita/Terzo_anno/Secondo_semestre/Tesi/Trimming/dataset2/train/peopleWithParkinson/Felicetta C/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\dataset2\train\peopleWithParkinson\Felicetta C\test" />
@@ -166,6 +177,10 @@
       <workItem from="1711741153341" duration="8000" />
       <workItem from="1711785385625" duration="1328000" />
       <workItem from="1711786776397" duration="6823000" />
+      <workItem from="1711793729956" duration="201000" />
+      <workItem from="1711834227942" duration="1084000" />
+      <workItem from="1711871395781" duration="1055000" />
+      <workItem from="1711875934705" duration="2917000" />
     </task>
     <servers />
   </component>
@@ -183,7 +198,7 @@
     <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1711739884284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$audioFileFormat.coverage" NAME="audioFileFormat Coverage Results" MODIFIED="1709991614669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifier.coverage" NAME="AudioClassifier Coverage Results" MODIFIED="1711364716799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1711793268596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1711880150594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifier2.coverage" NAME="AudioClassifier2 Coverage Results" MODIFIED="1711630130676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$predict.coverage" NAME="predict Coverage Results" MODIFIED="1711659536307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$predictLSTM.coverage" NAME="predictLSTM Coverage Results" MODIFIED="1711649414703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -1,5 +1,4 @@
 import os
-
 import torch
 from torch import nn
 from torch.utils.data import DataLoader, Dataset
@@ -7,12 +6,14 @@ import numpy as np
 import librosa  # for audio processing
 import glob  # to retrieve files/pathnames matching a specified pattern
 import matplotlib.pyplot as plt
-from sklearn.model_selection import KFold
+from sklearn.model_selection import KFold # for cross-validation
+
 
 class AudioDataset(Dataset):
     """
     Dataset class to be used in a PyTorch DataLoader to create batches.
     """
+
     def __init__(self, X, y):
         """
         This function initializes the dataset with the features and labels.
@@ -53,16 +54,22 @@ def load_data():
     Returns:
         tuple: The features and labels for training, testing and validation sets.
     """
-    # Define the directories for each category in train, test and validation sets
-    categories = ['elderlyHealthyControl', 'peopleWithParkinson', 'youngHealthyControl']
+    # Define the sets
     sets = ['train', 'test', 'validation']
+    """
+    Define the category names of each set, where elderlyHealthyControl and youngHealthyControl are considered as 
+    notParkinson
+    """
+    categories = ['elderlyHealthyControl', 'peopleWithParkinson', 'youngHealthyControl']
+
+    # Define the path to the dataset
     data = {set_name: {category: f'dataset2/{set_name}/{category}' for category in categories} for set_name in sets}
 
     # Initialize the features and labels for each set
     X_train, y_train, X_test, y_test, X_val, y_val = [], [], [], [], [], []
 
-    for set_name, set_data in data.items():
-        for category, dir in set_data.items():
+    for set_name, set_data in data.items():  # Iterate over the sets
+        for category, dir in set_data.items():  # Iterate over the categories
             # Get all subfolders in the specified directory
             subfolders = [f.path for f in os.scandir(dir) if f.is_dir()]
 
@@ -77,16 +84,21 @@ def load_data():
                     mfccs_processed = np.mean(mfccs.T, axis=0)  # average the MFCCs across all the frames
 
                     # Add the features to the appropriate list
-                    label = "parkinson" if category == "peopleWithParkinson" else "notParkinson"
+                    if category == "peopleWithParkinson":
+                        label = "parkinson"
+                    else:
+                        label = "notParkinson"
+
                     if set_name == 'train':
                         X_train.append(mfccs_processed)
                         y_train.append(label)
-                    elif set_name == 'test':
-                        X_test.append(mfccs_processed)
-                        y_test.append(label)
-                    else:  # validation set
-                        X_val.append(mfccs_processed)
-                        y_val.append(label)
+                    else:
+                        if set_name == 'test':
+                            X_test.append(mfccs_processed)
+                            y_test.append(label)
+                        else:  # validation set
+                            X_val.append(mfccs_processed)
+                            y_val.append(label)
 
     return np.array(X_train), np.array(y_train), np.array(X_test), np.array(y_test), np.array(X_val), np.array(y_val)
 
@@ -94,6 +106,15 @@ def load_data():
 # Define the model
 class AudioClassifier(nn.Module):
     def __init__(self):
+        """
+        This function initializes the audio classifier model.
+
+        The model consists of an LSTM layer followed by a hidden layer and an output layer.
+        The LSTM layer has an input size of 40, hidden size of 128, 2 layers, and a dropout of 0.5.
+        The hidden layer has an input size of 128 and an output size of 64 and uses the ReLU activation function.
+        The output layer has an input size of 64 and an output size of 2 and uses the softmax activation function to
+        output the class probabilities.
+        """
         super(AudioClassifier, self).__init__()
         self.lstm = nn.LSTM(input_size=40, hidden_size=128, num_layers=2, dropout=0.5, batch_first=True)
         self.hidden_layer = nn.Linear(128, 64)
@@ -101,6 +122,16 @@ class AudioClassifier(nn.Module):
         self.output_layer = nn.Linear(64, 2)
 
     def forward(self, x):
+        """
+        This function defines the forward pass of the model.
+
+        Args:
+            x (torch.Tensor): The input tensor.
+
+        Returns:
+            torch.Tensor: The output tensor after the forward pass. It contains the softmax probabilities for the two
+            classes: 'parkinson' and 'notParkinson'.
+        """
         x = x.unsqueeze(1)
         out, _ = self.lstm(x)
         out = out.view(out.shape[0], -1)
@@ -112,6 +143,18 @@ class AudioClassifier(nn.Module):
 
 
 def train_and_evaluate_model():
+    """
+    This function trains and evaluates the audio classifier model, using:
+    - 3-fold cross-validation
+    - Adam optimizer with a learning rate of 0.00003
+    - Cross-entropy loss function
+    - 10 epochs
+    - Batch size of 48
+
+    Finally, it saves the trained model as 'audio_classifier2.pth' and plots the training and validation loss values.
+    """
+
+    # Load the data: X for features, y for labels
     X_train, y_train, X_test, y_test, X_val, y_val = load_data()
 
     # Create DataLoaders
@@ -125,54 +168,55 @@ def train_and_evaluate_model():
     model = AudioClassifier()
 
     # Define loss and optimizer
-    criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.00003)
+    criterion = nn.CrossEntropyLoss()  # Cross-entropy loss function
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.00003)  # Adam optimizer with learning rate of 0.00003
 
-    model.train()
-    n = 10
+    model.train()  # Set the model to training mode
+    n = 10  # Number of epochs
     # Initialize lists to store loss values
     train_losses = []
     val_losses = []
 
     # Training loop
-    for epoch in range(n):  # Increase the number of epochs
+    for epoch in range(n):  # Iterate over the epochs
 
-        for fold, (train_ids, val_ids) in enumerate(kfold.split(train_data)):
-            print(f'FOLD {fold+1}')
+        for fold, (train_ids, val_ids) in enumerate(kfold.split(train_data)):  # Iterate over the folds
+            print(f'FOLD {fold + 1}')
             # Sample elements randomly from a given list of ids, no replacement.
             train_subsampler = torch.utils.data.SubsetRandomSampler(train_ids)
             val_subsampler = torch.utils.data.SubsetRandomSampler(val_ids)
 
             # Define data loaders for training and testing data in this fold
             train_loader = torch.utils.data.DataLoader(
-                              train_data,
-                              batch_size=48, sampler=train_subsampler)
+                train_data,
+                batch_size=48, sampler=train_subsampler)
             val_loader = torch.utils.data.DataLoader(
-                              train_data,
-                              batch_size=48, sampler=val_subsampler)
+                train_data,
+                batch_size=48, sampler=val_subsampler)
 
             loss = None
-            for i, (inputs, labels) in enumerate(train_loader):
+            for i, (inputs, labels) in enumerate(train_loader):  # Iterate over the training data
                 inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
-                outputs = model(inputs.float())
-                labels = labels.long()
-                loss = criterion(outputs, labels)
+                outputs = model(inputs.float())  # Forward pass
+                labels = labels.long()  # Convert labels to long
+                loss = criterion(outputs, labels)  # Calculate the loss
 
-                optimizer.zero_grad()
-                loss.backward()
-                optimizer.step()
+                optimizer.zero_grad()  # Zero the gradients
+                loss.backward()  # Backward pass
+                optimizer.step()  # Update the weights
 
             # Calculate validation loss
             val_loss = 0
-            model.eval()
-            with torch.no_grad():
-                for inputs, labels in val_loader:
+            model.eval()  # Set the model to evaluation mode
+            with torch.no_grad():  # Disable gradient tracking
+                for inputs, labels in val_loader:  # Iterate over the validation data
                     inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
-                    outputs = model(inputs.float())
-                    labels = labels.long()
-                    loss = criterion(outputs, labels)
-                    val_loss += loss.item()
-            val_loss /= len(val_loader)
+                    outputs = model(inputs.float())  # Forward pass
+                    labels = labels.long()  # Convert labels to long
+                    loss = criterion(outputs, labels)  # Calculate the loss
+                    val_loss = val_loss + loss.item()
+
+            val_loss = val_loss / len(val_loader)  # Calculate the average validation loss
 
             # Store loss values
             train_losses.append(loss.item())
@@ -183,7 +227,7 @@ def train_and_evaluate_model():
     # Save the model
     torch.save(model.state_dict(), 'audio_classifier2.pth')
 
-    model.eval()
+    model.eval()  # Set the model to evaluation mode
 
     test_loader = torch.utils.data.DataLoader(
         test_data,
@@ -194,15 +238,15 @@ def train_and_evaluate_model():
     correct = 0
     total = 0
 
-    with torch.no_grad():
-        for inputs, labels in test_loader:
+    with torch.no_grad():  # Disable gradient tracking
+        for inputs, labels in test_loader:  # Iterate over the test data
             inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
-            outputs = model(inputs.float())
-            _, predicted = torch.max(outputs.data, 1)
-            total = total + labels.size(0)
-            correct = correct + torch.sum(predicted.eq(labels)).item()
+            outputs = model(inputs.float())  # Forward pass
+            _, predicted = torch.max(outputs.data, 1)  # Get the predicted class
+            total = total + labels.size(0)  # Update the total count
+            correct = correct + torch.sum(predicted.eq(labels)).item()  # Update the correct count
 
-    print(f'Accuracy: {100 * correct / total}%')
+    print(f'Accuracy: {100 * correct / total}%')  # Print the accuracy
 
     # Plot loss values
     plt.figure(figsize=(10, 5))
@@ -212,6 +256,7 @@ def train_and_evaluate_model():
     plt.ylabel('Loss')
     plt.legend()
     plt.show()
+
 
 def predict_audio(file_path, model):
     """
@@ -238,17 +283,6 @@ def predict_audio(file_path, model):
     _, predicted = torch.max(output.data, 1)
 
     # Interpret the prediction
-    """
-    if predicted.item() == 0:
-        return "Young Healthy"
-    else:
-        if predicted.item() == 1:
-            return "Elderly Healthy"
-        else:
-            if predicted.item() == 2:
-                return "Parkinson's"
-    """
-
     if predicted.item() == 0:
         return "Parkinson's"
     else:

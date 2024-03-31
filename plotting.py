@@ -1,14 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import textwrap
-
 import torch
 from scipy.io.wavfile import read
 import librosa
 import librosa.display
 
+
 def plot_heatmap(audio, output, model, mfccs_tensor, sample_rate, file_path, prediction):
-    # Create a time array
+    # Create a time array to plot the seconds on the x-axis
     time = np.arange(0, len(audio)) / sample_rate
 
     # Get the predicted class
@@ -33,18 +33,19 @@ def plot_heatmap(audio, output, model, mfccs_tensor, sample_rate, file_path, pre
     # Average the channels of the activations
     heatmap = torch.mean(activations, dim=1).squeeze()
 
-    # Normalize the heatmap
+    # Normalize the heatmap to make the values between 0 and 1
     heatmap = np.maximum(heatmap, 0)
     heatmap /= torch.max(heatmap)
 
     # Reshape the heatmap to make it 2-dimensional
-    # Assuming heatmap is a 1D array with shape (20,)
-    heatmap_2d = heatmap.reshape((1, -1))  # Reshape to a 1x20 array or adjust shape accordingly
+    heatmap_2d = heatmap.reshape((1, -1))  # Reshape to (1, 20)
 
     # Plot the waveform
     plt.figure(figsize=(10, 4))
-    plt.plot(time, audio, alpha=0.5, label='Waveform')  # Use time array as x-values
-    plt.imshow(heatmap_2d, cmap='hot', aspect='auto', alpha=0.5, extent=[0, time[-1], -1, 1])  # Use time array as x-values
+    plt.plot(time, audio, alpha=0.5, label='Waveform')  # Use time array as x-values to display seconds
+
+    # Display the heatmap as a 2D image
+    plt.imshow(heatmap_2d, cmap='hot', aspect='auto', alpha=0.5, extent=(0.0, float(time[-1]), -1.0, 1.0))
     plt.colorbar(label='Activation Strength')  # Add label for the colorbar
     plt.xlabel('Time (s)')  # Add label for the x-axis
     plt.ylabel('Amplitude')  # Add label for the y-axis
@@ -61,16 +62,16 @@ def plot_time_frequency_heatmap(audio_path):
     y, sr = librosa.load(audio_path)
 
     # Compute the STFT of the audio signal
-    D = librosa.stft(y)
+    d = librosa.stft(y)
 
     # Convert the amplitude of the STFT to decibels
-    D_db = librosa.amplitude_to_db(abs(D), ref=np.max)
+    d_db = librosa.amplitude_to_db(abs(d), ref=np.max)
 
     # Create a new figure
     plt.figure(figsize=(12, 8))
 
     # Display the spectrogram as a heatmap
-    librosa.display.specshow(D_db, sr=sr, x_axis='time', y_axis='log')
+    librosa.display.specshow(d_db, sr=sr, x_axis='time', y_axis='log')
 
     # Add a colorbar to the plot
     plt.colorbar(format='%+2.0f dB')
