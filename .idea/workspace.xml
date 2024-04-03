@@ -5,17 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6322ae-8cf3-44ec-99c2-748db2316def" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dataset2/test/elderlyHealthyControl/TERESA M/mono_pcm/VI2TMEIRAEC54F230320171154_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pickledData/testData.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pickledData/trainData.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pickledData/trimmed/testData.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pickledData/trimmed/trainData.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pickledData/trimmed/valData.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pickledData/valData.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioClassifier2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifier2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioClassifierCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifierCNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/plotting.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/plotting.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/modules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/plotting.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/plotting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_classifier2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/audio_classifier2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/B1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/B1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/B1_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/B1_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/B2_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/B2_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/D1_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/D1_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/D2_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/D2_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/FB1_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/FB1_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/FB2_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/FB2_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VA1_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VA1_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VA2_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VA2_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VE1_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VE1_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VE2_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VE2_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VI1_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VI1_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VI2_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VI2_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VO1_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VO1_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VO2_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VO2_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VU1_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VU1_mono_pcm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VU2_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VU2_mono_pcm.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict2.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictCNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +71,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Python.AudioClassifier.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.AudioClassifier2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.AudioClassifier2.executor&quot;: &quot;Debug&quot;,
     &quot;Python.AudioClassifierCNN.executor&quot;: &quot;Run&quot;,
     &quot;Python.audioFileFormat.executor&quot;: &quot;Run&quot;,
     &quot;Python.languageDetection.executor&quot;: &quot;Run&quot;,
@@ -67,7 +87,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rubin/OneDrive/Desktop/Universita/Terzo_anno/Secondo_semestre/Tesi/Trimming/dataset2/train/peopleWithParkinson/Felicetta C/test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rubin/OneDrive/Desktop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -79,15 +99,15 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\dataset2\test\elderlyHealthyControl\TERESA M\mono_pcm" />
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\dataset2\train\peopleWithParkinson\Felicetta C\test" />
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\dataset2\validation\youngHealthyControl\Sara T" />
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\dataset2\validation\peopleWithParkinson\Vito S" />
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\dataset2\validation\peopleWithParkinson\Vito L" />
-      <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\dataset2\validation\peopleWithParkinson\Nicolò C" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\newDataset\elderlyHealthyControl\MariangelaColaianni" />
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming" />
+      <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\newDataset\elderlyHealthyControl\MariangelaColaianni" />
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\newDataset\elderlyHealthyControl\GiovannaAnaclerio" />
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\audio" />
     </key>
@@ -181,6 +201,13 @@
       <workItem from="1711834227942" duration="1084000" />
       <workItem from="1711871395781" duration="1055000" />
       <workItem from="1711875934705" duration="2917000" />
+      <workItem from="1712039147947" duration="1998000" />
+      <workItem from="1712041209502" duration="1403000" />
+      <workItem from="1712063917402" duration="11949000" />
+      <workItem from="1712125174749" duration="8086000" />
+      <workItem from="1712134220799" duration="17000" />
+      <workItem from="1712134428386" duration="4539000" />
+      <workItem from="1712145228025" duration="2266000" />
     </task>
     <servers />
   </component>
@@ -193,16 +220,16 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Trimming$test_simple.coverage" NAME="test_simple Coverage Results" MODIFIED="1710180230176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$languageDetection.coverage" NAME="languageDetection Coverage Results" MODIFIED="1710577290939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$AudioClassifierCNN.coverage" NAME="AudioClassifierCNN Coverage Results" MODIFIED="1711790205427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$predict2.coverage" NAME="predict2 Coverage Results" MODIFIED="1711785425007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$AudioClassifierCNN.coverage" NAME="AudioClassifierCNN Coverage Results" MODIFIED="1712133787182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$predict2.coverage" NAME="predict2 Coverage Results" MODIFIED="1712147496628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1711739884284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$audioFileFormat.coverage" NAME="audioFileFormat Coverage Results" MODIFIED="1709991614669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifier.coverage" NAME="AudioClassifier Coverage Results" MODIFIED="1711364716799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1711880150594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$AudioClassifier2.coverage" NAME="AudioClassifier2 Coverage Results" MODIFIED="1711630130676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1712147081407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$AudioClassifier2.coverage" NAME="AudioClassifier2 Coverage Results" MODIFIED="1712071893000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$predict.coverage" NAME="predict Coverage Results" MODIFIED="1711659536307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$predictLSTM.coverage" NAME="predictLSTM Coverage Results" MODIFIED="1711649414703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$trimming.coverage" NAME="trimming Coverage Results" MODIFIED="1710154819862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1711792440979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1712136227019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

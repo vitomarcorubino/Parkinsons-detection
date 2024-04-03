@@ -37,15 +37,15 @@ def plot_heatmap(audio, output, model, mfccs_tensor, sample_rate, file_path, pre
     heatmap = np.maximum(heatmap, 0)
     heatmap /= torch.max(heatmap)
 
-    # Reshape the heatmap to make it 2-dimensional
-    heatmap_2d = heatmap.reshape((1, -1))  # Reshape to (1, 20)
+    # Normalize the activations to the range of the audio signal
+    normalized_activations = np.interp(np.arange(len(audio)), np.linspace(0, len(audio), len(heatmap)), heatmap.numpy())
 
     # Plot the waveform
     plt.figure(figsize=(10, 4))
     plt.plot(time, audio, alpha=0.5, label='Waveform')  # Use time array as x-values to display seconds
 
     # Display the heatmap as a 2D image
-    plt.imshow(heatmap_2d, cmap='hot', aspect='auto', alpha=0.5, extent=(0.0, float(time[-1]), -1.0, 1.0))
+    plt.imshow(normalized_activations[np.newaxis, :], cmap='hot', aspect='auto', alpha=0.5, extent=(0.0, float(time[-1]), -1.0, 1.0))
     plt.colorbar(label='Activation Strength')  # Add label for the colorbar
     plt.xlabel('Time (s)')  # Add label for the x-axis
     plt.ylabel('Amplitude')  # Add label for the y-axis
@@ -55,7 +55,6 @@ def plot_heatmap(audio, output, model, mfccs_tensor, sample_rate, file_path, pre
     plt.text(-0.08, 1.135, f'File: {file_path}\nPrediction: {prediction}', horizontalalignment='left',
              verticalalignment='top', transform=plt.gca().transAxes)
     plt.show()  # Show the plot
-
 
 def plot_time_frequency_heatmap(audio_path):
     # Load the audio file

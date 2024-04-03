@@ -3,8 +3,8 @@ from AudioClassifierCNN import predict_audio, AudioClassifier, train_and_evaluat
 import glob
 import os
 
-# Set the train flag to choose whether to train the model or not
-train = False
+train = True  # Set the train flag to choose whether to train the model or not
+train_on_trimmed = True  # Set to True to train on the trimmed dataset, False to train on the original dataset
 
 # Load the trained model
 model = AudioClassifier()
@@ -12,11 +12,11 @@ model = AudioClassifier()
 # Check if the model file exists
 if not os.path.isfile('audio_classifier3.pth'):
     # If the model file does not exist, train and evaluate the model
-    train_and_evaluate_model()
+    train_and_evaluate_model(train_on_trimmed)
 else:
     # If the model file exist, load the model from the file if the train flag is set to False, otherwise train the model
     if train:
-        train_and_evaluate_model()
+        train_and_evaluate_model(train_on_trimmed)
     else:
         model.load_state_dict(torch.load('audio_classifier3.pth'))
 

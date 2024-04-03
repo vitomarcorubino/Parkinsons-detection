@@ -3,8 +3,8 @@ from AudioClassifier2 import predict_audio, AudioClassifier, train_and_evaluate_
 import glob
 import os
 
-# Set the train flag to choose whether to train the model or not
-train = False
+train = False  # Set the train flag to choose whether to train the model or not
+train_on_trimmed = True  # Set to True to train on the trimmed dataset, False to train on the original dataset
 
 # Load the trained model
 model = AudioClassifier()
@@ -12,20 +12,20 @@ model = AudioClassifier()
 # Check if the model file exists
 if not os.path.isfile('audio_classifier2.pth'):
     # If the model file does not exist, train and evaluate the model
-    train_and_evaluate_model()
+    train_and_evaluate_model(train_on_trimmed)
 else:
     # If the model file exist, load the model from the file if the train flag is set to False, otherwise train the model
     if train:
-        train_and_evaluate_model()
+        train_and_evaluate_model(train_on_trimmed)
     else:
         model.load_state_dict(torch.load('audio_classifier2.pth'))
-
 # Set the model to evaluation mode
 model.eval()
 
 # Set the directory path of the audio files to predict
-# directory_path = "newDataset/elderlyHealthyControl/MariangelaColaianni/trimmed"
-directory_path = "dataset2/test/peopleWithParkinson/Mario B/trimmed"
+directory_path = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"
+#  directory_path = "dataset2/test/peopleWithParkinson/Mario B"
+#  directory_path = "dataset2/test/elderlyHealthyControl/TERESA M"
 # Get all .wav files in the directory
 audio_files = glob.glob(directory_path + '/*.wav')
 
