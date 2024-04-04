@@ -6,10 +6,9 @@ import numpy as np
 import librosa  # for audio processing
 import glob  # to retrieve files/pathnames matching a specified pattern
 import matplotlib.pyplot as plt
-from sklearn.model_selection import KFold # for cross-validation
 from plotting import plot_heatmap
 import pickle
-
+from sklearn.model_selection import KFold
 
 class AudioDataset(Dataset):
     """
@@ -155,7 +154,7 @@ def load_data(load_trimmed):
         pickle_dataset(np.array(X_train), np.array(y_train), np.array(X_test), np.array(y_test), np.array(X_val),
                        np.array(y_val), load_trimmed)
 
-    return np.array(X_train), np.array(y_train), np.array(X_test), np.array(y_test), np.array(X_val), np.array(y_val)
+    return np.array(X_train), np.array(y_train), np.array(X_val), np.array(y_val), np.array(X_test), np.array(y_test)
 
 
 # Define the model class
@@ -254,62 +253,41 @@ class AudioClassifier(nn.Module):
 
 
 def train_and_evaluate_model(train_on_trimmed):
-    """
-    This function trains and evaluates the audio classification model, using:
-    - 5-fold cross-validation
-    - Adam optimizer with a learning rate of 0.00001
-    - Cross Entropy loss function
-    - 3 epochs
-    - Batch size of 48
-
-    Finally, it plots the training and validation loss values for each epoch and save the model to a file named
-    'audio_classifier3.pth'.
-    """
-
     # Load the data: X for the features and y for the labels
-    X_train, y_train, X_test, y_test, X_val, y_val = load_data(train_on_trimmed)
+    X_train, y_train, X_val, y_val, X_test, Y_test = load_data(train_on_trimmed)
 
     # Create DataLoaders
     train_data = AudioDataset(X_train, y_train)
-    test_data = AudioDataset(X_test, y_test)
     val_data = AudioDataset(X_val, y_val)
-
-    # Define the number of folds for cross-validation
-    n_folds = 5
-    kfold = KFold(n_splits=n_folds, shuffle=True)
 
     model = AudioClassifier()
 
     # Define loss and optimizer
     criterion = nn.CrossEntropyLoss()  # Cross Entropy loss function
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.00001)  # Adam optimizer with a learning rate of 0.00001
+    optimizer = torch.optim.Adam(model.parameters(), lr=1e-07)  # Adam optimizer with a learning rate of 0.00001
 
     model.train()  # Set the model to training mode
-    n = 3  # Number of epochs
+    n = 7  # Number of epochs
 
     # Initialize lists to store loss values
     train_losses = []
     val_losses = []
 
+    # Define KFold cross-validator
+    kfold = KFold(n_splits=5)
+
     # Training loop
-    for epoch in range(n):  # Loop over the dataset n times, where n is the number of epochs
+    for fold, (train_ids, _) in enumerate(kfold.split(X_train)):  # Loop over the dataset n times, where n is the number of epochs
+        print(f'FOLD {fold}')
+        print('--------------------------------')
 
-        for fold, (train_ids, val_ids) in enumerate(kfold.split(train_data)): # Loop over the folds
-            print(f'FOLD {fold + 1}')
+        # Define data loaders for training and validation data
+        train_subsampler = torch.utils.data.SubsetRandomSampler(train_ids)
+        val_loader = torch.utils.data.DataLoader(val_data, batch_size=48)
 
-            # Sample elements randomly from a given list of ids, no replacement.
-            train_subsampler = torch.utils.data.SubsetRandomSampler(train_ids)
-            val_subsampler = torch.utils.data.SubsetRandomSampler(val_ids)
-
-            # Define data loaders for training and testing data in this fold
-            train_loader = torch.utils.data.DataLoader(
-                              train_data,
-                              batch_size=48, sampler=train_subsampler)
-            val_loader = torch.utils.data.DataLoader(
-                              train_data,
-                              batch_size=48, sampler=val_subsampler)
-
+        for epoch in range(n):
             loss = None
+            train_loader = torch.utils.data.DataLoader(train_data, batch_size=48, sampler=train_subsampler)
             for i, (inputs, labels) in enumerate(train_loader): # Loop over the training data
                 inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
                 inputs.requires_grad_()
@@ -344,28 +322,6 @@ def train_and_evaluate_model(train_on_trimmed):
     # Save the model
     torch.save(model.state_dict(), 'audio_classifier3.pth')
 
-    model.eval()  # Set the model to evaluation mode
-
-    test_loader = torch.utils.data.DataLoader(
-        test_data,
-        batch_size=48  # Adjust the batch size according to your needs
-    )
-
-    # Evaluation
-    correct = 0
-    total = 0
-
-    with torch.no_grad():  # Disable gradient tracking for testing
-        for inputs, labels in test_loader:  # Loop over the test data
-            inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
-            inputs.requires_grad_()
-            outputs = model(inputs.float())  # Forward pass
-            _, predicted = torch.max(outputs.data, 1)  # Get the predicted class
-            total = total + labels.size(0)  # Update the total number of samples
-            correct = correct + torch.sum(predicted.eq(labels)).item()  # Update the number of correct predictions
-
-    print(f'Accuracy: {100 * correct / total}%')
-
     # Plot loss values
     plt.figure(figsize=(10, 5))
     plt.plot(train_losses, label='Training Loss')
@@ -377,19 +333,6 @@ def train_and_evaluate_model(train_on_trimmed):
 
 
 def predict_audio(file_path, model):
-    """
-    This function predicts the class of an audio file using the trained model.
-    It extracts the MFCCs from the audio file, converts them to a PyTorch tensor, and passes them through the model.
-    The predicted class is then interpreted and a heatmap is plotted to visualize the importance of different parts of
-    the input in the decision made by the network.
-
-    Args:
-        file_path (str): The path to the audio file.
-        model (AudioClassifier): The trained model.
-
-    Returns:
-        str: The predicted class of the audio file.
-    """
     # Load the audio file
     audio, sample_rate = librosa.load(file_path, res_type='kaiser_fast')
 
@@ -413,8 +356,5 @@ def predict_audio(file_path, model):
         prediction = "Parkinson's"
     else:
         prediction = "Not Parkinson's"
-
-    # Call the new function to plot the heatmap
-    plot_heatmap(audio, output, model, mfccs_tensor, sample_rate, file_path, prediction)
 
     return prediction

@@ -3,8 +3,8 @@ from AudioClassifierCNN import predict_audio, AudioClassifier, train_and_evaluat
 import glob
 import os
 
-train = True  # Set the train flag to choose whether to train the model or not
-train_on_trimmed = True  # Set to True to train on the trimmed dataset, False to train on the original dataset
+train = False  # Set the train flag to choose whether to train the model or not
+train_on_trimmed = False  # Set to True to train on the trimmed dataset, False to train on the original dataset
 
 # Load the trained model
 model = AudioClassifier()
@@ -24,8 +24,9 @@ else:
 model.eval()
 
 # Set the directory path of the audio files to predict
-# directory_path = "newDataset/elderlyHealthyControl/GiovannaAnaclerio"
-directory_path = "dataset2/test/peopleWithParkinson/Mario B"
+directory_path = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"
+# directory_path = "newDataset/youngHealthyControl/VitoMarcoRubino/mono_pcm"
+# directory_path = "dataset2/test/peopleWithParkinson/Mario B"
 # directory_path = "dataset2/test/elderlyHealthyControl/TERESA M"
 # Get all .wav files in the directory
 audio_files = glob.glob(directory_path + '/*.wav')
