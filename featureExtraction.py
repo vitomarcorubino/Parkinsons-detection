@@ -4,6 +4,7 @@ import parselmouth
 from parselmouth.praat import call
 import glob
 from datetime import datetime
+import librosa
 
 
 class FeatureExtraction:
@@ -136,8 +137,8 @@ class FeatureExtraction:
         df = df.drop(columns=['mfcc'])
         return df
 
-
     def extract_features_from_folder(self, folder_path):
+        df = pd.DataFrame()
         file_list = []
         mean_F0_list = []
         sd_F0_list = []
@@ -150,12 +151,20 @@ class FeatureExtraction:
         localdbShimmer_list = []
         apq3Shimmer_list = []
         aqpq5Shimmer_list = []
+        mfcc_list = []  # list to store MFCCs
         curr_time = datetime.now()
         print("Entering extract_features_from_folder, time:", curr_time)
         for file in glob.glob(folder_path):
-            #print("extract_features_from_folder: ", file)
-            try:
-                (meanF0, stdevF0, hnr, localJitter, localabsoluteJitter, rapJitter, ppq5Jitter, localShimmer, localdbShimmer, apq3Shimmer, aqpq5Shimmer) = self.extract_acoustic_features(file, 75, 500, "Hertz")
+            print("extract_features_from_folder: ", file)
+            (meanF0, stdevF0, hnr, localJitter, localabsoluteJitter, rapJitter, ppq5Jitter, localShimmer, localdbShimmer, apq3Shimmer, aqpq5Shimmer) = self.extract_acoustic_features(file, 75, 500, "Hertz")
+
+            if (meanF0,) != (None,):
+                # Load the audio file
+                audio, sample_rate = librosa.load(file, res_type='kaiser_fast')
+                # Extract MFCCs
+                mfccs = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=13)
+                mfccs_processed = np.mean(mfccs.T, axis=0)
+
                 file_list.append(file) # make an ID list
                 mean_F0_list.append(meanF0) # make a mean F0 list
                 sd_F0_list.append(stdevF0) # make a sd F0 list
@@ -168,11 +177,19 @@ class FeatureExtraction:
                 localdbShimmer_list.append(localdbShimmer)
                 apq3Shimmer_list.append(apq3Shimmer)
                 aqpq5Shimmer_list.append(aqpq5Shimmer)
-            except:
+                mfcc_list.append(mfccs_processed)  # append processed MFCCs
+            else:
                 print("missed:", file)
-        df = pd.DataFrame(np.column_stack([file_list, mean_F0_list, sd_F0_list, hnr_list, localJitter_list, localabsoluteJitter_list, rapJitter_list, ppq5Jitter_list, localShimmer_list, localdbShimmer_list, apq3Shimmer_list, aqpq5Shimmer_list]), columns=['voiceID','meanF0Hz', 'stdevF0Hz', 'HNR', 'localJitter', 'localabsoluteJitter', 'rapJitter', 'ppq5Jitter', 'localShimmer', 'localdbShimmer', 'apq3Shimmer', 'apq5Shimmer'])
-        return df
 
+        # Create column names for each MFCC
+        mfcc_columns = [f'mfcc_{i}' for i in range(13)]
+
+        # Combine these with the existing column names
+        columns=['voiceID','meanF0Hz', 'stdevF0Hz', 'HNR', 'localJitter', 'localabsoluteJitter', 'rapJitter', 'ppq5Jitter', 'localShimmer', 'localdbShimmer', 'apq3Shimmer', 'apq5Shimmer'] + mfcc_columns
+
+        # Now use these column names when creating the DataFrame
+        df = pd.DataFrame(np.column_stack([file_list, mean_F0_list, sd_F0_list, hnr_list, localJitter_list, localabsoluteJitter_list, rapJitter_list, ppq5Jitter_list, localShimmer_list, localdbShimmer_list, apq3Shimmer_list, aqpq5Shimmer_list, mfcc_list]), columns=columns)
+        return df
     def extract_features_from_folder_2(self, folder_path): #for the MDVR_KCL dataset (replication)
         df = pd.DataFrame()
         file_list = []

@@ -3,7 +3,7 @@ from AudioClassifierCNN import predict_audio, AudioClassifier, train_and_evaluat
 import glob
 import os
 
-train = False  # Set the train flag to choose whether to train the model or not
+train = True  # Set the train flag to choose whether to train the model or not
 train_on_trimmed = False  # Set to True to train on the trimmed dataset, False to train on the original dataset
 
 # Load the trained model
