@@ -2,7 +2,7 @@ import os
 from featureExtraction import FeatureExtraction
 import pandas as pd
 
-extract_trimmed = False  # Set to True to extract features from the trimmed dataset
+extract_trimmed = True  # Set to True to extract features from the trimmed dataset
 
 trimmed_subfolder = ""
 trimmed_filename = ""

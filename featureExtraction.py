@@ -5,6 +5,7 @@ from parselmouth.praat import call
 import glob
 from datetime import datetime
 import librosa
+import natsort
 
 
 class FeatureExtraction:
@@ -139,7 +140,9 @@ class FeatureExtraction:
 
     def extract_features_from_folder(self, folder_path):
         df = pd.DataFrame()
-        file_list = []
+        file_list = glob.glob(folder_path)  # get a list of all the files
+        file_list = natsort.natsorted(file_list)  # sort the list naturally
+
         mean_F0_list = []
         sd_F0_list = []
         hnr_list = []
@@ -152,10 +155,8 @@ class FeatureExtraction:
         apq3Shimmer_list = []
         aqpq5Shimmer_list = []
         mfcc_list = []  # list to store MFCCs
-        curr_time = datetime.now()
-        print("Entering extract_features_from_folder, time:", curr_time)
-        for file in glob.glob(folder_path):
-            print("extract_features_from_folder: ", file)
+
+        for file in file_list:
             (meanF0, stdevF0, hnr, localJitter, localabsoluteJitter, rapJitter, ppq5Jitter, localShimmer, localdbShimmer, apq3Shimmer, aqpq5Shimmer) = self.extract_acoustic_features(file, 75, 500, "Hertz")
 
             if (meanF0,) != (None,):
@@ -165,7 +166,6 @@ class FeatureExtraction:
                 mfccs = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=13)
                 mfccs_processed = np.mean(mfccs.T, axis=0)
 
-                file_list.append(file) # make an ID list
                 mean_F0_list.append(meanF0) # make a mean F0 list
                 sd_F0_list.append(stdevF0) # make a sd F0 list
                 hnr_list.append(hnr)
@@ -178,8 +178,6 @@ class FeatureExtraction:
                 apq3Shimmer_list.append(apq3Shimmer)
                 aqpq5Shimmer_list.append(aqpq5Shimmer)
                 mfcc_list.append(mfccs_processed)  # append processed MFCCs
-            else:
-                print("missed:", file)
 
         # Create column names for each MFCC
         mfcc_columns = [f'mfcc_{i}' for i in range(13)]
@@ -190,6 +188,7 @@ class FeatureExtraction:
         # Now use these column names when creating the DataFrame
         df = pd.DataFrame(np.column_stack([file_list, mean_F0_list, sd_F0_list, hnr_list, localJitter_list, localabsoluteJitter_list, rapJitter_list, ppq5Jitter_list, localShimmer_list, localdbShimmer_list, apq3Shimmer_list, aqpq5Shimmer_list, mfcc_list]), columns=columns)
         return df
+
     def extract_features_from_folder_2(self, folder_path): #for the MDVR_KCL dataset (replication)
         df = pd.DataFrame()
         file_list = []
