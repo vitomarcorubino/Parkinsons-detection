@@ -10,9 +10,8 @@ if extract_trimmed:
     trimmed_filename = "_trimmed"
     trimmed_subfolder = "trimmed/"
 
-
 # Define the main dataset folder
-main_folder = "dataset2"
+main_folder = "dataset3"
 
 # Define the subfolders
 subfolders = ["train", "validation", "test"]
@@ -28,24 +27,16 @@ for subfolder in subfolders:
     # Initialize a list to store the features
     features_list = []
 
-    # Loop over the labels
-    for label in labels:
-        # Define the path for the current label
-        path = os.path.join(main_folder, subfolder, label, f"*/{trimmed_subfolder}*.wav")
-        print(path)
+    path = os.path.join(main_folder, subfolder)
+    print(path)
 
-        features = f.extract_features_from_folder(path)  # for replicating the research paper
-
-        if label == "peopleWithParkinson":
-            features['label'] = 1
-        else:
-            features['label'] = 0
-        features_list.append(features)
+    features, labels_f = f.extract_features_from_folder(path)  # for replicating the research paper
+    print("ciao")
 
     # Concatenate all the DataFrames in the list into a single DataFrame
-    features_df = pd.concat(features_list)
+    #features_df = pd.concat(features_list, axis = 1)
 
-    f.convert_to_csv(features_df, f"features/splitted/{trimmed_subfolder}{subfolder}_features{trimmed_filename}")
+    #f.convert_to_csv(features_df, f"features/splitted/{subfolder}_features")
 
 """
 import os
