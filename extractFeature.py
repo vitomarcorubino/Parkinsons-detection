@@ -1,6 +1,7 @@
 import os
 from featureExtraction import FeatureExtraction
 import pandas as pd
+import pickle
 
 # Define the main dataset folder
 main_folder = "dataset3"
@@ -9,13 +10,20 @@ main_folder = "dataset3"
 subfolders = ["train", "validation", "test"]
 
 # Create an instance of FeatureExtraction
-f = FeatureExtraction()
+featureExtraction = FeatureExtraction()
 
 # Loop over the subfolders
 for subfolder in subfolders:
     path = os.path.join(main_folder, subfolder)
 
-    features, labels = f.extract_features_from_folder(path)  # for replicating the research paper
+    features, labels = featureExtraction.extract_features_from_folder(path)  # for replicating the research paper
+
+    # Serialize the features and labels
+    with open(f"features/splitted/{subfolder}_features", 'wb') as file:
+        pickle.dump(features, file)
+
+    with open(f"features/splitted/{subfolder}_features", 'wb') as file:
+        pickle.dump(labels, file)
 
     # Convert the list of dictionaries to a DataFrame
     # features_df = pd.DataFrame(features)

@@ -212,10 +212,14 @@ class FeatureExtraction:
                     mfcc_list.append(self.extract_mfcc(trimmed_file))
 
                 # Create a DataFrame for the .wav file with its corresponding trimmed files' features
-                df_dict[os.path.basename(wav_file)] = pd.DataFrame(np.column_stack(
+                df = pd.DataFrame(np.column_stack(
                     [filename_list, mean_F0_list, sd_F0_list, hnr_list, localJitter_list, localabsoluteJitter_list,
                     rapJitter_list, ppq5Jitter_list, localShimmer_list, localdbShimmer_list, apq3Shimmer_list,
                     aqpq5Shimmer_list, mfcc_list]), columns=columns)
+
+                # df = df.transpose()
+
+                df_dict[os.path.basename(wav_file)] = df
 
             df_dict_list.append(df_dict)
             labels_list.append(labels)
