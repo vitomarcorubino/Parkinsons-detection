@@ -142,7 +142,7 @@ class FeatureExtraction:
 
     def extract_features_from_folder(self, main_folder_path):
         df_dict_list = []
-        labels = []  # list to store the labels
+        labels_list = []  # list to store the labels
 
         # Create column names for each MFCC
         mfcc_columns = [f'mfcc_{i}' for i in range(13)]
@@ -157,15 +157,20 @@ class FeatureExtraction:
         # Loop over the main folders
         for main_folder in os.listdir(original_main_folder_path):
             df_dict = {}  # dictionary to store the dataframes
+            labels = []
             main_folder_path = os.path.join(original_main_folder_path, main_folder)
 
-            print("Main folder:", main_folder)
-            print("Main folder path:", main_folder_path)
+            print("Processing:", main_folder_path)
             # Get the list of .wav files
             wav_files = glob.glob(os.path.join(main_folder_path, "*.wav"))
 
             # Loop over the .wav files
             for wav_file in wav_files:
+                if main_folder == "peopleWithParkinson":
+                    labels.append(1)
+                else:
+                    labels.append(0)
+
                 # Initialize the lists to store the features
                 filename_list = []
                 mean_F0_list = []
@@ -213,8 +218,9 @@ class FeatureExtraction:
                     aqpq5Shimmer_list, mfcc_list]), columns=columns)
 
             df_dict_list.append(df_dict)
+            labels_list.append(labels)
 
-        return df_dict_list, labels
+        return df_dict_list, labels_list
 
     def extract_features_from_folder_2(self, folder_path):  #for the MDVR_KCL dataset (replication)
         df = pd.DataFrame()

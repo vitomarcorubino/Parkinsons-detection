@@ -2,41 +2,25 @@ import os
 from featureExtraction import FeatureExtraction
 import pandas as pd
 
-extract_trimmed = True  # Set to True to extract features from the trimmed dataset
-
-trimmed_subfolder = ""
-trimmed_filename = ""
-if extract_trimmed:
-    trimmed_filename = "_trimmed"
-    trimmed_subfolder = "trimmed/"
-
 # Define the main dataset folder
 main_folder = "dataset3"
 
 # Define the subfolders
 subfolders = ["train", "validation", "test"]
 
-# Define the labels
-labels = ["elderlyHealthyControl", "peopleWithParkinson", "youngHealthyControl"]
-
 # Create an instance of FeatureExtraction
 f = FeatureExtraction()
 
 # Loop over the subfolders
 for subfolder in subfolders:
-    # Initialize a list to store the features
-    features_list = []
-
     path = os.path.join(main_folder, subfolder)
-    print(path)
 
-    features, labels_f = f.extract_features_from_folder(path)  # for replicating the research paper
-    print("ciao")
+    features, labels = f.extract_features_from_folder(path)  # for replicating the research paper
 
-    # Concatenate all the DataFrames in the list into a single DataFrame
-    #features_df = pd.concat(features_list, axis = 1)
+    # Convert the list of dictionaries to a DataFrame
+    # features_df = pd.DataFrame(features)
 
-    #f.convert_to_csv(features_df, f"features/splitted/{subfolder}_features")
+    # f.convert_to_csv(features_df, f"features/splitted/{subfolder}_features")
 
 """
 import os
