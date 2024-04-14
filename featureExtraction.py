@@ -150,7 +150,7 @@ class FeatureExtraction:
         mfcc_columns = [f'mfcc_{i}' for i in range(13)]
 
         # Combine these with the existing column names
-        columns = ['voiceID', 'meanF0Hz', 'stdevF0Hz', 'HNR', 'localJitter', 'localabsoluteJitter', 'rapJitter',
+        columns = ['meanF0Hz', 'stdevF0Hz', 'HNR', 'localJitter', 'localabsoluteJitter', 'rapJitter',
                    'ppq5Jitter', 'localShimmer', 'localdbShimmer', 'apq3Shimmer', 'apq5Shimmer'] + mfcc_columns
 
         # Store the original main_folder_path
@@ -215,13 +215,13 @@ class FeatureExtraction:
 
                 # Create a DataFrame for the .wav file with its corresponding trimmed files' features
                 df = pd.DataFrame(np.column_stack(
-                    [filename_list, mean_F0_list, sd_F0_list, hnr_list, localJitter_list, localabsoluteJitter_list,
+                    [mean_F0_list, sd_F0_list, hnr_list, localJitter_list, localabsoluteJitter_list,
                     rapJitter_list, ppq5Jitter_list, localShimmer_list, localdbShimmer_list, apq3Shimmer_list,
                     aqpq5Shimmer_list, mfcc_list]), columns=columns)
 
                 # df = df.transpose()
 
-                df_dict[os.path.basename(wav_file)] = df
+                df_dict[os.path.basename(wav_file)] = df.to_numpy()
 
             # df_dict_list.append(df_dict)
             # labels_list.append(labels)

@@ -24,7 +24,7 @@ class AudioDataset(Dataset):
         """
         self.X = X
         self.y = y
-        self.label_map = {"parkinson": 0, "notParkinson": 1}
+        self.label_map = {0: 0, 1: 1}
 
     def __len__(self):
         """
@@ -175,13 +175,13 @@ class AudioClassifier(nn.Module):
             nn.Module: The base class for all neural network modules in PyTorch.
         """
         super(AudioClassifier, self).__init__()
-        self.conv1 = nn.Conv1d(1, 64, kernel_size=5, stride=1, padding=2)
+        self.conv1 = nn.Conv1d(1, 12, kernel_size=5)
         self.relu1 = nn.ReLU()  # ReLU activation function
         self.maxpool1 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
-        self.conv2 = nn.Conv1d(64, 128, kernel_size=5, stride=1, padding=2)
+        self.conv2 = nn.Conv1d(12, 48, kernel_size=5)
         self.relu2 = nn.ReLU()  # ReLU activation function
         self.maxpool2 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
-        self.fc = nn.Linear(128*10, 2)  # Fully connected layer
+        self.fc = nn.Linear(48, 2)  # Fully connected layer
 
         # Store the gradients
         self.gradients = None
@@ -207,7 +207,7 @@ class AudioClassifier(nn.Module):
             torch.Tensor: The output tensor after the forward pass.It contains the softmax probabilities for the two
                           classes: 'parkinson' and 'notParkinson'.
         """
-        x = x.unsqueeze(1) # Add a channel dimension
+        # x = x.unsqueeze(1) # Add a channel dimension
         out = self.conv1(x) # Pass the input through the first convolutional layer
         out = self.relu1(out) # Apply the ReLU activation function
         out = self.maxpool1(out) # Apply max pooling in order to reduce the spatial dimensions of the output
@@ -254,7 +254,26 @@ class AudioClassifier(nn.Module):
 
 def train_and_evaluate_model(train_on_trimmed):
     # Load the data: X for the features and y for the labels
-    X_train, y_train, X_val, y_val, X_test, Y_test = load_data(train_on_trimmed)
+    # X_train, y_train, X_val, y_val, X_test, Y_test = load_data(train_on_trimmed)
+
+    X_train, y_train, X_val, y_val, X_test, y_test = [], [], [], [], [], []
+    with open('features/splitted/train_features.pkl', 'rb') as file:
+        X_train = list(pickle.load(file).values())
+
+    with open('features/splitted/train_labels.pkl', 'rb') as file:
+        y_train = pickle.load(file)
+
+    with open('features/splitted/validation_features.pkl', 'rb') as file:
+        X_val = list(pickle.load(file).values())
+
+    with open('features/splitted/validation_labels.pkl', 'rb') as file:
+        y_val = pickle.load(file)
+
+    with open('features/splitted/test_features.pkl', 'rb') as file:
+        X_test = list(pickle.load(file).values())
+
+    with open('features/splitted/test_labels.pkl', 'rb') as file:
+        y_test = pickle.load(file)
 
     # Create DataLoaders
     train_data = AudioDataset(X_train, y_train)
@@ -283,11 +302,11 @@ def train_and_evaluate_model(train_on_trimmed):
 
         # Define data loaders for training and validation data
         train_subsampler = torch.utils.data.SubsetRandomSampler(train_ids)
-        val_loader = torch.utils.data.DataLoader(val_data, batch_size=48)
+        val_loader = torch.utils.data.DataLoader(val_data, batch_size=1)
 
         for epoch in range(n):
             loss = None
-            train_loader = torch.utils.data.DataLoader(train_data, batch_size=48, sampler=train_subsampler)
+            train_loader = torch.utils.data.DataLoader(train_data, batch_size=1, sampler=train_subsampler)
             for i, (inputs, labels) in enumerate(train_loader): # Loop over the training data
                 inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
                 inputs.requires_grad_()
