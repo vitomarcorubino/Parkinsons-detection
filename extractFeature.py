@@ -14,11 +14,11 @@ subfolders = ["train", "validation", "test"]
 featureExtraction = FeatureExtraction()
 
 
-with open('features/splitted/test_features.pkl', 'rb') as file:
+with open('features/splitted/train_features.pkl', 'rb') as file:
     features = pickle.load(file)
 
 
-with open('features/splitted/test_labels.pkl', 'rb') as file:
+with open('features/splitted/train_labels.pkl', 'rb') as file:
     labels = pickle.load(file)
 """
 # Loop over the subfolders

@@ -141,8 +141,10 @@ class FeatureExtraction:
         return df
 
     def extract_features_from_folder(self, main_folder_path):
-        df_dict_list = []
-        labels_list = []  # list to store the labels
+        # df_dict_list = []
+        # labels_list = []  # list to store the labels
+        labels = []
+        df_dict = {}
 
         # Create column names for each MFCC
         mfcc_columns = [f'mfcc_{i}' for i in range(13)]
@@ -156,8 +158,8 @@ class FeatureExtraction:
 
         # Loop over the main folders
         for main_folder in os.listdir(original_main_folder_path):
-            df_dict = {}  # dictionary to store the dataframes
-            labels = []
+            # df_dict = {}  # dictionary to store the dataframes
+            # labels = []
             main_folder_path = os.path.join(original_main_folder_path, main_folder)
 
             print("Processing:", main_folder_path)
@@ -221,10 +223,10 @@ class FeatureExtraction:
 
                 df_dict[os.path.basename(wav_file)] = df
 
-            df_dict_list.append(df_dict)
-            labels_list.append(labels)
+            # df_dict_list.append(df_dict)
+            # labels_list.append(labels)
 
-        return df_dict_list, labels_list
+        return df_dict, labels
 
     def extract_features_from_folder_2(self, folder_path):  #for the MDVR_KCL dataset (replication)
         df = pd.DataFrame()
