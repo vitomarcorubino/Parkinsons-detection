@@ -219,6 +219,7 @@ class AudioClassifier(nn.Module):
 
         out = self.maxpool2(out) # Apply max pooling
         out = out.view(out.size(0), -1)  # Flatten the output
+        out = torch.transpose(out, 0, 1)  # Transpose the output to have the correct shape for the fully connected layer
         out = self.fc(out) # Pass the output through the fully connected layer
         out = torch.softmax(out, dim=1) # Apply the softmax function to get the final output probabilities
 
