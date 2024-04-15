@@ -209,18 +209,26 @@ class AudioClassifier(nn.Module):
         """
         # x = x.unsqueeze(1) # Add a channel dimension
         out = self.conv1(x) # Pass the input through the first convolutional layer
+        # Print out shape
+        print("conv1: ", out.shape)
         out = self.relu1(out) # Apply the ReLU activation function
         out = self.maxpool1(out) # Apply max pooling in order to reduce the spatial dimensions of the output
+        print("maxpool1: ", out.shape)
         out = self.conv2(out) # Pass the output through the second convolutional layer
+        print("conv2: ", out.shape)
         out = self.relu2(out) # Apply the ReLU activation function
         out.requires_grad_(True)
         # Register the hook
         h = out.register_hook(self.activations_hook)
 
         out = self.maxpool2(out) # Apply max pooling
+        print("maxpool2: ", out.shape)
         out = out.view(out.size(0), -1)  # Flatten the output
+        print("view: ", out.shape)
         out = torch.transpose(out, 0, 1)  # Transpose the output to have the correct shape for the fully connected layer
+        print("transpose: ", out.shape)
         out = self.fc(out) # Pass the output through the fully connected layer
+        print("fc: ", out.shape)
         out = torch.softmax(out, dim=1) # Apply the softmax function to get the final output probabilities
 
         return out
