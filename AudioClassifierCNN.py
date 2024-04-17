@@ -208,6 +208,7 @@ class AudioClassifier(nn.Module):
                           classes: 'parkinson' and 'notParkinson'.
         """
         # x = x.unsqueeze(1) # Add a channel dimension
+        print("input shape: ", x.shape)
         out = self.conv1(x) # Pass the input through the first convolutional layer
         # Print out shape
         print("after conv1: ", out.shape)
