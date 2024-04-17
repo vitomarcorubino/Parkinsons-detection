@@ -24,7 +24,7 @@ class AudioDataset(Dataset):
         """
         self.X = X
         self.y = y
-        self.label_map = {0: 0, 1: 1}
+        # self.label_map = {0: 0, 1: 1}
 
     def __len__(self):
         """
@@ -43,7 +43,7 @@ class AudioDataset(Dataset):
             idx (int): The index of the sample.
         """
         # Convert labels to numerical values and then to tensor
-        labels = torch.tensor(self.label_map[self.y[idx]])
+        labels = torch.tensor(self.y[idx])
 
         return self.X[idx], labels
 
@@ -177,10 +177,10 @@ class AudioClassifier(nn.Module):
         super(AudioClassifier, self).__init__()
         self.conv1 = nn.Conv1d(24, 48, kernel_size=3, padding=1)
         self.relu1 = nn.ReLU()  # ReLU activation function
-        self.maxpool1 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
-        self.conv2 = nn.Conv1d(48, 96, kernel_size=3)
+        # self.maxpool1 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
+        self.conv2 = nn.Conv1d(48, 96, kernel_size=3, padding=1)
         self.relu2 = nn.ReLU()  # ReLU activation function
-        self.maxpool2 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
+        # self.maxpool2 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
         self.fc = nn.Linear(96, 2)  # Fully connected layer
 
         # Store the gradients
@@ -207,32 +207,22 @@ class AudioClassifier(nn.Module):
             torch.Tensor: The output tensor after the forward pass.It contains the softmax probabilities for the two
                           classes: 'parkinson' and 'notParkinson'.
         """
-        # x = x.unsqueeze(1) # Add a channel dimension
-        print("input shape: ", x.shape)
         out = self.conv1(x) # Pass the input through the first convolutional layer
-        # Print out shape
-        print("after conv1: ", out.shape)
         out = self.relu1(out) # Apply the ReLU activation function
-        out = self.maxpool1(out) # Apply max pooling in order to reduce the spatial dimensions of the output
-        print("after maxpool1: ", out.shape)
+        # out = self.maxpool1(out) # Apply max pooling in order to reduce the spatial dimensions of the output
         out = self.conv2(out) # Pass the output through the second convolutional layer
-        print("after conv2: ", out.shape)
         out = self.relu2(out) # Apply the ReLU activation function
-        out.requires_grad_(True)
-        # Register the hook
-        h = out.register_hook(self.activations_hook)
 
-        out = self.maxpool2(out) # Apply max pooling
-        print("after maxpool2: ", out.shape)
-        out = out.view(out.size(0), -1)  # Flatten the output
-        print("after view: ", out.shape)
-        out = torch.transpose(out, 0, 1)  # Transpose the output to have the correct shape for the fully connected layer
-        print("after transpose: ", out.shape)
+        # out.requires_grad_(True)
+        # h = out.register_hook(self.activations_hook) # Register the hook
+
+        # out = self.maxpool2(out) # Apply max pooling
+        out = torch.mean(out, dim=2)
         out = self.fc(out) # Pass the output through the fully connected layer
-        print("after fc: ", out.shape)
         out = torch.softmax(out, dim=1) # Apply the softmax function to get the final output probabilities
 
         return out
+
 
     # Method for the gradient extraction
     def get_activations_gradient(self):
@@ -261,7 +251,6 @@ class AudioClassifier(nn.Module):
         """
         return self.relu2(self.conv2(self.maxpool1(self.relu1(self.conv1(x.unsqueeze(1))))))
 
-
 def train_and_evaluate_model(train_on_trimmed):
     # Load the data: X for the features and y for the labels
     # X_train, y_train, X_val, y_val, X_test, Y_test = load_data(train_on_trimmed)
@@ -289,64 +278,53 @@ def train_and_evaluate_model(train_on_trimmed):
     train_data = AudioDataset(X_train, y_train)
     val_data = AudioDataset(X_val, y_val)
 
+    train_loader = torch.utils.data.DataLoader(train_data, batch_size=1, shuffle=True)
+    val_loader = torch.utils.data.DataLoader(val_data, batch_size=1, shuffle=True)
+
     model = AudioClassifier()
 
     # Define loss and optimizer
     criterion = nn.CrossEntropyLoss()  # Cross Entropy loss function
-    optimizer = torch.optim.Adam(model.parameters(), lr=1e-07)  # Adam optimizer with a learning rate of 0.00001
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)  # Adam optimizer with a learning rate of 0.00001
 
     model.train()  # Set the model to training mode
-    n = 7  # Number of epochs
+    n = 50  # Number of epochs
 
     # Initialize lists to store loss values
     train_losses = []
     val_losses = []
 
-    # Define KFold cross-validator
-    kfold = KFold(n_splits=5)
-
     # Training loop
-    for fold, (train_ids, _) in enumerate(kfold.split(X_train)):  # Loop over the dataset n times, where n is the number of epochs
-        print(f'FOLD {fold}')
-        print('--------------------------------')
+    for epoch in range(n):
+        loss = None
+        for i, (inputs, labels) in enumerate(train_loader): # Loop over the training data
+            # inputs.requires_grad_()
+            outputs = model(inputs.float())  # Forward pass
+            labels = labels.long()  # Convert labels to long type
+            loss = criterion(outputs, labels)  # Calculate the loss
 
-        # Define data loaders for training and validation data
-        train_subsampler = torch.utils.data.SubsetRandomSampler(train_ids)
-        val_loader = torch.utils.data.DataLoader(val_data, batch_size=1)
+            optimizer.zero_grad()  # Zero the gradients
+            loss.backward()  # Backward pass
+            optimizer.step()  # Update the weights
 
-        for epoch in range(n):
-            loss = None
-            train_loader = torch.utils.data.DataLoader(train_data, batch_size=1, sampler=train_subsampler)
-            for i, (inputs, labels) in enumerate(train_loader): # Loop over the training data
-                # inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
-                inputs.requires_grad_()
+        # Calculate validation loss
+        val_loss = 0
+        model.eval()
+        with torch.no_grad():  # Disable gradient tracking for validation
+            for inputs, labels in val_loader:  # Loop over the validation data
+                # inputs.requires_grad_()
                 outputs = model(inputs.float())  # Forward pass
                 labels = labels.long()  # Convert labels to long type
                 loss = criterion(outputs, labels)  # Calculate the loss
+                val_loss = val_loss + loss.item()  # Accumulate the loss
 
-                optimizer.zero_grad()  # Zero the gradients
-                loss.backward()  # Backward pass
-                optimizer.step()  # Update the weights
+        val_loss = val_loss / len(val_loader)  # Calculate the average validation loss
 
-            # Calculate validation loss
-            val_loss = 0
-            model.eval()
-            with torch.no_grad():  # Disable gradient tracking for validation
-                for inputs, labels in val_loader:  # Loop over the validation data
-                    # inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
-                    inputs.requires_grad_()
-                    outputs = model(inputs.float())  # Forward pass
-                    labels = labels.long()  # Convert labels to long type
-                    loss = criterion(outputs, labels)  # Calculate the loss
-                    val_loss = val_loss + loss.item()  # Accumulate the loss
+        # Store loss values
+        train_losses.append(loss.item())
+        val_losses.append(val_loss)
 
-            val_loss = val_loss / len(val_loader)  # Calculate the average validation loss
-
-            # Store loss values
-            train_losses.append(loss.item())
-            val_losses.append(val_loss)
-
-            print(f'Epoch {epoch + 1}/{n} Train Loss: {loss.item()} Val Loss: {val_loss}')
+        print(f'Epoch {epoch + 1}/{n} Train Loss: {loss.item()} Val Loss: {val_loss}')
 
     # Save the model
     torch.save(model.state_dict(), 'audio_classifier3.pth')
