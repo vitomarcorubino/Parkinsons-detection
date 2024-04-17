@@ -285,10 +285,10 @@ def train_and_evaluate_model(train_on_trimmed):
 
     # Define loss and optimizer
     criterion = nn.CrossEntropyLoss()  # Cross Entropy loss function
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)  # Adam optimizer with a learning rate of 0.00001
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)  # Adam optimizer
 
     model.train()  # Set the model to training mode
-    n = 50  # Number of epochs
+    n = 20  # Number of epochs
 
     # Initialize lists to store loss values
     train_losses = []

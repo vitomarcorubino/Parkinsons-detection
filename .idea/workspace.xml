@@ -5,9 +5,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6322ae-8cf3-44ec-99c2-748db2316def" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/B1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/B2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/D1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/D2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/FB1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/FB2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/VA1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/VA2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/VE1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/VE2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/VI1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/VI2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/VO1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/VO2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/VU1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/VU2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/B1_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/B2_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/D1_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/D2_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/FB1_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/FB2_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/VA1_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/VA2_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/VE1_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/VE2_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/VI1_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/VI2_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/VO1_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/VO2_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/VU1_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/mono_pcm/VU2_mono_pcm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed10.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed11.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed12.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed13.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed14.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B1_mono_pcm_trimmed9.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed10.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed11.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed12.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed13.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed14.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed15.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/B2_mono_pcm_trimmed9.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/D1_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/D2_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/D2_mono_pcm_trimmed1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB1_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB1_mono_pcm_trimmed1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB1_mono_pcm_trimmed2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB1_mono_pcm_trimmed3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB1_mono_pcm_trimmed4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB1_mono_pcm_trimmed5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB1_mono_pcm_trimmed6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB1_mono_pcm_trimmed7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB1_mono_pcm_trimmed8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed10.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/FB2_mono_pcm_trimmed9.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/VA1_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/VA2_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/VE1_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/VE2_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/VI1_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/VI2_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/VO1_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/VO2_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/VU1_mono_pcm_trimmed0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newDataset/peopleWithParkinson/DonatoBruno/trimmed/VU2_mono_pcm_trimmed0.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioClassifierCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifierCNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/audio_classifier3.pth" beforeDir="false" afterPath="$PROJECT_DIR$/audio_classifier3.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,11 +190,11 @@
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\dataset2\validation\peopleWithParkinson\Vito L" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming" />
+      <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\newDataset\peopleWithParkinson\DonatoBruno" />
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\features\shuffled\trimmed" />
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\features\shuffled" />
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\features\splitted" />
-      <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming" />
-      <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\newDataset\elderlyHealthyControl\MariangelaColaianni" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -226,7 +323,8 @@
       <workItem from="1713281128866" duration="993000" />
       <workItem from="1713285974301" duration="2041000" />
       <workItem from="1713288055639" duration="281000" />
-      <workItem from="1713356136927" duration="7495000" />
+      <workItem from="1713356136927" duration="7983000" />
+      <workItem from="1713372113740" duration="822000" />
     </task>
     <servers />
   </component>
@@ -241,7 +339,7 @@
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifier2.coverage" NAME="AudioClassifier2 Coverage Results" MODIFIED="1712071893000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1712912034546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$extractFeature.coverage" NAME="extractFeature Coverage Results" MODIFIED="1713109950692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1713364336724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1713372901542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifierML.coverage" NAME="AudioClassifierML Coverage Results" MODIFIED="1712667079208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$trimming.coverage" NAME="trimming Coverage Results" MODIFIED="1710154819862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$test_simple.coverage" NAME="test_simple Coverage Results" MODIFIED="1710180230176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -250,7 +348,7 @@
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifierCNN.coverage" NAME="AudioClassifierCNN Coverage Results" MODIFIED="1713250855353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$predictLSTM.coverage" NAME="predictLSTM Coverage Results" MODIFIED="1711649414703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$languageDetection.coverage" NAME="languageDetection Coverage Results" MODIFIED="1710577290939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1711739884284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1713372395638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifier.coverage" NAME="AudioClassifier Coverage Results" MODIFIED="1711364716799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$predict2.coverage" NAME="predict2 Coverage Results" MODIFIED="1712147515353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
