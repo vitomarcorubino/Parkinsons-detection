@@ -175,13 +175,13 @@ class AudioClassifier(nn.Module):
             nn.Module: The base class for all neural network modules in PyTorch.
         """
         super(AudioClassifier, self).__init__()
-        self.conv1 = nn.Conv1d(1, 12, kernel_size=5)
+        self.conv1 = nn.Conv1d(24, 48, kernel_size=3, padding=1)
         self.relu1 = nn.ReLU()  # ReLU activation function
         self.maxpool1 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
-        self.conv2 = nn.Conv1d(12, 48, kernel_size=5)
+        self.conv2 = nn.Conv1d(48, 96, kernel_size=3)
         self.relu2 = nn.ReLU()  # ReLU activation function
         self.maxpool2 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
-        self.fc = nn.Linear(48, 2)  # Fully connected layer
+        self.fc = nn.Linear(96, 2)  # Fully connected layer
 
         # Store the gradients
         self.gradients = None
@@ -210,25 +210,25 @@ class AudioClassifier(nn.Module):
         # x = x.unsqueeze(1) # Add a channel dimension
         out = self.conv1(x) # Pass the input through the first convolutional layer
         # Print out shape
-        print("conv1: ", out.shape)
+        print("after conv1: ", out.shape)
         out = self.relu1(out) # Apply the ReLU activation function
         out = self.maxpool1(out) # Apply max pooling in order to reduce the spatial dimensions of the output
-        print("maxpool1: ", out.shape)
+        print("after maxpool1: ", out.shape)
         out = self.conv2(out) # Pass the output through the second convolutional layer
-        print("conv2: ", out.shape)
+        print("after conv2: ", out.shape)
         out = self.relu2(out) # Apply the ReLU activation function
         out.requires_grad_(True)
         # Register the hook
         h = out.register_hook(self.activations_hook)
 
         out = self.maxpool2(out) # Apply max pooling
-        print("maxpool2: ", out.shape)
+        print("after maxpool2: ", out.shape)
         out = out.view(out.size(0), -1)  # Flatten the output
-        print("view: ", out.shape)
+        print("after view: ", out.shape)
         out = torch.transpose(out, 0, 1)  # Transpose the output to have the correct shape for the fully connected layer
-        print("transpose: ", out.shape)
+        print("after transpose: ", out.shape)
         out = self.fc(out) # Pass the output through the fully connected layer
-        print("fc: ", out.shape)
+        print("after fc: ", out.shape)
         out = torch.softmax(out, dim=1) # Apply the softmax function to get the final output probabilities
 
         return out
@@ -317,7 +317,7 @@ def train_and_evaluate_model(train_on_trimmed):
             loss = None
             train_loader = torch.utils.data.DataLoader(train_data, batch_size=1, sampler=train_subsampler)
             for i, (inputs, labels) in enumerate(train_loader): # Loop over the training data
-                inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
+                # inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
                 inputs.requires_grad_()
                 outputs = model(inputs.float())  # Forward pass
                 labels = labels.long()  # Convert labels to long type
@@ -332,7 +332,7 @@ def train_and_evaluate_model(train_on_trimmed):
             model.eval()
             with torch.no_grad():  # Disable gradient tracking for validation
                 for inputs, labels in val_loader:  # Loop over the validation data
-                    inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
+                    # inputs = inputs.view(inputs.size(0), -1)  # Reshape the input data
                     inputs.requires_grad_()
                     outputs = model(inputs.float())  # Forward pass
                     labels = labels.long()  # Convert labels to long type

@@ -1,5 +1,5 @@
 import torch
-from AudioClassifierCNN import predict_audio, AudioClassifier, train_and_evaluate_model
+from AudioClassifierCNN import AudioClassifier, train_and_evaluate_model
 import glob
 import os
 
@@ -19,7 +19,7 @@ else:
         train_and_evaluate_model(train_on_trimmed)
     else:
         model.load_state_dict(torch.load('audio_classifier3.pth'))
-
+"""
 # Set the model to evaluation mode
 model.eval()
 
@@ -51,3 +51,4 @@ if parkinsonCounter + notParkinsonCounter > 0:
 # Print the number of Parkinson's and not Parkinson's predictions
 print(f"Parkinson's: {parkinsonCounter}")
 print(f"Not Parkinson's: {notParkinsonCounter}")
+"""
