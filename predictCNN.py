@@ -1,10 +1,9 @@
 import torch
-from AudioClassifierCNN import AudioClassifier, train_and_evaluate_model
+from AudioClassifierCNN import AudioClassifier, train_and_evaluate_model, predict_audio
 import glob
 import os
 
-train = True  # Set the train flag to choose whether to train the model or not
-train_on_trimmed = False  # Set to True to train on the trimmed dataset, False to train on the original dataset
+train = False  # Set the train flag to choose whether to train the model or not
 
 # Load the trained model
 model = AudioClassifier()
@@ -12,21 +11,22 @@ model = AudioClassifier()
 # Check if the model file exists
 if not os.path.isfile('audio_classifier3.pth'):
     # If the model file does not exist, train and evaluate the model
-    train_and_evaluate_model(train_on_trimmed)
+    train_and_evaluate_model()
 else:
     # If the model file exist, load the model from the file if the train flag is set to False, otherwise train the model
     if train:
-        train_and_evaluate_model(train_on_trimmed)
+        train_and_evaluate_model()
     else:
         model.load_state_dict(torch.load('audio_classifier3.pth'))
-"""
+
 # Set the model to evaluation mode
 model.eval()
 
 # Set the directory path of the audio files to predict
-directory_path = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"
+# directory_path = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"
+# directory_path = "newDataset/elderlyHealthyControl/MariangelaColaianni/mono_pcm"
 # directory_path = "newDataset/youngHealthyControl/VitoMarcoRubino/mono_pcm"
-# directory_path = "dataset2/test/peopleWithParkinson/Mario B"
+directory_path = "dataset2/test/peopleWithParkinson/Mario B"
 # directory_path = "dataset2/test/elderlyHealthyControl/TERESA M"
 # Get all .wav files in the directory
 audio_files = glob.glob(directory_path + '/*.wav')
@@ -51,4 +51,3 @@ if parkinsonCounter + notParkinsonCounter > 0:
 # Print the number of Parkinson's and not Parkinson's predictions
 print(f"Parkinson's: {parkinsonCounter}")
 print(f"Not Parkinson's: {notParkinsonCounter}")
-"""

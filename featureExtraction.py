@@ -1,5 +1,4 @@
 import os
-
 import numpy as np
 import pandas as pd
 import parselmouth
@@ -140,6 +139,88 @@ class FeatureExtraction:
         df = df.drop(columns=['mfcc'])
         return df
 
+    def extract_features(self, wav_filepath):
+        df_dict = {}
+
+        # Create column names for each MFCC
+        mfcc_columns = [f'mfcc_{i}' for i in range(13)]
+
+        # Combine these with the existing column names
+        columns = ['meanF0Hz', 'stdevF0Hz', 'HNR', 'localJitter', 'localabsoluteJitter', 'rapJitter',
+                   'ppq5Jitter', 'localShimmer', 'localdbShimmer', 'apq3Shimmer', 'apq5Shimmer'] + mfcc_columns
+
+        # print("Processing:", wav_filepath)
+
+        # Initialize the lists to store the features
+        filename_list = []
+        mean_F0_list = []
+        sd_F0_list = []
+        hnr_list = []
+        localJitter_list = []
+        localabsoluteJitter_list = []
+        rapJitter_list = []
+        ppq5Jitter_list = []
+        localShimmer_list = []
+        localdbShimmer_list = []
+        apq3Shimmer_list = []
+        aqpq5Shimmer_list = []
+        mfcc_list = []
+
+        # Get the base name of the wav file
+        base_name = os.path.splitext(os.path.basename(wav_filepath))[0]
+
+        # Get the directory of the wav file
+        dir_name = os.path.dirname(wav_filepath)
+
+        # Get the last folder of the wav file
+        last_folder = os.path.basename(dir_name)
+
+        if last_folder == "mono_pcm":
+            # Get the parent directory of the wav file
+            parent_dir_name = os.path.dirname(dir_name)
+
+            # Get all the trimmed files corresponding to the wav file
+            print("join: ", os.path.join(parent_dir_name, "trimmed", base_name + "_trimmed*.wav"))
+            trimmed_files = glob.glob(os.path.join(parent_dir_name, "trimmed", base_name + "_trimmed*.wav"))
+        else:
+            # Get all the trimmed files corresponding to the wav file
+            trimmed_files = glob.glob(os.path.join(dir_name, "trimmed", base_name + "_trimmed*.wav"))
+
+        trimmed_files = natsort.natsorted(trimmed_files)
+
+        # Loop over the trimmed files
+        for trimmed_file in trimmed_files:
+            # Extract the features
+            (meanF0, stdevF0, hnr, localJitter, localabsoluteJitter, rapJitter, ppq5Jitter, localShimmer, localdbShimmer,
+            apq3Shimmer, aqpq5Shimmer) = self.extract_acoustic_features(trimmed_file, 75, 500, "Hertz")
+
+            # Append the features to the lists
+            filename_list.append(trimmed_file)
+            mean_F0_list.append(meanF0)
+            sd_F0_list.append(stdevF0)
+            hnr_list.append(hnr)
+            localJitter_list.append(localJitter)
+            localabsoluteJitter_list.append(localabsoluteJitter)
+            rapJitter_list.append(rapJitter)
+            ppq5Jitter_list.append(ppq5Jitter)
+            localShimmer_list.append(localShimmer)
+            localdbShimmer_list.append(localdbShimmer)
+            apq3Shimmer_list.append(apq3Shimmer)
+            aqpq5Shimmer_list.append(aqpq5Shimmer)
+            mfcc_list.append(self.extract_mfcc(trimmed_file))
+
+        # Create a DataFrame for the .wav file with its corresponding trimmed files' features
+        df = pd.DataFrame(np.column_stack(
+            [mean_F0_list, sd_F0_list, hnr_list, localJitter_list, localabsoluteJitter_list,
+            rapJitter_list, ppq5Jitter_list, localShimmer_list, localdbShimmer_list, apq3Shimmer_list,
+            aqpq5Shimmer_list, mfcc_list]), columns=columns)
+
+        df = df.transpose()
+
+        df_dict[base_name] = df.to_numpy()
+
+        return df_dict
+
     def extract_features_from_folder(self, main_folder_path):
         # df_dict_list = []
         # labels_list = []  # list to store the labels
@@ -153,9 +234,9 @@ class FeatureExtraction:
         columns = ['meanF0Hz', 'stdevF0Hz', 'HNR', 'localJitter', 'localabsoluteJitter', 'rapJitter',
                    'ppq5Jitter', 'localShimmer', 'localdbShimmer', 'apq3Shimmer', 'apq5Shimmer'] + mfcc_columns
 
+        # wav_file_counter = 0
         # Store the original main_folder_path
         original_main_folder_path = main_folder_path
-
         # Loop over the main folders
         for main_folder in os.listdir(original_main_folder_path):
             # df_dict = {}  # dictionary to store the dataframes
@@ -168,6 +249,12 @@ class FeatureExtraction:
 
             # Loop over the .wav files
             for wav_file in wav_files:
+                # wav_file_counter += 1
+
+                # Skip the first 642 .wav files
+                # if wav_file_counter <= 642:
+                #    continue
+
                 if main_folder == "peopleWithParkinson":
                     labels.append(1)
                 else:
@@ -219,7 +306,7 @@ class FeatureExtraction:
                     rapJitter_list, ppq5Jitter_list, localShimmer_list, localdbShimmer_list, apq3Shimmer_list,
                     aqpq5Shimmer_list, mfcc_list]), columns=columns)
 
-                # df = df.transpose()
+                df = df.transpose()
 
                 df_dict[os.path.basename(wav_file)] = df.to_numpy()
 
