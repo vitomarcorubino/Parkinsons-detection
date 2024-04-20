@@ -358,8 +358,7 @@ def test_model(model):
     with open('features/splitted/test_labels_transposed.pkl', 'rb') as file:
         y_test = pickle.load(file)
 
-
-    test_loader = DataLoader(AudioDataset(X_test, y_test), batch_size=batch_size, shuffle=True, collate_fn=AudioDataset.collate_fn)
+    test_loader = DataLoader(AudioDataset(X_test, y_test), batch_size=batch_size, shuffle=False, collate_fn=AudioDataset.collate_fn)
 
     # Calculate metrics on test set
     y_pred = []
