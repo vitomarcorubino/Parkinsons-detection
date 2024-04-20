@@ -11,6 +11,7 @@ import pickle
 from sklearn.model_selection import KFold
 from featureExtraction import FeatureExtraction
 import torch.nn.functional as F
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 class AudioDataset(Dataset):
     def __init__(self, X, y):
@@ -265,32 +266,26 @@ class AudioClassifier(nn.Module):
 
 def train_and_evaluate_model():
     lr = 0.0001
-    n_epochs = 15
+    n_epochs = 200
     batch_size = 48
-    decay = 1e-4
+    decay = 1e-5
 
-    X_train, y_train, X_val, y_val, X_test, y_test = [], [], [], [], [], []
-    with open('features/splitted/noVowels/train_features_transposed.pkl', 'rb') as file:
+    X_train, y_train, X_val, y_val = [], [], [], []
+    with open('features/splitted/train_features_transposed.pkl', 'rb') as file:
         X_train = list(pickle.load(file).values())
 
         # Replace NaN values with 0 in X_train
         for i in range(len(X_train)):
             X_train[i] = np.nan_to_num(X_train[i])
 
-    with open('features/splitted/noVowels/train_labels_transposed.pkl', 'rb') as file:
+    with open('features/splitted/train_labels_transposed.pkl', 'rb') as file:
         y_train = pickle.load(file)
 
-    with open('features/splitted/noVowels/validation_features_transposed.pkl', 'rb') as file:
+    with open('features/splitted/validation_features_transposed.pkl', 'rb') as file:
         X_val = list(pickle.load(file).values())
 
-    with open('features/splitted/noVowels/validation_labels_transposed.pkl', 'rb') as file:
+    with open('features/splitted/validation_labels_transposed.pkl', 'rb') as file:
         y_val = pickle.load(file)
-
-    with open('features/splitted/noVowels/test_features_transposed.pkl', 'rb') as file:
-        X_test = list(pickle.load(file).values())
-
-    with open('features/splitted/noVowels/test_labels_transposed.pkl', 'rb') as file:
-        y_test = pickle.load(file)
 
     # Create DataLoaders
     train_data = AudioDataset(X_train, y_train)
@@ -324,8 +319,6 @@ def train_and_evaluate_model():
 
         # Calculate validation loss and accuracy
         val_loss = 0
-        correct_val = 0
-        total_val = 0
         model.eval()
         with torch.no_grad():  # Disable gradient tracking for validation
             for inputs, labels in val_loader:  # Loop over the validation data
@@ -334,19 +327,13 @@ def train_and_evaluate_model():
                 loss = criterion(outputs, labels)  # Calculate the loss
                 val_loss = val_loss + loss.item()  # Accumulate the loss
 
-                # Calculate accuracy
-                _, predicted = torch.max(outputs.data, 1)
-                total_val += labels.size(0)
-                correct_val += (predicted == labels).sum().item()
-
         val_loss = val_loss / len(val_loader)  # Calculate the average validation loss
-        val_accuracy = 100 * correct_val / total_val
 
         # Store loss values
         train_losses.append(loss.item())
         val_losses.append(val_loss)
 
-        print(f'Epoch {epoch + 1}/{n_epochs} Train Loss: {loss.item()} Val Loss: {val_loss} Val Accuracy: {val_accuracy}%')
+        print(f'Epoch {epoch + 1}/{n_epochs} Train Loss: {loss.item()} Val Loss: {val_loss}')
 
     # Save the model
     torch.save(model.state_dict(), 'audio_classifier4.pth') # 4 for no vowels
@@ -360,6 +347,39 @@ def train_and_evaluate_model():
     plt.legend()
     plt.show()
 
+def test_model(model):
+    model.eval()
+    batch_size = 48
+    X_test, y_test = [], []
+
+    with open('features/splitted/test_features_transposed.pkl', 'rb') as file:
+        X_test = list(pickle.load(file).values())
+
+    with open('features/splitted/test_labels_transposed.pkl', 'rb') as file:
+        y_test = pickle.load(file)
+
+
+    test_loader = DataLoader(AudioDataset(X_test, y_test), batch_size=batch_size, shuffle=True, collate_fn=AudioDataset.collate_fn)
+
+    # Calculate metrics on test set
+    y_pred = []
+    with torch.no_grad():  # Disable gradient tracking for validation
+        for inputs, labels in test_loader:  # Loop over the validation data
+            outputs = model(inputs.float())  # Forward pass
+
+            # Get predicted class
+            _, predicted = torch.max(outputs.data, 1)
+            y_pred.extend(predicted.tolist())
+
+    accuracy = round(accuracy_score(y_test, y_pred) * 100, 2)
+    precision = round(precision_score(y_test, y_pred) * 100, 2)
+    recall = round(recall_score(y_test, y_pred) * 100, 2)
+    f1 = round(f1_score(y_test, y_pred) * 100, 2)
+
+    print(f'Accuracy: {accuracy}%')
+    print(f'Precision: {precision}%')
+    print(f'Recall: {recall}%')
+    print(f'F1 Score: {f1}%')
 
 def predict_audio(file_path, model):
     # Create an instance of FeatureExtraction

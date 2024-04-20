@@ -1,10 +1,10 @@
 import torch
-from AudioClassifierCNN import AudioClassifier, train_and_evaluate_model, predict_audio
+from AudioClassifierCNN import AudioClassifier, train_and_evaluate_model, predict_audio, test_model
 import glob
 import os
 
 train = False  # Set the train flag to choose whether to train the model or not
-predict = True
+predict = False
 
 # Load the trained model
 model = AudioClassifier()
@@ -19,6 +19,8 @@ else:
         train_and_evaluate_model()
     else:
         model.load_state_dict(torch.load('audio_classifier4.pth'))
+
+test_model(model)
 
 if predict:
     # Set the model to evaluation mode
