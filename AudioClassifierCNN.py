@@ -270,26 +270,26 @@ def train_and_evaluate_model():
     decay = 1e-3
 
     X_train, y_train, X_val, y_val, X_test, y_test = [], [], [], [], [], []
-    with open('features/splitted/train_features.pkl', 'rb') as file:
+    with open('features/splitted/train_features_transposed.pkl', 'rb') as file:
         X_train = list(pickle.load(file).values())
 
         # Replace NaN values with 0 in X_train
         for i in range(len(X_train)):
             X_train[i] = np.nan_to_num(X_train[i])
 
-    with open('features/splitted/train_labels.pkl', 'rb') as file:
+    with open('features/splitted/train_labels_transposed.pkl', 'rb') as file:
         y_train = pickle.load(file)
 
-    with open('features/splitted/validation_features.pkl', 'rb') as file:
+    with open('features/splitted/validation_features_transposed.pkl', 'rb') as file:
         X_val = list(pickle.load(file).values())
 
-    with open('features/splitted/validation_labels.pkl', 'rb') as file:
+    with open('features/splitted/validation_labels_transposed.pkl', 'rb') as file:
         y_val = pickle.load(file)
 
-    with open('features/splitted/test_features.pkl', 'rb') as file:
+    with open('features/splitted/test_features_transposed.pkl', 'rb') as file:
         X_test = list(pickle.load(file).values())
 
-    with open('features/splitted/test_labels.pkl', 'rb') as file:
+    with open('features/splitted/test_labels_transposed.pkl', 'rb') as file:
         y_test = pickle.load(file)
 
     # Create DataLoaders

@@ -306,7 +306,7 @@ class FeatureExtraction:
                     rapJitter_list, ppq5Jitter_list, localShimmer_list, localdbShimmer_list, apq3Shimmer_list,
                     aqpq5Shimmer_list, mfcc_list]), columns=columns)
 
-                df = df.transpose()
+                # df = df.transpose()
 
                 df_dict[os.path.basename(wav_file)] = df.to_numpy()
 

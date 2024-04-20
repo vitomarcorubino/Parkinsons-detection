@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 
 # Define the main dataset folder
-main_folder = "dataset3"
+main_folder = "dataset4"
 
 # Define the subfolders
 subfolders = ["train", "validation", "test"]
@@ -14,13 +14,13 @@ subfolders = ["train", "validation", "test"]
 featureExtraction = FeatureExtraction()
 
 """
-with open('features/splitted/train_features.pkl', 'rb') as file:
+with open('features/splitted/train_features_transposed.pkl', 'rb') as file:
     features = pickle.load(file)
     features = np.array(features)
     print(features)
 
 
-with open('features/splitted/train_labels.pkl', 'rb') as file:
+with open('features/splitted/train_labels_transposed.pkl', 'rb') as file:
     labels = pickle.load(file)
     labels = np.array(labels)
     # print(labels)
@@ -32,13 +32,8 @@ for subfolder in subfolders:
     features, labels = featureExtraction.extract_features_from_folder(path)  # for replicating the research paper
 
     # Serialize the features and labels
-    with open(f"features/splitted/{subfolder}_features_NT.pkl", 'wb') as file:
+    with open(f"features/splitted/noVowels/{subfolder}_features.pkl", 'wb') as file:
         pickle.dump(features, file)
 
-    with open(f"features/splitted/{subfolder}_labels_NT.pkl", 'wb') as file:
+    with open(f"features/splitted/noVowels/{subfolder}_labels.pkl", 'wb') as file:
         pickle.dump(labels, file)
-
-    # Convert the list of dictionaries to a DataFrame
-    # features_df = pd.DataFrame(features)
-
-    # f.convert_to_csv(features_df, f"features/splitted/{subfolder}_features")
