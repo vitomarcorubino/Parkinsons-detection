@@ -376,6 +376,9 @@ def test_model(model):
     recall = round(recall_score(y_test, y_pred) * 100, 2)
     f1 = round(f1_score(y_test, y_pred) * 100, 2)
 
+    print("Y_test: ", y_test)
+    print("Y_pred: ", y_pred)
+    print("------------------------------------")
     print(f'Accuracy: {accuracy}%')
     print(f'Precision: {precision}%')
     print(f'Recall: {recall}%')
