@@ -180,7 +180,6 @@ class FeatureExtraction:
             parent_dir_name = os.path.dirname(dir_name)
 
             # Get all the trimmed files corresponding to the wav file
-            print("join: ", os.path.join(parent_dir_name, "trimmed", base_name + "_trimmed*.wav"))
             trimmed_files = glob.glob(os.path.join(parent_dir_name, "trimmed", base_name + "_trimmed*.wav"))
         else:
             # Get all the trimmed files corresponding to the wav file

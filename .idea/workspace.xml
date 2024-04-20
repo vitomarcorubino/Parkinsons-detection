@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6322ae-8cf3-44ec-99c2-748db2316def" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/audio_classifier4.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioClassifierCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifierCNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio_classifier3.pth" beforeDir="false" afterPath="$PROJECT_DIR$/audio_classifier3.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/featureExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/featureExtraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/D1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/D2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/VI2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/VO2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/D1_mono_pcm.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/D2_mono_pcm.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VI2_mono_pcm.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/VO2_mono_pcm.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/MariangelaColaianni/D1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/MariangelaColaianni/d2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/MariangelaColaianni/mono_pcm/D1_mono_pcm.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newDataset/elderlyHealthyControl/MariangelaColaianni/mono_pcm/d2_mono_pcm.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickledData/testData.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickledData/trainData.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickledData/trimmed/testData.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickledData/trimmed/trainData.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickledData/trimmed/valData.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickledData/valData.pkl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/predictCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictCNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +67,7 @@
     "Python.AudioClassifierCNN.executor": "Run",
     "Python.AudioClassifierML.executor": "Run",
     "Python.audioFileFormat.executor": "Run",
-    "Python.extractFeature.executor": "Debug",
+    "Python.extractFeature.executor": "Run",
     "Python.featureExtraction.executor": "Debug",
     "Python.languageDetection.executor": "Run",
     "Python.main.executor": "Run",
@@ -247,6 +241,7 @@
       <workItem from="1713507649290" duration="3792000" />
       <workItem from="1713526719985" duration="5583000" />
       <workItem from="1713541853353" duration="6069000" />
+      <workItem from="1713598583774" duration="3291000" />
     </task>
     <servers />
   </component>
@@ -259,9 +254,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Trimming$predict.coverage" NAME="predict Coverage Results" MODIFIED="1711659536307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifier2.coverage" NAME="AudioClassifier2 Coverage Results" MODIFIED="1712071893000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$extractFeature.coverage" NAME="extractFeature Coverage Results" MODIFIED="1713507989590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1713548573447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1713549215099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$extractFeature.coverage" NAME="extractFeature Coverage Results" MODIFIED="1713599237194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1713601866693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifierML.coverage" NAME="AudioClassifierML Coverage Results" MODIFIED="1712667079208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$trimming.coverage" NAME="trimming Coverage Results" MODIFIED="1710154819862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$test_simple.coverage" NAME="test_simple Coverage Results" MODIFIED="1710180230176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

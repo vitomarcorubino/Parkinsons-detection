@@ -265,31 +265,31 @@ class AudioClassifier(nn.Module):
 
 def train_and_evaluate_model():
     lr = 0.0001
-    n_epochs = 180
+    n_epochs = 15
     batch_size = 48
-    decay = 1e-3
+    decay = 1e-4
 
     X_train, y_train, X_val, y_val, X_test, y_test = [], [], [], [], [], []
-    with open('features/splitted/train_features_transposed.pkl', 'rb') as file:
+    with open('features/splitted/noVowels/train_features_transposed.pkl', 'rb') as file:
         X_train = list(pickle.load(file).values())
 
         # Replace NaN values with 0 in X_train
         for i in range(len(X_train)):
             X_train[i] = np.nan_to_num(X_train[i])
 
-    with open('features/splitted/train_labels_transposed.pkl', 'rb') as file:
+    with open('features/splitted/noVowels/train_labels_transposed.pkl', 'rb') as file:
         y_train = pickle.load(file)
 
-    with open('features/splitted/validation_features_transposed.pkl', 'rb') as file:
+    with open('features/splitted/noVowels/validation_features_transposed.pkl', 'rb') as file:
         X_val = list(pickle.load(file).values())
 
-    with open('features/splitted/validation_labels_transposed.pkl', 'rb') as file:
+    with open('features/splitted/noVowels/validation_labels_transposed.pkl', 'rb') as file:
         y_val = pickle.load(file)
 
-    with open('features/splitted/test_features_transposed.pkl', 'rb') as file:
+    with open('features/splitted/noVowels/test_features_transposed.pkl', 'rb') as file:
         X_test = list(pickle.load(file).values())
 
-    with open('features/splitted/test_labels_transposed.pkl', 'rb') as file:
+    with open('features/splitted/noVowels/test_labels_transposed.pkl', 'rb') as file:
         y_test = pickle.load(file)
 
     # Create DataLoaders
@@ -349,7 +349,7 @@ def train_and_evaluate_model():
         print(f'Epoch {epoch + 1}/{n_epochs} Train Loss: {loss.item()} Val Loss: {val_loss} Val Accuracy: {val_accuracy}%')
 
     # Save the model
-    torch.save(model.state_dict(), 'audio_classifier3.pth')
+    torch.save(model.state_dict(), 'audio_classifier4.pth') # 4 for no vowels
 
     # Plot loss values
     plt.figure(figsize=(10, 5))
