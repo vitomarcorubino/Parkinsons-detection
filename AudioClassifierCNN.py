@@ -370,8 +370,8 @@ def test_model(model):
             outputs = model(inputs.float())  # Forward pass
 
             # Get predicted class
-            _, predicted = torch.max(outputs.data, 1)
-            y_pred.extend(predicted.tolist())
+            predicted = torch.round(torch.sigmoid(outputs))
+            y_pred.extend([int(p[0]) for p in predicted.tolist()])
 
     accuracy = round(accuracy_score(y_test, y_pred) * 100, 2)
     precision = round(precision_score(y_test, y_pred) * 100, 2)
@@ -399,7 +399,9 @@ def predict_audio(file_path, model):
     # Pass the features through the model to get the prediction
     output = model(features.float())
 
-    if torch.sigmoid(output) < 0.5:
+    predicted = torch.round(torch.sigmoid(output))
+
+    if predicted == 0:
         prediction = "Not Parkinson's"
     else:
         prediction = "Parkinson's"
