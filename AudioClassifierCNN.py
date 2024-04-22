@@ -1,6 +1,7 @@
 import os
 import torch
 from torch import nn
+from torch.nn import BCEWithLogitsLoss
 from torch.utils.data import DataLoader, Dataset
 import numpy as np
 import librosa  # for audio processing
@@ -182,7 +183,8 @@ class AudioClassifier(nn.Module):
         self.conv2 = nn.Conv1d(48, 96, kernel_size=3, padding=1)
         self.relu2 = nn.ReLU()  # ReLU activation function
         self.maxpool2 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
-        self.fc = nn.Linear(96, 2)  # Fully connected layer
+        self.fc = nn.Linear(96, 1)  # Fully connected layer
+        # self.sigmoid = nn.Sigmoid()  # Sigmoid activation function
 
         # Store the gradients
         self.gradients = None
@@ -233,7 +235,8 @@ class AudioClassifier(nn.Module):
         out = self.maxpool2(out) # Apply max pooling
         out = torch.mean(out, dim=2)
         out = self.fc(out)  # Pass the output through the fully connected layer
-        out = torch.softmax(out, dim=1)  # Apply the softmax function to get the final output probabilities
+        # out = self.sigmoid(out)  # Apply the sigmoid activation function
+        # out = torch.softmax(out, dim=1)  # Apply the softmax function to get the final output probabilities
 
         return out
 
@@ -297,7 +300,7 @@ def train_and_evaluate_model():
     model = AudioClassifier()
 
     # Define loss and optimizer
-    criterion = nn.CrossEntropyLoss()  # Cross Entropy loss function
+    criterion = BCEWithLogitsLoss() # Binary Cross Entropy loss with logits
     optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=decay)  # Adam optimizer
 
     model.train()  # Set the model to training mode
@@ -310,8 +313,8 @@ def train_and_evaluate_model():
     for epoch in range(n_epochs):
         for i, (inputs, labels) in enumerate(train_loader):  # Loop over the training data
             outputs = model(inputs.float())  # Forward pass
-            labels = labels.long()  # Convert labels to long type
-            loss = criterion(outputs, labels)  # Calculate the loss
+            labels = labels.float()  # Convert labels to float type
+            loss = criterion(outputs, labels.unsqueeze(1))  # Calculate the loss
 
             optimizer.zero_grad()  # Zero the gradients
             loss.backward()  # Backward pass
@@ -323,8 +326,8 @@ def train_and_evaluate_model():
         with torch.no_grad():  # Disable gradient tracking for validation
             for inputs, labels in val_loader:  # Loop over the validation data
                 outputs = model(inputs.float())  # Forward pass
-                labels = labels.long()  # Convert labels to long type
-                loss = criterion(outputs, labels)  # Calculate the loss
+                labels = labels.float()  # Convert labels to float type
+                loss = criterion(outputs, labels.unsqueeze(1))  # Calculate the loss
                 val_loss = val_loss + loss.item()  # Accumulate the loss
 
         val_loss = val_loss / len(val_loader)  # Calculate the average validation loss
@@ -396,11 +399,7 @@ def predict_audio(file_path, model):
     # Pass the features through the model to get the prediction
     output = model(features.float())
 
-    # Get the predicted class
-    _, predicted = torch.max(output.data, 1)
-
-    # Convert the prediction to a readable format
-    if predicted.item() == 0:
+    if torch.sigmoid(output) < 0.5:
         prediction = "Not Parkinson's"
     else:
         prediction = "Parkinson's"
