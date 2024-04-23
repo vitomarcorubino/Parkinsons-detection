@@ -10,15 +10,14 @@ predict = True
 model = AudioClassifier()
 
 # Check if the model file exists
-if not os.path.isfile('audio_classifier4.pth'):
+if not os.path.isfile('audio_classifier5.pth'):
     # If the model file does not exist, train and evaluate the model
     train_and_evaluate_model()
 else:
     # If the model file exist, load the model from the file if the train flag is set to False, otherwise train the model
     if train:
         train_and_evaluate_model()
-    else:
-        model.load_state_dict(torch.load('audio_classifier4.pth'))
+    model.load_state_dict(torch.load('audio_classifier5.pth'))
 
 test_model(model)
 
@@ -28,10 +27,10 @@ if predict:
 
     # Set the directory path of the audio files to predict
     # directory_path = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"
-    directory_path = "newDataset/peopleWithParkinson/DonatoBruno/mono_pcm"
+    # directory_path = "newDataset/peopleWithParkinson/DonatoBruno/mono_pcm"
     # directory_path = "newDataset/elderlyHealthyControl/MariangelaColaianni/mono_pcm"
     # directory_path = "newDataset/youngHealthyControl/VitoMarcoRubino/mono_pcm"
-    # directory_path = "dataset2/test/peopleWithParkinson/Mario B"
+    directory_path = "dataset2/test/peopleWithParkinson/Mario B"
     # directory_path = "dataset2/test/elderlyHealthyControl/TERESA M"
     # Get all .wav files in the directory
     audio_files = glob.glob(directory_path + '/*.wav')

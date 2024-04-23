@@ -6,8 +6,10 @@ from scipy.io.wavfile import read
 import librosa
 import librosa.display
 
+def plot_heatmap(features, output, model, file_path, prediction):
+    # Load the audio file
+    audio, sample_rate = librosa.load(file_path, res_type='kaiser_fast')
 
-def plot_heatmap(audio, output, model, mfccs_tensor, sample_rate, file_path, prediction):
     # Create a time array to plot the seconds on the x-axis
     time = np.arange(0, len(audio)) / sample_rate
 
@@ -24,10 +26,10 @@ def plot_heatmap(audio, output, model, mfccs_tensor, sample_rate, file_path, pre
     pooled_gradients = torch.mean(gradients, dim=[0, 2])
 
     # Get the activations of the last convolutional layer
-    activations = model.get_activations(mfccs_tensor).detach()
+    activations = model.get_activations(features).detach()
 
     # Weight the channels by corresponding gradients
-    for i in range(128):  # 128 is the number of channels in the last conv layer
+    for i in range(96):  # 96 is the number of channels in the last conv layer
         activations[:, i, :] *= pooled_gradients[i]
 
     # Average the channels of the activations
@@ -38,11 +40,18 @@ def plot_heatmap(audio, output, model, mfccs_tensor, sample_rate, file_path, pre
     heatmap /= torch.max(heatmap)
 
     # Normalize the activations to the range of the audio signal
-    normalized_activations = np.interp(np.arange(len(audio)), np.linspace(0, len(audio), len(heatmap)), heatmap.numpy())
+    if heatmap.dim() == 0:  # If heatmap is a 0-dimensional tensor (a scalar)
+        normalized_activations = np.full(len(audio), heatmap.item())
+    else:
+        normalized_activations = np.interp(np.arange(len(audio)), np.linspace(0, len(audio), len(heatmap)), heatmap.numpy())
 
     # Plot the waveform
     plt.figure(figsize=(10, 4))
-    plt.plot(time, audio, alpha=0.5, label='Waveform')  # Use time array as x-values to display seconds
+    plt.plot(time, audio, alpha=1.0, label='Waveform')  # Use time array as x-values to display seconds
+
+    # Check if time[-1] is 0
+    if time[-1] == 0:
+        time[-1] = 1e-10  # Set it to a small positive value
 
     # Display the heatmap as a 2D image
     plt.imshow(normalized_activations[np.newaxis, :], cmap='hot', aspect='auto', alpha=0.5, extent=(0.0, float(time[-1]), -1.0, 1.0))

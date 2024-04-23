@@ -9,10 +9,10 @@ import glob  # to retrieve files/pathnames matching a specified pattern
 import matplotlib.pyplot as plt
 from plotting import plot_heatmap
 import pickle
-from sklearn.model_selection import KFold
 from featureExtraction import FeatureExtraction
 import torch.nn.functional as F
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
 
 class AudioDataset(Dataset):
     def __init__(self, X, y):
@@ -36,10 +36,10 @@ class AudioDataset(Dataset):
         # Pad the inputs to match the maximum length
         padded_inputs = []
         for input in inputs:
-            padding_length = max_length - input.shape[1] # Calculate the padding length
-            padding = torch.zeros((24, padding_length)) # Create a tensor of padding with -1 values
-            padded_input = torch.cat((input, padding), dim=1) # Concatenate the input and padding
-            padded_inputs.append(padded_input) # Append the padded input to the list
+            padding_length = max_length - input.shape[1]  # Calculate the padding length
+            padding = torch.zeros((24, padding_length))  # Create a tensor of padding with -1 values
+            padded_input = torch.cat((input, padding), dim=1)  # Concatenate the input and padding
+            padded_inputs.append(padded_input)  # Append the padded input to the list
 
         # Stack the padded inputs
         inputs = torch.stack(padded_inputs)
@@ -48,6 +48,7 @@ class AudioDataset(Dataset):
         labels = torch.stack(labels)
 
         return inputs, labels
+
 
 def pickle_dataset(X_train, y_train, X_test, y_test, X_val, y_val, pickle_trimmed):
     trimmed = ""
@@ -184,7 +185,6 @@ class AudioClassifier(nn.Module):
         self.relu2 = nn.ReLU()  # ReLU activation function
         self.maxpool2 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
         self.fc = nn.Linear(96, 1)  # Fully connected layer
-        # self.sigmoid = nn.Sigmoid()  # Sigmoid activation function
 
         # Store the gradients
         self.gradients = None
@@ -219,24 +219,21 @@ class AudioClassifier(nn.Module):
             padding_size = self.maxpool1.kernel_size - out.shape[2]
             out = F.pad(out, (0, padding_size))
 
-        out = self.maxpool1(out) # Apply max pooling in order to reduce the spatial dimensions of the output
+        out = self.maxpool1(out)  # Apply max pooling in order to reduce the spatial dimensions of the output
         out = self.conv2(out)  # Pass the output through the second convolutional layer
         out = self.relu2(out)  # Apply the ReLU activation function
 
         out.requires_grad_(True)
-        h = out.register_hook(self.activations_hook) # Register the hook
+        h = out.register_hook(self.activations_hook)  # Register the hook
 
         if out.shape[2] < self.maxpool2.kernel_size:
             # Pad the input to make it equal to the kernel size
             padding_size = self.maxpool2.kernel_size - out.shape[2]
             out = F.pad(out, (0, padding_size))
 
-
-        out = self.maxpool2(out) # Apply max pooling
+        out = self.maxpool2(out)  # Apply max pooling
         out = torch.mean(out, dim=2)
         out = self.fc(out)  # Pass the output through the fully connected layer
-        # out = self.sigmoid(out)  # Apply the sigmoid activation function
-        # out = torch.softmax(out, dim=1)  # Apply the softmax function to get the final output probabilities
 
         return out
 
@@ -254,24 +251,24 @@ class AudioClassifier(nn.Module):
 
     # Method for the activation extraction
     def get_activations(self, x):
-        """
-        This function returns the activations of the second convolutional layer.
-        These activations are used later for explainability purposes, which means visualize the importance of
-        different parts of the input in the decision made by the network.
+        out = self.conv1(x)
+        out = self.relu1(out)
 
-        Args:
-            x (torch.Tensor): The input tensor to the network. It should have a shape of (batch_size, num_features).
+        if out.shape[2] < self.maxpool1.kernel_size:
+            padding_size = self.maxpool1.kernel_size - out.shape[2]
+            out = F.pad(out, (0, padding_size))
 
-        Returns:
-            torch.Tensor: The activations of the second convolutional layer.
-        """
-        return self.relu2(self.conv2(self.maxpool1(self.relu1(self.conv1(x.unsqueeze(1))))))
+        out = self.maxpool1(out)
+        out = self.conv2(out)
+        out = self.relu2(out)
+
+        return out
 
 def train_and_evaluate_model():
     lr = 0.0001
-    n_epochs = 200
+    n_epochs = 20
     batch_size = 48
-    decay = 1e-5
+    decay = 0.005
 
     X_train, y_train, X_val, y_val = [], [], [], []
     with open('features/splitted/train_features_transposed.pkl', 'rb') as file:
@@ -295,12 +292,13 @@ def train_and_evaluate_model():
     val_data = AudioDataset(X_val, y_val)
 
     train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True, collate_fn=AudioDataset.collate_fn)
-    val_loader = torch.utils.data.DataLoader(val_data, batch_size=batch_size, shuffle=True, collate_fn=AudioDataset.collate_fn)
+    val_loader = torch.utils.data.DataLoader(val_data, batch_size=batch_size, shuffle=True,
+                                             collate_fn=AudioDataset.collate_fn)
 
     model = AudioClassifier()
 
     # Define loss and optimizer
-    criterion = BCEWithLogitsLoss() # Binary Cross Entropy loss with logits
+    criterion = BCEWithLogitsLoss()  # Binary Cross Entropy loss with logits
     optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=decay)  # Adam optimizer
 
     model.train()  # Set the model to training mode
@@ -339,7 +337,7 @@ def train_and_evaluate_model():
         print(f'Epoch {epoch + 1}/{n_epochs} Train Loss: {loss.item()} Val Loss: {val_loss}')
 
     # Save the model
-    torch.save(model.state_dict(), 'audio_classifier4.pth') # 4 for no vowels
+    torch.save(model.state_dict(), 'audio_classifier6.pth')  # 4 for no vowels
 
     # Plot loss values
     plt.figure(figsize=(10, 5))
@@ -349,6 +347,7 @@ def train_and_evaluate_model():
     plt.ylabel('Loss')
     plt.legend()
     plt.show()
+
 
 def test_model(model):
     model.eval()
@@ -361,7 +360,8 @@ def test_model(model):
     with open('features/splitted/test_labels_transposed.pkl', 'rb') as file:
         y_test = pickle.load(file)
 
-    test_loader = DataLoader(AudioDataset(X_test, y_test), batch_size=batch_size, shuffle=False, collate_fn=AudioDataset.collate_fn)
+    test_loader = DataLoader(AudioDataset(X_test, y_test), batch_size=batch_size, shuffle=False,
+                             collate_fn=AudioDataset.collate_fn)
 
     # Calculate metrics on test set
     y_pred = []
@@ -386,6 +386,7 @@ def test_model(model):
     print(f'Recall: {recall}%')
     print(f'F1 Score: {f1}%')
 
+
 def predict_audio(file_path, model):
     # Create an instance of FeatureExtraction
     feature_extraction = FeatureExtraction()
@@ -405,5 +406,7 @@ def predict_audio(file_path, model):
         prediction = "Not Parkinson's"
     else:
         prediction = "Parkinson's"
+
+    plot_heatmap(features.float(), output, model, file_path, prediction)
 
     return prediction
