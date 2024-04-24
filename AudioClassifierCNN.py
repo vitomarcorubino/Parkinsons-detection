@@ -266,7 +266,7 @@ class AudioClassifier(nn.Module):
 
 def train_and_evaluate_model(model_filepath):
     lr = 0.0001
-    n_epochs = 10
+    n_epochs = 20
     batch_size = 48
     decay = 0.005
 
@@ -380,6 +380,14 @@ def test_model(model):
 
     print("Y_test: ", y_test)
     print("Y_pred: ", y_pred)
+
+    mismatches = []
+
+    for i in range(len(y_pred)):
+        if y_pred[i] != y_test[i]:
+            mismatches.append(i)
+
+    print("Indexes where values don't correspond:", mismatches)
     print("------------------------------------")
     print(f'Accuracy: {accuracy}%')
     print(f'Precision: {precision}%')
