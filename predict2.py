@@ -10,7 +10,7 @@ train_on_trimmed = True  # Set to True to train on the trimmed dataset, False to
 model = AudioClassifier()
 
 # Check if the model file exists
-if not os.path.isfile('audio_classifier2.pth'):
+if not os.path.isfile('models/audio_classifier2.pth'):
     # If the model file does not exist, train and evaluate the model
     train_and_evaluate_model(train_on_trimmed)
 else:
@@ -18,7 +18,7 @@ else:
     if train:
         train_and_evaluate_model(train_on_trimmed)
     else:
-        model.load_state_dict(torch.load('audio_classifier2.pth'))
+        model.load_state_dict(torch.load('models/audio_classifier2.pth'))
 # Set the model to evaluation mode
 model.eval()
 

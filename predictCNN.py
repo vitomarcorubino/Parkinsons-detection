@@ -3,21 +3,23 @@ from AudioClassifierCNN import AudioClassifier, train_and_evaluate_model, predic
 import glob
 import os
 
-train = False  # Set the train flag to choose whether to train the model or not
-predict = True
+train = True  # Set the train flag to choose whether to train the model or not
+predict = False
+
+model_filepath = "models/audio_classifierCNN.pth"
 
 # Load the trained model
 model = AudioClassifier()
 
 # Check if the model file exists
-if not os.path.isfile('audio_classifier5.pth'):
+if not os.path.isfile(model_filepath):
     # If the model file does not exist, train and evaluate the model
-    train_and_evaluate_model()
+    train_and_evaluate_model(model_filepath)
 else:
     # If the model file exist, load the model from the file if the train flag is set to False, otherwise train the model
     if train:
-        train_and_evaluate_model()
-    model.load_state_dict(torch.load('audio_classifier5.pth'))
+        train_and_evaluate_model(model_filepath)
+    model.load_state_dict(torch.load(model_filepath))
 
 test_model(model)
 
@@ -26,12 +28,12 @@ if predict:
     model.eval()
 
     # Set the directory path of the audio files to predict
-    # directory_path = "newDataset/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"
-    # directory_path = "newDataset/peopleWithParkinson/DonatoBruno/mono_pcm"
-    # directory_path = "newDataset/elderlyHealthyControl/MariangelaColaianni/mono_pcm"
-    # directory_path = "newDataset/youngHealthyControl/VitoMarcoRubino/mono_pcm"
-    directory_path = "dataset2/test/peopleWithParkinson/Mario B"
-    # directory_path = "dataset2/test/elderlyHealthyControl/TERESA M"
+    # directory_path = "datasetNew/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"
+    # directory_path = "datasetNew/peopleWithParkinson/DonatoBruno/mono_pcm"
+    # directory_path = "datasetNew/elderlyHealthyControl/MariangelaColaianni/mono_pcm"
+    # directory_path = "datasetNew/youngHealthyControl/VitoMarcoRubino/mono_pcm"
+    directory_path = "datasetPeople/test/peopleWithParkinson/Mario B"
+    # directory_path = "datasetPeople/test/elderlyHealthyControl/TERESA M"
     # Get all .wav files in the directory
     audio_files = glob.glob(directory_path + '/*.wav')
 

@@ -191,7 +191,7 @@ def train_and_evaluate_model():
             print(f'Epoch {epoch + 1}/{n} No loss calculated')
 
     # Save the model
-    torch.save(model.state_dict(), 'audio_classifier.pth')
+    torch.save(model.state_dict(), 'models/audio_classifier.pth')
 
     model.eval()
 

@@ -10,11 +10,11 @@ import shutil
 
 name = "DonatoBruno"
 # The directory where the audio files are stored
-audio_dir = "newDataset/peopleWithParkinson/" + name
+audio_dir = "datasetNew/peopleWithParkinson/" + name
 # The folder where the converted audio are stored
-output_folder_converted = "newDataset/peopleWithParkinson/" + name + "/mono_pcm"
+output_folder_converted = "datasetNew/peopleWithParkinson/" + name + "/mono_pcm"
 # The folder where the trimmed audio files are stored
-output_folder_trimmed = "newDataset/peopleWithParkinson/" + name + "/trimmed"
+output_folder_trimmed = "datasetNew/peopleWithParkinson/" + name + "/trimmed"
 
 number_of_words = 4  # The number of words to consider for each trimming operation
 

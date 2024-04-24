@@ -289,7 +289,7 @@ def train_and_evaluate_model(train_on_trimmed):
         print(f'Epoch {epoch + 1}/{n} Train Loss: {loss.item()} Val Loss: {val_loss}')
 
     # Save the model
-    torch.save(model.state_dict(), 'audio_classifier2.pth')
+    torch.save(model.state_dict(), 'models/audio_classifier2.pth')
 
     model.eval()  # Set the model to evaluation mode
 
