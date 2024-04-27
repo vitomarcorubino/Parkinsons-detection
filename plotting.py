@@ -5,8 +5,12 @@ import torch
 from scipy.io.wavfile import read
 import librosa
 import librosa.display
+from trimming import get_segment_times
 
 def plot_heatmap(features, output, model, file_path, prediction):
+    segment_times = get_segment_times(file_path)
+    print(segment_times)
+
     # Load the audio file
     audio, sample_rate = librosa.load(file_path, res_type='kaiser_fast')
 
@@ -47,6 +51,19 @@ def plot_heatmap(features, output, model, file_path, prediction):
 
     # Plot the waveform
     plt.figure(figsize=(10, 4))
+
+    i = 0
+    # Add vertical lines for each start and end time of the audio segments
+    for start_time, end_time in segment_times:
+        plt.axvline(x=start_time, color='0.8')  # Start of segment
+
+        # Add a number for each segment at the top, between the vertical lines of start and end times
+        segment_midpoint = (start_time + end_time) / 2
+        plt.text(segment_midpoint, 0.75, str(i), horizontalalignment='center', verticalalignment='top', fontsize=8)
+
+        plt.axvline(x=end_time, color='0.8')  # End of segment
+        i = i + 1
+
     plt.plot(time, audio, alpha=1.0, label='Waveform')  # Use time array as x-values to display seconds
 
     # Check if time[-1] is 0
@@ -59,6 +76,7 @@ def plot_heatmap(features, output, model, file_path, prediction):
     plt.xlabel('Time (s)')  # Add label for the x-axis
     plt.ylabel('Amplitude')  # Add label for the y-axis
     plt.legend()  # Add the legend
+
 
     # Add the file path and the prediction to the top left of the plot
     plt.text(-0.08, 1.135, f'File: {file_path}\nPrediction: {prediction}', horizontalalignment='left',

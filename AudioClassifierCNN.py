@@ -13,6 +13,8 @@ from featureExtraction import FeatureExtraction
 import torch.nn.functional as F
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
+from trimming import get_segment_times
+
 
 class AudioDataset(Dataset):
     def __init__(self, X, y):
@@ -415,6 +417,6 @@ def predict_audio(file_path, model):
     else:
         prediction = "Parkinson's"
 
-    # plot_heatmap(features.float(), output, model, file_path, prediction)
+    plot_heatmap(features.float(), output, model, file_path, prediction)
 
     return prediction
