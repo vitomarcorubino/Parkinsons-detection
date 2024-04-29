@@ -5,6 +5,8 @@ import os
 
 train = False  # Set the train flag to choose whether to train the model or not
 predict = True
+heatmap = False
+test = False
 
 model_filepath = "models/audio_classifierCNN.pth"
 
@@ -21,7 +23,8 @@ else:
         train_and_evaluate_model(model_filepath)
     model.load_state_dict(torch.load(model_filepath))
 
-test_model(model)
+if test:
+    test_model(model)
 
 if predict:
     # Set the model to evaluation mode
@@ -41,7 +44,7 @@ if predict:
     notParkinsonCounter = 0
     # Iterate over the audio files and predict each one
     for file_path in audio_files:
-        prediction = predict_audio(file_path, model)
+        prediction = predict_audio(file_path, model, heatmap)
         print(f"The predicted class for the audio file {file_path} is: {prediction}")
 
         if prediction == "Parkinson's":

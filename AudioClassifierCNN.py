@@ -11,7 +11,8 @@ from plotting import plot_heatmap
 import pickle
 from featureExtraction import FeatureExtraction
 import torch.nn.functional as F
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import (accuracy_score, precision_score, recall_score, f1_score, classification_report,
+                             confusion_matrix)
 
 from trimming import get_segment_times
 
@@ -396,8 +397,13 @@ def test_model(model):
     print(f'Recall: {recall}%')
     print(f'F1 Score: {f1}%')
 
+    target_names = ["Not Parkinson's", "Parkinson's"]
+    print(classification_report(y_test, y_pred, target_names=target_names))
 
-def predict_audio(file_path, model):
+    print("Confusion matrix\n", confusion_matrix(y_test, y_pred, labels=[0, 1]))
+
+
+def predict_audio(file_path, model, heatmap):
     # Create an instance of FeatureExtraction
     feature_extraction = FeatureExtraction()
 
@@ -417,6 +423,7 @@ def predict_audio(file_path, model):
     else:
         prediction = "Parkinson's"
 
-    plot_heatmap(features.float(), output, model, file_path, prediction)
+    if heatmap:
+        plot_heatmap(features.float(), output, model, file_path, prediction)
 
     return prediction
