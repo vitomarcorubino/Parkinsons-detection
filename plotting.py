@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import textwrap
@@ -5,11 +6,12 @@ import torch
 from scipy.io.wavfile import read
 import librosa
 import librosa.display
-from trimming import get_segment_times
+from trimming import get_segment_times, transcribe_audio
+from explainability import get_normalized_activations
 
-def plot_heatmap(features, output, model, file_path, prediction):
+def plot_heatmap(file_path, model, features, output, prediction):
     segment_times = get_segment_times(file_path)
-    print(segment_times)
+    # print("Segment times: ", segment_times)
 
     # Load the audio file
     audio, sample_rate = librosa.load(file_path, res_type='kaiser_fast')
@@ -17,37 +19,46 @@ def plot_heatmap(features, output, model, file_path, prediction):
     # Create a time array to plot the seconds on the x-axis
     time = np.arange(0, len(audio)) / sample_rate
 
-    # Get the predicted class
-    _, predicted = torch.max(output.data, 1)
+    # Get the normalized activations
+    normalized_activations = get_normalized_activations(file_path, model, features, output)
 
-    # Get the gradient of the output with respect to the parameters of the model
-    output[:, predicted.item()].backward()
+    # Calculate the 90th percentile of the normalized activations
+    percentile_90 = np.percentile(normalized_activations, 90)
 
-    # Pull the gradients out of the model
-    gradients = model.get_activations_gradient()
 
-    # Pool the gradients across the channels
-    pooled_gradients = torch.mean(gradients, dim=[0, 2])
+    # Create a list of tuples where each tuple contains the start and end indices of each segment
+    segment_indices = [(int(start_time * sample_rate), int(end_time * sample_rate)) for start_time, end_time in
+                       segment_times]
 
-    # Get the activations of the last convolutional layer
-    activations = model.get_activations(features).detach()
+    # Create a list to store the indices of segment times that contain activations above the 90th percentile
+    indices_with_activations_above_90 = []
 
-    # Weight the channels by corresponding gradients
-    for i in range(96):  # 96 is the number of channels in the last conv layer
-        activations[:, i, :] *= pooled_gradients[i]
+    # Iterate over the segment indices
+    for index, (start_index, end_index) in enumerate(segment_indices):
+        # Get the activations for this segment
+        segment_activations = normalized_activations[start_index:end_index]
 
-    # Average the channels of the activations
-    heatmap = torch.mean(activations, dim=1).squeeze()
+        # Check if any of the activations in this segment are above the 90th percentile
+        if any(segment_activations > percentile_90):
+            # If there are any activations above the 90th percentile, store the index of the segment time
+            indices_with_activations_above_90.append(index)
 
-    # Normalize the heatmap to make the values between 0 and 1
-    heatmap = np.maximum(heatmap, 0)
-    heatmap /= torch.max(heatmap)
+    print("Indices of segment times with activations above 90th percentile: ", indices_with_activations_above_90)
 
-    # Normalize the activations to the range of the audio signal
-    if heatmap.dim() == 0:  # If heatmap is a 0-dimensional tensor (a scalar)
-        normalized_activations = np.full(len(audio), heatmap.item())
-    else:
-        normalized_activations = np.interp(np.arange(len(audio)), np.linspace(0, len(audio), len(heatmap)), heatmap.numpy())
+    # Iterate over indices with activations above the 90th percentile
+    for i in indices_with_activations_above_90:
+        # Get the directory and base file name without extension
+        dir_name = os.path.dirname(file_path)
+        base_name = os.path.splitext(os.path.basename(file_path))[0]
+
+        # Create the path for the i-th trimmed segment
+        segment_path = os.path.join(dir_name, "trimmed", f"{base_name}_trimmed{i}.wav")
+
+        # Transcribe the audio segment
+        transcription = transcribe_audio(segment_path)
+
+        # Print the transcription
+        print(f"Transcription of segment {i}: {transcription}")
 
     # Plot the waveform
     plt.figure(figsize=(10, 4))

@@ -1,11 +1,8 @@
-import os
 import torch
 from torch import nn
 from torch.nn import BCEWithLogitsLoss
 from torch.utils.data import DataLoader, Dataset
 import numpy as np
-import librosa  # for audio processing
-import glob  # to retrieve files/pathnames matching a specified pattern
 import matplotlib.pyplot as plt
 from plotting import plot_heatmap
 import pickle
@@ -13,8 +10,6 @@ from featureExtraction import FeatureExtraction
 import torch.nn.functional as F
 from sklearn.metrics import (accuracy_score, precision_score, recall_score, f1_score, classification_report,
                              confusion_matrix)
-
-from trimming import get_segment_times
 
 
 class AudioDataset(Dataset):
@@ -51,116 +46,6 @@ class AudioDataset(Dataset):
         labels = torch.stack(labels)
 
         return inputs, labels
-
-
-def pickle_dataset(X_train, y_train, X_test, y_test, X_val, y_val, pickle_trimmed):
-    trimmed = ""
-    if pickle_trimmed:
-        trimmed = "trimmed/"
-
-    # Create a dictionary to store X_train and y_train
-    train_data = {'X_train': X_train, 'y_train': y_train}
-
-    # Pickle the dictionary into a single file
-    with open(f'pickledData/{trimmed}trainData.pkl', 'wb') as f:
-        pickle.dump(train_data, f)
-
-    # Create a dictionary to store X_val and y_val
-    val_data = {'X_val': X_val, 'y_val': y_val}
-
-    # Pickle the dictionary into a single file
-    with open(f'pickledData/{trimmed}valData.pkl', 'wb') as f:
-        pickle.dump(val_data, f)
-
-    # Create a dictionary to store X_test and y_test
-    test_data = {'X_test': X_test, 'y_test': y_test}
-
-    # Pickle the dictionary into a single file
-    with open(f'pickledData/{trimmed}testData.pkl', 'wb') as f:
-        pickle.dump(test_data, f)
-
-
-def load_data(load_trimmed):
-    """
-    This function loads the audio data and extracts the features using librosa.
-
-    Returns:
-        tuple: The features and labels for training, testing and validation sets.
-    """
-
-    trimmed = ""
-    if load_trimmed:
-        trimmed = "trimmed/"
-
-    # Initialize the features and labels for each set
-    X_train, y_train, X_test, y_test, X_val, y_val = [], [], [], [], [], []
-
-    # Check if pickle files already exist
-    if (os.path.exists(f'pickledData/{trimmed}trainData.pkl') and os.path.exists(
-            f'pickledData/{trimmed}valData.pkl') and
-            os.path.exists(f'pickledData/{trimmed}testData.pkl')):
-        # Load the pickle files
-        with open(f'pickledData/{trimmed}trainData.pkl', 'rb') as file:
-            train_data = pickle.load(file)
-            X_train, y_train = train_data['X_train'], train_data['y_train']
-
-        with open(f'pickledData/{trimmed}valData.pkl', 'rb') as file:
-            val_data = pickle.load(file)
-            X_val, y_val = val_data['X_val'], val_data['y_val']
-
-        with open(f'pickledData/{trimmed}testData.pkl', 'rb') as file:
-            test_data = pickle.load(file)
-            X_test, y_test = test_data['X_test'], test_data['y_test']
-    else:
-        # If pickle files do not exist, extract features using librosa
-        # Define the sets
-        sets = ['train', 'test', 'validation']
-        """
-        Define the category names of each set, where elderlyHealthyControl and youngHealthyControl are considered as 
-        notParkinson
-        """
-        categories = ['elderlyHealthyControl', 'peopleWithParkinson', 'youngHealthyControl']
-
-        # Define the path to the dataset
-        data = {set_name: {category: f'dataset2/{set_name}/{category}' for category in categories} for set_name in sets}
-
-        for set_name, set_data in data.items():  # Iterate over the sets
-            for category, dir in set_data.items():  # Iterate over the categories
-                # Get all subfolders in the specified directory
-                subfolders = [f.path for f in os.scandir(dir) if f.is_dir()]
-
-                for subfolder in subfolders:
-                    # Get all .wav files in the subfolder
-                    audio_files = glob.glob(subfolder + '/trimmed/*.wav')
-
-                    for file in audio_files:
-                        # Extract features using librosa
-                        audio, sample_rate = librosa.load(file, res_type='kaiser_fast')  # resample to 22050 Hz
-                        mfccs = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=40)  # extract 40 MFCCs
-                        mfccs_processed = np.mean(mfccs.T, axis=0)  # average the MFCCs across all the frames
-
-                        # Add the features to the appropriate list
-                        if category == "peopleWithParkinson":
-                            label = "parkinson"
-                        else:
-                            label = "notParkinson"
-
-                        if set_name == 'train':
-                            X_train.append(mfccs_processed)
-                            y_train.append(label)
-                        else:
-                            if set_name == 'test':
-                                X_test.append(mfccs_processed)
-                                y_test.append(label)
-                            else:  # validation set
-                                X_val.append(mfccs_processed)
-                                y_val.append(label)
-
-        # Call the pickle_dataset function
-        pickle_dataset(np.array(X_train), np.array(y_train), np.array(X_test), np.array(y_test), np.array(X_val),
-                       np.array(y_val), load_trimmed)
-
-    return np.array(X_train), np.array(y_train), np.array(X_val), np.array(y_val), np.array(X_test), np.array(y_test)
 
 
 # Define the model class
@@ -423,7 +308,8 @@ def predict_audio(file_path, model, heatmap):
     else:
         prediction = "Parkinson's"
 
+
     if heatmap:
-        plot_heatmap(features.float(), output, model, file_path, prediction)
+        plot_heatmap(file_path, model, features.float(), output, prediction)
 
     return prediction

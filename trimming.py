@@ -4,15 +4,14 @@ from pydub import AudioSegment
 from pydub.silence import split_on_silence
 import plotting
 import os
-
-import os
 import json
 import wave
 import languageDetection  # Module to detect the language of the audio file
 from vosk import Model, KaldiRecognizer, SetLogLevel
 
 
-def trim_on_descending_waveform(audio_path, start_times, end_times, words, number_of_words, output_folder, plot, threshold=0.1, end_buffer=0.075):
+def trim_on_descending_waveform(audio_path, start_times, end_times, words, number_of_words, output_folder, plot,
+                                threshold=0.1, end_buffer=0.075):
     """
     Trims an audio file based on the start and end times of spoken words. It iterates over the start and end times,
     extracts the corresponding audio segment, and trims the segment at the first point where the amplitude decreases.
@@ -174,7 +173,6 @@ def get_segment_times(audio_path, threshold=0.1, end_buffer=0.075):
         # Find the points where the amplitude decreases
         decrease_points = np.where(np.diff(segment) < 0)[0]
 
-
         # If there are decrease points, trim the segment at the first decrease point
         if len(decrease_points) > 0 and decrease_points[0] > threshold * len(segment):
             segment_tuple = (start_sample / sample_rate, decrease_points[0] / sample_rate)
@@ -187,6 +185,40 @@ def get_segment_times(audio_path, threshold=0.1, end_buffer=0.075):
         i = i + number_of_words
 
     return segment_times
+
+
+def transcribe_audio(audio_path):
+    SetLogLevel(-1)
+
+    # Open the audio file
+    wf = wave.open(audio_path, "rb")
+
+    # Get the language id of the audio file, such as "it" for italian
+    # lang_id = languageDetection.get_language_id(audio_path)
+
+    # Load the language model for the detected language
+    model = Model(lang="it")
+
+    # Create a recognizer object using the language model and the sample rate of the audio file
+    rec = KaldiRecognizer(model, wf.getframerate())
+    rec.SetWords(True)  # Enable the result to include the words
+    rec.SetPartialWords(True)  # Enable the result to include the partial words
+
+    text = ""  # The text of the audio
+
+    data = wf.readframes(wf.getnframes())  # Read the audio file in chunks of 4000 frames
+    if len(data) > 0:
+        rec.AcceptWaveform(data)
+
+    # Get the final result
+    result = rec.FinalResult()
+
+    # Convert the result to a JSON object
+    result_json = json.loads(result)
+    if 'result' in result_json:
+        text = result_json['text']
+
+    return text
 
 
 def trim_on_timestamp(audio_path, start_times, end_times, number_of_words):
