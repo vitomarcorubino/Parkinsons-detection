@@ -2,7 +2,6 @@ from scipy.io.wavfile import read, write
 import numpy as np
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
-import plotting
 import os
 import json
 import wave
@@ -74,7 +73,8 @@ def trim_on_descending_waveform(audio_path, start_times, end_times, words, numbe
 
     # Plot the trimmed audio segments
     if plot:
-        plotting.plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, words)
+        from plotting import plot_trimmed_audio
+        plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, words)
 
 
 def get_segment_times(audio_path, threshold=0.1, end_buffer=0.075):

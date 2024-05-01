@@ -2,7 +2,6 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import textwrap
-import torch
 from scipy.io.wavfile import read
 import librosa
 import librosa.display
