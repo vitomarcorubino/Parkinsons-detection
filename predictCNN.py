@@ -2,15 +2,13 @@ import torch
 from AudioClassifierCNN import AudioClassifier, train_and_evaluate_model, predict_audio, test_model
 import glob
 import os
-from collections import Counter
-from explainability import lexycometric_analysis_on_set
 
 train = False  # Set the train flag to choose whether to train the model or not
-predict = False
+predict = True
 heatmap = False
-test = True
+test = False
 
-model_filepath = "models/audio_classifierCNN.pth"
+model_filepath = "models/audio_classifierCNN2.pth"
 
 # Load the trained model
 model = AudioClassifier()
@@ -33,11 +31,11 @@ if predict:
     model.eval()
 
     # Set the directory path of the audio files to predict
-    # directory_path = "datasetNew/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"
+    directory_path = "datasetNew/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm"
     # directory_path = "datasetNew/peopleWithParkinson/DonatoBruno/mono_pcm"
     # directory_path = "datasetNew/elderlyHealthyControl/MariangelaColaianni/mono_pcm"
     # directory_path = "datasetNew/youngHealthyControl/VitoMarcoRubino/mono_pcm"
-    directory_path = "datasetPeople/test/peopleWithParkinson/Mario B"
+    # directory_path = "datasetPeople/test/peopleWithParkinson/Mario B"
     # directory_path = "datasetPeople/test/elderlyHealthyControl/TERESA M"
     # Get all .wav files in the directory
     audio_files = glob.glob(directory_path + '/*.wav')

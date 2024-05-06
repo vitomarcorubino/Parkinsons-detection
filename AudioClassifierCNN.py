@@ -14,17 +14,63 @@ from sklearn.metrics import (accuracy_score, precision_score, recall_score, f1_s
 
 class AudioDataset(Dataset):
     def __init__(self, X, y):
+        """
+        Initializes the AudioDataset object.
+
+        Args:
+            X (list): A list of numpy arrays where each array represents the features of an audio sample.
+                      These features are converted to PyTorch tensors and stored in self.X.
+
+            y (list): A list of labels corresponding to each audio sample in X. Each label is converted to a
+                      PyTorch tensor and stored in self.y.
+        """
         self.X = [torch.from_numpy(x) for x in X]
         self.y = [torch.tensor(label) for label in y]
 
     def __len__(self):
+        """
+        Returns the total number of samples in the dataset.
+
+        This method is used by PyTorch to know the number of samples in the dataset. It is used during the creation
+        of a DataLoader object to determine the total number of batches.
+
+        Returns:
+            int: The total number of samples in the dataset.
+        """
         return len(self.X)
 
     def __getitem__(self, idx):
+        """
+        Returns the features and label of the sample at the given index.
+
+        This method is used by PyTorch to access the data of the dataset. It is used during the creation
+        of a DataLoader object to fetch the samples.
+
+        Args:
+            idx (int): The index of the sample to fetch.
+
+        Returns:
+            tuple: A tuple containing the features and label of the sample at the given index.
+        """
         return self.X[idx], self.y[idx]
 
     @staticmethod
     def collate_fn(batch):
+        """
+        This method is used to collate the samples into a batch. It separates the inputs and labels, finds the maximum
+        length of sequences among inputs, pads the inputs to match the maximum length, and then stacks the padded inputs
+        and labels.
+
+        This method is used by PyTorch's DataLoader to collate the samples into a batch. It is necessary when the
+        samples in a batch have varying sizes and need to be padded to the same size.
+
+        Args:
+            batch (list): A list of tuples where each tuple contains an input tensor and its corresponding label tensor.
+
+        Returns:
+            tuple: A tuple containing two tensors. The first tensor is a stack of the padded inputs and the second
+            tensor is a stack of the labels.
+        """
         # Separate the inputs and labels
         inputs, labels = zip(*batch)
 
@@ -52,26 +98,24 @@ class AudioDataset(Dataset):
 class AudioClassifier(nn.Module):
     def __init__(self):
         """
-        This is the constructor for the AudioClassifier class. It initializes the layers of the neural network.
+        Initializes the AudioClassifier model. This model is a subclass of the PyTorch nn.Module class.
+        The model architecture consists of two convolutional layers, each followed by a ReLU activation function and a
+        max pooling layer, and a final fully connected layer.
 
-        The network architecture consists of two convolutional layers, each followed by a ReLU activation function
-        and a max pooling layer. The output of the second max pooling layer is then flattened and passed through a
-        fully connected layer. The output of the fully connected layer is then passed through a softmax function to
-        get the final output probabilities for the two classes: Parkinson's and Not Parkinson's.
-
-        The gradients of the activations of the second convolutional layer are also stored in order to implement
-        explainability.
-
-        Args:
-            nn.Module: The base class for all neural network modules in PyTorch.
+        The first convolutional layer has 24 input channels and 48 output channels, and uses a kernel size of 3 with
+        padding of 1.
+        The second convolutional layer has 48 input channels and 96 output channels, and also uses a kernel size of 3
+        with padding of 1.
+        Both max pooling layers use a kernel size of 2.
+        The fully connected layer has 96 input features and 1 output feature.
         """
         super(AudioClassifier, self).__init__()
         self.conv1 = nn.Conv1d(24, 48, kernel_size=3, padding=1)
         self.relu1 = nn.ReLU()  # ReLU activation function
-        self.maxpool1 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
+        self.maxpool1 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 3
         self.conv2 = nn.Conv1d(48, 96, kernel_size=3, padding=1)
         self.relu2 = nn.ReLU()  # ReLU activation function
-        self.maxpool2 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 2
+        self.maxpool2 = nn.MaxPool1d(kernel_size=2)  # Max pooling layer with a kernel size of 3
         self.fc = nn.Linear(96, 1)  # Fully connected layer
 
         # Store the gradients
@@ -80,23 +124,23 @@ class AudioClassifier(nn.Module):
     # Hook for the gradients
     def activations_hook(self, grad):
         """
-        This function is a hook that stores the gradients of the activations of the second convolutional layer.
+        This hook is used to store the gradients of the activations of the second convolutional layer.
 
         Args:
-            grad: The gradients of the activations.
+            grad (torch.Tensor): The gradients of the activations of the second convolutional layer.
         """
         self.gradients = grad
 
     def forward(self, x):
         """
-        This function defines the forward pass of the neural network.
+        This method defines the forward pass of the neural network.
 
         Args:
             x (torch.Tensor): The input tensor to the network. It should have a shape of (batch_size, num_features).
 
         Returns:
-            torch.Tensor: The output tensor after the forward pass.It contains the softmax probabilities for the two
-                          classes: 'parkinson' and 'notParkinson'.
+            torch.Tensor: The output tensor after passing through the network. It will have a shape of (batch_size, 1).
+
         """
         out = self.conv1(x)  # Pass the input through the first convolutional layer
         out = self.relu1(out)  # Apply the ReLU activation function
@@ -129,16 +173,22 @@ class AudioClassifier(nn.Module):
     def get_activations_gradient(self):
         """
         This function returns the gradients of the activations of the second convolutional layer.
-        These gradients are stored during the forward pass, and are used later for explainability purposes,
-        which means visualize the importance of different parts of the input in the decision made by the network.
 
         Returns:
             torch.Tensor: The gradients of the activations of the second convolutional layer.
         """
         return self.gradients
 
-    # Method for the activation extraction
     def get_activations(self, x):
+        """
+        This function takes an input tensor and returns the activations of the second convolutional layer.
+
+        Args:
+            x (torch.Tensor): The input tensor to the network. It should have a shape of (batch_size, num_features).
+
+        Returns:
+            torch.Tensor: The activations of the second convolutional layer.
+        """
         out = self.conv1(x)
         out = self.relu1(out)
 
@@ -152,10 +202,17 @@ class AudioClassifier(nn.Module):
 
         return out
 
+
 def train_and_evaluate_model(model_filepath):
-    lr = 0.0001
-    n_epochs = 20
-    batch_size = 48
+    """
+    This function trains and evaluates the AudioClassifier model on the provided dataset.
+
+    Args:
+        model_filepath (str): The path to the file where the trained model will be saved.
+    """
+    lr = 0.00009
+    n_epochs = 30
+    batch_size = 32
     decay = 0.005
 
     X_train, y_train, X_val, y_val = [], [], [], []
@@ -238,8 +295,21 @@ def train_and_evaluate_model(model_filepath):
 
 
 def test_model(model):
+    """
+    This function tests the trained model on the test set and prints:
+        - Accuracy
+        - Precision
+        - Recall
+        - F1 Score
+        - True values and predicted values
+        - Classification Report
+        - Confusion Matrix
+
+    Args:
+        model (AudioClassifier): The trained model.
+    """
     model.eval()
-    batch_size = 48
+    batch_size = 32
     X_test, y_test = [], []
 
     with open('features/DL/test_features_transposed.pkl', 'rb') as file:
@@ -266,15 +336,14 @@ def test_model(model):
     recall = round(recall_score(y_test, y_pred) * 100, 2)
     f1 = round(f1_score(y_test, y_pred) * 100, 2)
 
-    print("Y_test: ", y_test)
-    print("Y_pred: ", y_pred)
-
     mismatches = []
 
     for i in range(len(y_pred)):
         if y_pred[i] != y_test[i]:
             mismatches.append(i)
 
+    print("Y_test: ", y_test)
+    print("Y_pred: ", y_pred)
     print("Indexes where values don't correspond:", mismatches)
     print("------------------------------------")
     print(f'Accuracy: {accuracy}%')
@@ -289,6 +358,18 @@ def test_model(model):
 
 
 def predict_audio(file_path, model, heatmap):
+    """
+    This function takes an audio file path, a trained model, and a boolean value indicating whether to generate a heatmap,
+    and returns the predicted class for the audio file.
+
+    Args:
+        file_path (str): The path to the audio file.
+        model (AudioClassifier): The trained model.
+        heatmap (bool): A boolean value indicating whether to generate a heatmap for explainability purposes.
+
+    Returns:
+        str: The predicted class for the audio file.
+    """
     # Create an instance of FeatureExtraction
     feature_extraction = FeatureExtraction()
 
@@ -307,7 +388,6 @@ def predict_audio(file_path, model, heatmap):
         prediction = "Not Parkinson's"
     else:
         prediction = "Parkinson's"
-
 
     if heatmap:
         plot_heatmap(file_path, model, features.float(), output, prediction)

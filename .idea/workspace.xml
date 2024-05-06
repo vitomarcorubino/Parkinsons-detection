@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6322ae-8cf3-44ec-99c2-748db2316def" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lexycometricAnalysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crucialWords/notParkinsonsCNN2.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crucialWords/parkinsonCNN2.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudioClassifierCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifierCNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/plotting.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/plotting.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/plotting.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/plotting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lexycometricAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/lexycometricAnalysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/audio_classifierCNN2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/models/audio_classifierCNN2.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predictCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictCNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trimming.py" beforeDir="false" afterPath="$PROJECT_DIR$/trimming.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +82,7 @@
     "Python.trimming.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.google.cloudcode.ide_session_index": "20240506_0004",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/rubin/OneDrive/Desktop",
@@ -84,7 +91,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "settings.editor.selected.configurable": "google.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -258,7 +265,22 @@
       <workItem from="1714466023276" duration="13376000" />
       <workItem from="1714481339804" duration="1765000" />
       <workItem from="1714490290747" duration="3012000" />
-      <workItem from="1714548235165" duration="5078000" />
+      <workItem from="1714548235165" duration="5107000" />
+      <workItem from="1714559690200" duration="1031000" />
+      <workItem from="1714627131951" duration="128000" />
+      <workItem from="1714766467034" duration="153000" />
+      <workItem from="1714766652314" duration="390000" />
+      <workItem from="1714767072005" duration="3063000" />
+      <workItem from="1714771325155" duration="65000" />
+      <workItem from="1714813990236" duration="505000" />
+      <workItem from="1714814514704" duration="89000" />
+      <workItem from="1714814617474" duration="652000" />
+      <workItem from="1714815497798" duration="757000" />
+      <workItem from="1714977194187" duration="95000" />
+      <workItem from="1714977320487" duration="2555000" />
+      <workItem from="1714981518869" duration="2898000" />
+      <workItem from="1715002696753" duration="69000" />
+      <workItem from="1715002789335" duration="13499000" />
     </task>
     <servers />
   </component>
@@ -273,15 +295,15 @@
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifier2.coverage" NAME="AudioClassifier2 Coverage Results" MODIFIED="1712071893000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1713548573447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$extractFeature.coverage" NAME="extractFeature Coverage Results" MODIFIED="1713942202055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1714552602057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$explainability.coverage" NAME="explainability Coverage Results" MODIFIED="1714552756661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$lexycometricAnalysis.coverage" NAME="lexycometricAnalysis Coverage Results" MODIFIED="1714553592004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1715015638269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$lexycometricAnalysis.coverage" NAME="lexycometricAnalysis Coverage Results" MODIFIED="1715016248750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifierML.coverage" NAME="AudioClassifierML Coverage Results" MODIFIED="1713940393571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$trimming.coverage" NAME="trimming Coverage Results" MODIFIED="1710154819862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$test_simple.coverage" NAME="test_simple Coverage Results" MODIFIED="1710180230176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1712136227019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$audioFileFormat.coverage" NAME="audioFileFormat Coverage Results" MODIFIED="1709991614669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$AudioClassifierCNN.coverage" NAME="AudioClassifierCNN Coverage Results" MODIFIED="1714550227638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$AudioClassifierCNN.coverage" NAME="AudioClassifierCNN Coverage Results" MODIFIED="1715003367118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$predictLSTM.coverage" NAME="predictLSTM Coverage Results" MODIFIED="1711649414703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$languageDetection.coverage" NAME="languageDetection Coverage Results" MODIFIED="1710577290939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1713372395638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
