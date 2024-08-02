@@ -8,6 +8,7 @@ import librosa.display
 from trimming import get_segment_times, transcribe_audio
 from explainability import get_normalized_activations
 
+
 def plot_heatmap(file_path, model, features, output, prediction):
     segment_times = get_segment_times(file_path)
     # print("Segment times: ", segment_times)
@@ -23,7 +24,6 @@ def plot_heatmap(file_path, model, features, output, prediction):
 
     # Calculate the 90th percentile of the normalized activations
     percentile_90 = np.percentile(normalized_activations, 90)
-
 
     # Create a list of tuples where each tuple contains the start and end indices of each segment
     segment_indices = [(int(start_time * sample_rate), int(end_time * sample_rate)) for start_time, end_time in
@@ -81,17 +81,18 @@ def plot_heatmap(file_path, model, features, output, prediction):
         time[-1] = 1e-10  # Set it to a small positive value
 
     # Display the heatmap as a 2D image
-    plt.imshow(normalized_activations[np.newaxis, :], cmap='hot', aspect='auto', alpha=0.5, extent=(0.0, float(time[-1]), -1.0, 1.0))
+    plt.imshow(normalized_activations[np.newaxis, :], cmap='hot', aspect='auto', alpha=0.5,
+               extent=(0.0, float(time[-1]), -1.0, 1.0))
     plt.colorbar(label='Activation Strength')  # Add label for the colorbar
     plt.xlabel('Time (s)')  # Add label for the x-axis
     plt.ylabel('Amplitude')  # Add label for the y-axis
     plt.legend()  # Add the legend
 
-
     # Add the file path and the prediction to the top left of the plot
     plt.text(-0.08, 1.135, f'File: {file_path}\nPrediction: {prediction}', horizontalalignment='left',
              verticalalignment='top', transform=plt.gca().transAxes)
     plt.show()  # Show the plot
+
 
 def plot_time_frequency_heatmap(audio_path):
     # Load the audio file
@@ -166,11 +167,12 @@ def plot_trimmed_audio(audio_path, start_times, end_times, number_of_words, word
         segment_words = ' '.join(words[i:i + number_of_words])
 
         # Split the words into multiple lines if they are too long
-        wrapped_words = textwrap.wrap(segment_words, width=12)
+        wrapped_words = textwrap.wrap(segment_words, width=6)
 
         # Add the words to the plot
         for line_num, line in enumerate(wrapped_words):
-            plt.text(middle_time, 0.95 - line_num * 0.1, line, horizontalalignment='center', verticalalignment='top')
+            plt.text(middle_time, 0.95 - line_num * 0.1, line, horizontalalignment='center', verticalalignment='top',
+                     fontsize=8)
 
     plt.title('Original Audio and Trim Points')
     plt.xlabel('Time (s)')

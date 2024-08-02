@@ -1,6 +1,5 @@
 # Source: https://huggingface.co/speechbrain/lang-id-commonlanguage_ecapa
 from speechbrain.inference.classifiers import EncoderClassifier
-import os
 import torchaudio
 
 

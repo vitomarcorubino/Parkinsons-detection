@@ -351,3 +351,39 @@ def predict_audio(file_path, model):
         return "Parkinson's"
     else:
         return "Not Parkinson's"
+
+'''
+# Define the main dataset folder
+main_folder = "dataset"
+
+# Define the subfolders
+subfolders = ["train", "test", "validation"]
+
+# Define the labels
+labels = ["elderlyHealthyControl", "peopleWithParkinson", "youngHealthyControl"]
+
+# Initialize a list to store lengths of all audio files
+lengths = []
+
+# Loop over the subfolders
+for subfolder in subfolders:
+    # Loop over the labels
+    for label in labels:
+        # Define the path for the current label
+        path = os.path.join(main_folder, subfolder, label, "*.wav")
+        # Get all audio files in the current path
+        audio_files = glob.glob(path)
+        # Loop over the audio files
+        for file_path in audio_files:
+            # Load the audio file
+            audio, sample_rate = librosa.load(file_path, sr=None)
+            # Calculate the duration in seconds and append to the list
+            print(f"Duration of {file_path}: {librosa.get_duration(y=audio, sr=sample_rate)} seconds")
+            lengths.append(librosa.get_duration(y=audio, sr=sample_rate))
+
+# Calculate the average length
+average_length = sum(lengths) / len(lengths) if lengths else 0
+
+print(f"Average length of audio files: {average_length} seconds")
+print("Number of audio files: ", len(lengths))
+'''

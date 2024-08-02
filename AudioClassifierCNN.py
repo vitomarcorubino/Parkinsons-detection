@@ -8,6 +8,7 @@ from plotting import plot_heatmap
 import pickle
 from featureExtraction import FeatureExtraction
 import torch.nn.functional as F
+import seaborn as sns
 from sklearn.metrics import (accuracy_score, precision_score, recall_score, f1_score, classification_report,
                              confusion_matrix)
 
@@ -336,15 +337,27 @@ def test_model(model):
     recall = round(recall_score(y_test, y_pred) * 100, 2)
     f1 = round(f1_score(y_test, y_pred) * 100, 2)
 
+    # Store the metrics in a dictionary
+    metrics = {'Accuracy': accuracy, 'Precision': precision, 'Recall': recall, 'F1 Score': f1}
+
+    # Create a bar chart
+    plt.bar(metrics.keys(), metrics.values())
+    plt.xlabel('Metrics')
+    plt.ylabel('Score')
+    plt.title('Model Performance Metrics')
+    plt.ylim([0, 100])  # Set the limit of y-axis to match the percentage
+    plt.show()
+
     mismatches = []
 
     for i in range(len(y_pred)):
         if y_pred[i] != y_test[i]:
             mismatches.append(i)
 
-    print("Y_test: ", y_test)
-    print("Y_pred: ", y_pred)
-    print("Indexes where values don't correspond:", mismatches)
+    # Print Y_test size and y_test values
+    print(f"Y_test ({len(y_test)}): " + str(y_test))
+    print(f"Y_pred ({len(y_pred)}): " + str(y_pred))
+    print(f"Mismatches ({len(mismatches)}):" + str(mismatches))
     print("------------------------------------")
     print(f'Accuracy: {accuracy}%')
     print(f'Precision: {precision}%')
@@ -354,8 +367,17 @@ def test_model(model):
     target_names = ["Not Parkinson's", "Parkinson's"]
     print(classification_report(y_test, y_pred, target_names=target_names))
 
-    print("Confusion matrix\n", confusion_matrix(y_test, y_pred, labels=[0, 1]))
+    conf_matrix = confusion_matrix(y_test, y_pred, labels=[0, 1])
+    print("Confusion matrix\n", conf_matrix)
 
+    plt.figure(figsize=(10, 7))
+    sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=target_names, yticklabels=target_names)
+    plt.title('Confusion Matrix')
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.show()
+
+import pandas as pd
 
 def predict_audio(file_path, model, heatmap):
     """
@@ -393,3 +415,4 @@ def predict_audio(file_path, model, heatmap):
         plot_heatmap(file_path, model, features.float(), output, prediction)
 
     return prediction
+
