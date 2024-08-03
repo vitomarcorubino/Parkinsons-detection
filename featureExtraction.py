@@ -1,12 +1,12 @@
+import glob
 import os
+from datetime import datetime
+
+import natsort
 import numpy as np
 import pandas as pd
 import parselmouth
 from parselmouth.praat import call
-import glob
-from datetime import datetime
-import librosa
-import natsort
 
 
 class FeatureExtraction:

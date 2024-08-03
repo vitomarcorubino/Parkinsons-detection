@@ -5,1048 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6322ae-8cf3-44ec-99c2-748db2316def" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/datasetNew/youngHealthyControl/SergioPinto/S1_mono_pcm.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/Dataset.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/VA1APGANRET55F170320171107.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/VA2APGANRET55F170320171108.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/VE1APGANRET55F170320171109.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/VE2APGANRET55F170320171109.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/VI1APGANRET55F170320171109.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/VI2APGANRET55F170320171110.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/VO1APGANRET55F170320171111.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/VO2APGANRET55F170320171111.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/VU1APGANRET55F170320171112.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/VU2APGANRET55F170320171112.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/trimmed/VA1APGANRET55F170320171107_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/trimmed/VA2APGANRET55F170320171108_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/trimmed/VE1APGANRET55F170320171109_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/trimmed/VE2APGANRET55F170320171109_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/trimmed/VI1APGANRET55F170320171109_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/trimmed/VI2APGANRET55F170320171110_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/trimmed/VO1APGANRET55F170320171111_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/trimmed/VO2APGANRET55F170320171111_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/trimmed/VU1APGANRET55F170320171112_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/AGNESE P/trimmed/VU2APGANRET55F170320171112_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/VA1ACNAGRER49F210320170920.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/VA2ACNAGRER49F210320170920.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/VE1ACNAGRER49F210320170921.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/VE2ACNAGRER49F210320170921.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/VI1ACNAGRER49F210320170921.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/VI2ACNAGRER49F210320170922.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/VO1ACNAGRER49F210320170922.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/VO2ACNAGRER49F210320170923.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/VU1ACNAGRER49F210320170923.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/VU2ACNAGRER49F210320170923.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/trimmed/VA1ACNAGRER49F210320170920_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/trimmed/VA2ACNAGRER49F210320170920_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/trimmed/VE1ACNAGRER49F210320170921_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/trimmed/VE2ACNAGRER49F210320170921_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/trimmed/VI1ACNAGRER49F210320170921_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/trimmed/VI2ACNAGRER49F210320170922_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/trimmed/VO1ACNAGRER49F210320170922_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/trimmed/VO2ACNAGRER49F210320170923_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/trimmed/VU1ACNAGRER49F210320170923_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA C/trimmed/VU2ACNAGRER49F210320170923_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/VA1AGNIGNEE54F230320171020.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/VA2AGNIGNEE54F230320171021.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/VE1AGNIGNEE54F230320171021.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/VE2AGNIGNEE54F230320171021.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/VI1AGNIGNEE54F230320171021.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/VI2AGNIGNEE54F230320171022.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/VO1AGNIGNEE54F230320171022.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/VO2AGNIGNEE54F230320171022.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/VU1AGNIGNEE54F230320171022.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/VU2AGNIGNEE54F230320171023.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/trimmed/VA1AGNIGNEE54F230320171020_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/trimmed/VA2AGNIGNEE54F230320171021_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/trimmed/VE1AGNIGNEE54F230320171021_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/trimmed/VE2AGNIGNEE54F230320171021_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/trimmed/VI1AGNIGNEE54F230320171021_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/trimmed/VI2AGNIGNEE54F230320171022_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/trimmed/VO1AGNIGNEE54F230320171022_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/trimmed/VO2AGNIGNEE54F230320171022_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/trimmed/VU1AGNIGNEE54F230320171022_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/ANGELA G/trimmed/VU2AGNIGNEE54F230320171023_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/VA1TMEIRAEC54F230320171153.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/VA2TMEIRAEC54F230320171153.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/VE1TMEIRAEC54F230320171154.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/VE2TMEIRAEC54F230320171154.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/VI1TMEIRAEC54F230320171154.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/VI2TMEIRAEC54F230320171154.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/VO1TMEIRAEC54F230320171155.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/VO2TMEIRAEC54F230320171155.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/VU1TMEIRAEC54F230320171155.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/VU2TMEIRAEC54F230320171155.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/trimmed/VA1TMEIRAEC54F230320171153_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/trimmed/VA2TMEIRAEC54F230320171153_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/trimmed/VE1TMEIRAEC54F230320171154_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/trimmed/VE2TMEIRAEC54F230320171154_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/trimmed/VI1TMEIRAEC54F230320171154_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/trimmed/VI2TMEIRAEC54F230320171154_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/trimmed/VO1TMEIRAEC54F230320171155_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/trimmed/VO2TMEIRAEC54F230320171155_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/trimmed/VU1TMEIRAEC54F230320171155_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/TERESA M/trimmed/VU2TMEIRAEC54F230320171155_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/VA1VDIET AS47M210320170942.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/VA2VDIET AS47M210320170943.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/VE1VDIET AS47M210320170943.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/VE2VDIET AS47M210320170944.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/VI1VDIET AS47M210320170944.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/VI2VDIET AS47M210320170944.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/VO1VDIET AS47M210320170945.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/VO2VDIET AS47M210320170945.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/VU1VDIET AS47M210320170945.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/VU2VDIET AS47M210320170945.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/trimmed/VA1VDIET AS47M210320170942_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/trimmed/VA2VDIET AS47M210320170943_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/trimmed/VE1VDIET AS47M210320170943_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/trimmed/VE2VDIET AS47M210320170944_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/trimmed/VI1VDIET AS47M210320170944_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/trimmed/VI2VDIET AS47M210320170944_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/trimmed/VO1VDIET AS47M210320170945_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/trimmed/VO2VDIET AS47M210320170945_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/trimmed/VU1VDIET AS47M210320170945_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITANTONIO D/trimmed/VU2VDIET AS47M210320170945_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/VA1VAILTFOO49M230320171031.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/VA2VAILTFOO49M230320171031.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/VE1VAILTFOO49M230320171032.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/VE2VAILTFOO49M230320171032.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/VI1VAILTFOO49M230320171032.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/VI2VAILTFOO49M230320171033.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/VO1VAILTFOO49M230320171033.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/VO2VAILTFOO49M230320171033.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/VU1VAILTFOO49M230320171033.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/VU2VAILTFOO49M230320171034.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/trimmed/VA1VAILTFOO49M230320171031_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/trimmed/VA2VAILTFOO49M230320171031_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/trimmed/VE1VAILTFOO49M230320171032_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/trimmed/VE2VAILTFOO49M230320171032_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/trimmed/VI1VAILTFOO49M230320171032_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/trimmed/VI2VAILTFOO49M230320171033_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/trimmed/VO1VAILTFOO49M230320171033_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/trimmed/VO2VAILTFOO49M230320171033_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/trimmed/VU1VAILTFOO49M230320171033_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO A/trimmed/VU2VAILTFOO49M230320171034_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/VA1VLIATFOO55M300320171245.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/VA2VLIATFOO55M300320171245.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/VE1VLIATFOO55M300320171246.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/VE2VLIATFOO55M300320171246.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/VI1VLIATFOO55M300320171247.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/VI2VLIATFOO55M300320171247.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/VO1VLIATFOO55M300320171247.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/VO2VLIATFOO55M300320171248.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/VU1VLIATFOO55M300320171248.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/VU2VLIATFOO55M300320171249.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/trimmed/VA1VLIATFOO55M300320171245_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/trimmed/VA2VLIATFOO55M300320171245_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/trimmed/VE1VLIATFOO55M300320171246_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/trimmed/VE2VLIATFOO55M300320171246_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/trimmed/VI1VLIATFOO55M300320171247_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/trimmed/VI2VLIATFOO55M300320171247_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/trimmed/VO1VLIATFOO55M300320171247_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/trimmed/VO2VLIATFOO55M300320171248_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/trimmed/VU1VLIATFOO55M300320171248_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/elderlyHealthyControl/VITO L/trimmed/VU2VLIATFOO55M300320171249_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/VA1ABNINSAC46F240120171758.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/VA2ABNINSAC46F240120171759.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/VE1ABNINSAC46F240120171800.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/VE2ABNINSAC46F240120171801.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/VI1ABNINSAC46F240120171801.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/VI2ABNINSAC46F240120171802.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/VO1ABNINSAC46F240120171802.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/VO2ABNINSAC46F240120171803.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/VU1ABNINSAC46F240120171804.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/VU2ABNINSAC46F240120171804.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/trimmed/VA1ABNINSAC46F240120171758_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/trimmed/VA2ABNINSAC46F240120171759_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/trimmed/VE1ABNINSAC46F240120171800_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/trimmed/VE2ABNINSAC46F240120171801_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/trimmed/VI1ABNINSAC46F240120171801_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/trimmed/VI2ABNINSAC46F240120171802_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/trimmed/VO1ABNINSAC46F240120171802_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/trimmed/VO2ABNINSAC46F240120171803_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/trimmed/VU1ABNINSAC46F240120171804_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Anna B/trimmed/VU2ABNINSAC46F240120171804_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/VA1AGNUTGOL52F100220171049.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/VA2AGNUTGOL52F100220171049.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/VE1AGNUTGOL52F100220171050.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/VE2AGNUTGOL52F100220171049.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/VI1AGNUTGOL52F100220171051.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/VI2AGNUTGOL63F100220171052.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/VO1AGNUTGOL52F100220171052.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/VO2AGNUTGOL52F100220171053.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/VU1AGNUTGOL52F100220171054.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/VU2AGNUTGOL52F100220171054.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/trimmed/VA1AGNUTGOL52F100220171049_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/trimmed/VA2AGNUTGOL52F100220171049_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/trimmed/VE1AGNUTGOL52F100220171050_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/trimmed/VE2AGNUTGOL52F100220171049_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/trimmed/VI1AGNUTGOL52F100220171051_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/trimmed/VI2AGNUTGOL63F100220171052_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/trimmed/VO1AGNUTGOL52F100220171052_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/trimmed/VO2AGNUTGOL52F100220171053_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/trimmed/VU1AGNUTGOL52F100220171054_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Antonia G/trimmed/VU2AGNUTGOL52F100220171054_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/VA1DLAARCII37F100220171114.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/VA2DLAARCII37F100220171114.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/VE1DLAARCII37F100220171115.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/VE2DLAARCII37F100220171115.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/VI1DLAARCII37F100220171116.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/VI2DLAARCII37F100220171117.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/VO1DLAARCII37F100220171117.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/VO2DLAARCII37F100220171117.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/VU1DLAARCII37F100220171119.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/VU2DLAARCII37F100220171119.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/trimmed/VA1DLAARCII37F100220171114_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/trimmed/VA2DLAARCII37F100220171114_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/trimmed/VE1DLAARCII37F100220171115_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/trimmed/VE2DLAARCII37F100220171115_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/trimmed/VI1DLAARCII37F100220171116_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/trimmed/VI2DLAARCII37F100220171117_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/trimmed/VO1DLAARCII37F100220171117_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/trimmed/VO2DLAARCII37F100220171117_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/trimmed/VU1DLAARCII37F100220171119_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Daria L/trimmed/VU2DLAARCII37F100220171119_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Giustina M/VA1GMIAUSST39F100220171159.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Giustina M/VE1GMIAUSST39F100220171159.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Giustina M/VI1GMIAUSST39F100220171200.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Giustina M/VO1GMIAUSST39F100220171200.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Giustina M/VU1GMIAUSST39F100220171200.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Giustina M/trimmed/VA1GMIAUSST39F100220171159_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Giustina M/trimmed/VE1GMIAUSST39F100220171159_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Giustina M/trimmed/VI1GMIAUSST39F100220171200_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Giustina M/trimmed/VO1GMIAUSST39F100220171200_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Giustina M/trimmed/VU1GMIAUSST39F100220171200_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/VA1MBAUROIN45M100220171007.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/VA2MBAUROIN45M100220171008.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/VE1MBAUROIN45M100220171009.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/VE2MBAUROIN45M100220171009.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/VI1MBAUROIN45M100220171009.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/VI2MBAUROIN45M100220171010.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/VO1MBAUROIN45M100220171010.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/VO2MBAUROIN45M100220171011.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/VU1MBAUROIN45M100220171011.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/VU2MBAUROIN45M100220171011.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/trimmed/VA1MBAUROIN45M100220171007_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/trimmed/VA2MBAUROIN45M100220171008_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/trimmed/VE1MBAUROIN45M100220171009_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/trimmed/VE2MBAUROIN45M100220171009_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/trimmed/VI1MBAUROIN45M100220171009_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/trimmed/VI2MBAUROIN45M100220171010_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/trimmed/VO1MBAUROIN45M100220171010_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/trimmed/VO2MBAUROIN45M100220171011_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/trimmed/VU1MBAUROIN45M100220171011_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Mario B/trimmed/VU2MBAUROIN45M100220171011_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/VA1NMIICNOO52M100220171136.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/VA2NMIICNOO52M100220171137.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/VE1NMIICNOO52M100220171138.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/VE2NMIICNOO52M100220171139.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/VI1NMIICNOO52M100220171139.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/VI2NMIICNOO52M100220171140.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/VO1NMIICNOO52M100220171140.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/VO2NMIICNOO52M100220171140.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/VU1NMIICNOO52M100220171141.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/VU2NMIICNOO52M100220171142.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/trimmed/VA1NMIICNOO52M100220171136_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/trimmed/VA2NMIICNOO52M100220171137_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/trimmed/VE1NMIICNOO52M100220171138_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/trimmed/VE2NMIICNOO52M100220171139_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/trimmed/VI1NMIICNOO52M100220171139_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/trimmed/VI2NMIICNOO52M100220171140_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/trimmed/VO1NMIICNOO52M100220171140_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/trimmed/VO2NMIICNOO52M100220171140_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/trimmed/VU1NMIICNOO52M100220171141_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicola M/trimmed/VU2NMIICNOO52M100220171142_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/VA1NCIICAOC52M100220171239.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/VA2NCIICAOC52M100220171240.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/VE1NCIICAOC52M100220171240.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/VE2NCIICAOC52M100220171240.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/VI1NCIICAOC52M100220171241.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/VI2NCIICAOC52M100220171241.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/VO1NCIICAOC52M100220171242.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/VO2NCIICAOC52M100220171243.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/VU1NCIICAOC52M100220171243.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/VU2NCIICAOC52M100220171244.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/trimmed/VA1NCIICAOC52M100220171239_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/trimmed/VA2NCIICAOC52M100220171240_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/trimmed/VE1NCIICAOC52M100220171240_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/trimmed/VE2NCIICAOC52M100220171240_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/trimmed/VI1NCIICAOC52M100220171241_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/trimmed/VI2NCIICAOC52M100220171241_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/trimmed/VO1NCIICAOC52M100220171242_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/trimmed/VO2NCIICAOC52M100220171243_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/trimmed/VU1NCIICAOC52M100220171243_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Nicolò C/trimmed/VU2NCIICAOC52M100220171244_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/VA1VLIAT OP47M100220171318.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/VA2VLIAT OP47M100220171318.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/VE1VLIAT OP47M100220171319.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/VE2VLIAT OP47M100220171319.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/VI1VLIAT OP47M100220171319.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/VI2VLIAT OP47M100220171320.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/VO1VLIAT OP47M100220171320.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/VO2VLIAT OP47M100220171320.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/VU1VLIAT OP47M100220171321.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/VU2VLIAT OP47M100220171321.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/trimmed/VA1VLIAT OP47M100220171318_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/trimmed/VA2VLIAT OP47M100220171318_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/trimmed/VE1VLIAT OP47M100220171319_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/trimmed/VE2VLIAT OP47M100220171319_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/trimmed/VI1VLIAT OP47M100220171319_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/trimmed/VI2VLIAT OP47M100220171320_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/trimmed/VO1VLIAT OP47M100220171320_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/trimmed/VO2VLIAT OP47M100220171320_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/trimmed/VU1VLIAT OP47M100220171321_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito L/trimmed/VU2VLIAT OP47M100220171321_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/VA1VSIOTLOP47M100220171331.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/VA2VSIOTLOP47M100220171332.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/VE1VSIOTLOP47M100220171332.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/VE2VSIOTLOP47M100220171333.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/VI1VSIOTLOP47M100220171334.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/VI2VSIOTLOP47M100220171334.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/VO1VSIOTLOP47M100220171335.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/VO2VSIOTLOP47M100220171335.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/VU1VSIOTLOP47M100220171336.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/VU2VSIOTLOP47M100220171336.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/trimmed/VA1VSIOTLOP47M100220171331_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/trimmed/VA2VSIOTLOP47M100220171332_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/trimmed/VE1VSIOTLOP47M100220171332_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/trimmed/VE2VSIOTLOP47M100220171333_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/trimmed/VI1VSIOTLOP47M100220171334_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/trimmed/VI2VSIOTLOP47M100220171334_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/trimmed/VO1VSIOTLOP47M100220171335_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/trimmed/VO2VSIOTLOP47M100220171335_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/trimmed/VU1VSIOTLOP47M100220171336_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/test/peopleWithParkinson/Vito S/trimmed/VU2VSIOTLOP47M100220171336_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/VA1APNITNOT56F230320170850.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/VA2APNITNOT56F230320170851.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/VE1APNITNOT56F230320170851.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/VE2APNITNOT56F230320170852.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/VI1APNITNOT56F230320170852.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/VI2APNITNOT56F230320170853.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/VO1APNITNOT56F230320170854.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/VO2APNITNOT56F230320170854.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/VU1APNITNOT56F230320170855.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/VU2APNITNOT56F230320170855.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/trimmed/VA1APNITNOT56F230320170850_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/trimmed/VA2APNITNOT56F230320170851_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/trimmed/VE1APNITNOT56F230320170851_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/trimmed/VE2APNITNOT56F230320170852_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/trimmed/VI1APNITNOT56F230320170852_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/trimmed/VI2APNITNOT56F230320170853_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/trimmed/VO1APNITNOT56F230320170854_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/trimmed/VO2APNITNOT56F230320170854_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/trimmed/VU1APNITNOT56F230320170855_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIETTA P/trimmed/VU2APNITNOT56F230320170855_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/VA1ACNUTCOC40M230320171125.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/VA2ACNUTCOC40M230320171125.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/VE1ACNUTCOC40M230320171126.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/VE2ACNUTCOC40M230320171126.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/VI1ACNUTCOC40M230320171126.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/VI2ACNUTCOC40M230320171126.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/VO1ACNUTCOC40M230320171127.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/VO2ACNUTCOC40M230320171127.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/VU1ACNUTCOC40M230320171128.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/VU2ACNUTCOC40M230320171128.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/trimmed/VA1ACNUTCOC40M230320171125_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/trimmed/VA2ACNUTCOC40M230320171125_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/trimmed/VE1ACNUTCOC40M230320171126_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/trimmed/VE2ACNUTCOC40M230320171126_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/trimmed/VI1ACNUTCOC40M230320171126_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/trimmed/VI2ACNUTCOC40M230320171126_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/trimmed/VO1ACNUTCOC40M230320171127_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/trimmed/VO2ACNUTCOC40M230320171127_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/trimmed/VU1ACNUTCOC40M230320171128_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/ANTONIO C/trimmed/VU2ACNUTCOC40M230320171128_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/VA1BCRAISGS48F210320171005.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/VA2BCRAISGS48F210320171005.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/VE1BCRAISGS48F210320171006.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/VE2BCRAISGS48F210320171006.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/VI1BCRAISGS48F210320171007.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/VI2BCRAISGS48F210320171007.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/VO1BCRAISGS48F210320171007.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/VO2BCRAISGS48F210320171008.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/VU1BCRAISGS48F210320171009.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/VU2BCRAISGS48F210320171010.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/trimmed/VA1BCRAISGS48F210320171005_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/trimmed/VA2BCRAISGS48F210320171005_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/trimmed/VE1BCRAISGS48F210320171006_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/trimmed/VE2BCRAISGS48F210320171006_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/trimmed/VI1BCRAISGS48F210320171007_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/trimmed/VI2BCRAISGS48F210320171007_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/trimmed/VO1BCRAISGS48F210320171007_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/trimmed/VO2BCRAISGS48F210320171008_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/trimmed/VU1BCRAISGS48F210320171009_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/BRIGIDA C/trimmed/VU2BCRAISGS48F210320171010_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/VA1GCIALSDA52F170320171127.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/VA2GCIALSDA52F170320171127.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/VE1GCIALSDA52F170320171127.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/VE2GCIALSDA52F170320171128.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/VI1GCIALSDA52F170320171128.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/VI2GCIALSDA52F170320171129.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/VO1GCIALSDA52F170320171129.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/VO2GCIALSDA52F170320171130.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/VU1GCIALSDA52F170320171130.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/VU2GCIALSDA52F170320171130.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/trimmed/VA1GCIALSDA52F170320171127_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/trimmed/VA2GCIALSDA52F170320171127_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/trimmed/VE1GCIALSDA52F170320171127_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/trimmed/VE2GCIALSDA52F170320171128_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/trimmed/VI1GCIALSDA52F170320171128_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/trimmed/VI2GCIALSDA52F170320171129_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/trimmed/VO1GCIALSDA52F170320171129_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/trimmed/VO2GCIALSDA52F170320171130_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/trimmed/VU1GCIALSDA52F170320171130_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GILDA C/trimmed/VU2GCIALSDA52F170320171130_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/VA1GGIAORVG47F300320171212.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/VA2GGIAORVG47F300320171213.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/VE1GGIAORVG47F300320171213.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/VE2GGIAORVG47F300320171214.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/VI1GGIAORVG47F300320171214.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/VI2GGIAORVG47F300320171214.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/VO1GGIAORVG47F300320171214.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/VO2GGIAORVG47F300320171215.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/VU1GGIAORVG47F300320171215.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/VU2GGIAORVG47F300320171215.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/trimmed/VA1GGIAORVG47F300320171212_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/trimmed/VA2GGIAORVG47F300320171213_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/trimmed/VE1GGIAORVG47F300320171213_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/trimmed/VE2GGIAORVG47F300320171214_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/trimmed/VI1GGIAORVG47F300320171214_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/trimmed/VI2GGIAORVG47F300320171214_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/trimmed/VO1GGIAORVG47F300320171214_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/trimmed/VO2GGIAORVG47F300320171215_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/trimmed/VU1GGIAORVG47F300320171215_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNA G/trimmed/VU2GGIAORVG47F300320171215_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/VA1GBIAORVI48M230320171236.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/VA2GBIAORVI48M230320171236.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/VE1GBIAORVI48M230320171236.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/VE2GBIAORVI48M230320171237.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/VI1GBIAORVI48M230320171237.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/VI2GBIAORVI48M230320171238.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/VO1GBIAORVI48M230320171238.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/VO2GBIAORVI48M230320171239.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/VU1GBIAORVI48M230320171239.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/VU2GBIAORVI48M230320171239.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/trimmed/VA1GBIAORVI48M230320171236_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/trimmed/VA2GBIAORVI48M230320171236_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/trimmed/VE1GBIAORVI48M230320171236_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/trimmed/VE2GBIAORVI48M230320171237_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/trimmed/VI1GBIAORVI48M230320171237_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/trimmed/VI2GBIAORVI48M230320171238_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/trimmed/VO1GBIAORVI48M230320171238_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/trimmed/VO2GBIAORVI48M230320171239_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/trimmed/VU1GBIAORVI48M230320171239_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GIOVANNI B/trimmed/VU2GBIAORVI48M230320171239_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/VA1GGRIAUZL45F020420171821.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/VA2GGRIAUZL45F020420171821.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/VE1GGRIAUZL45F020420171822.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/VE2GGRIAUZL45F020420171822.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/VI1GGRIAUZL45F020420171822.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/VI2GGRIAUZL45F020420171823.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/VO1GGRIAUZL45F020420171823.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/VO2GGRIAUZL45F020420171823.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/VU1GGRIAUZL45F020420171824.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/VU2GGRIAUZL45F020420171824.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/trimmed/VA1GGRIAUZL45F020420171821_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/trimmed/VA2GGRIAUZL45F020420171821_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/trimmed/VE1GGRIAUZL45F020420171822_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/trimmed/VE2GGRIAUZL45F020420171822_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/trimmed/VI1GGRIAUZL45F020420171822_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/trimmed/VI2GGRIAUZL45F020420171823_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/trimmed/VO1GGRIAUZL45F020420171823_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/trimmed/VO2GGRIAUZL45F020420171823_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/trimmed/VU1GGRIAUZL45F020420171824_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/GRAZIA G/trimmed/VU2GGRIAUZL45F020420171824_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/VA1LFEIOONR57F210320171126.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/VA2LFEIOONR57F210320171126.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/VE1LFEIOONR57F210320171126.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/VE2LFEIOONR57F210320171127.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/VI1LFEIOONR57F210320171127.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/VI2LFEIOONR57F210320171127.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/VO1LFEIOONR57F210320171128.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/VO2LFEIOONR57F210320171128.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/VU1LFEIOONR57F210320171128.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/VU2LFEIOONR57F210320171128.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/trimmed/VA1LFEIOONR57F210320171126_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/trimmed/VA2LFEIOONR57F210320171126_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/trimmed/VE1LFEIOONR57F210320171126_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/trimmed/VE2LFEIOONR57F210320171127_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/trimmed/VI1LFEIOONR57F210320171127_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/trimmed/VI2LFEIOONR57F210320171127_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/trimmed/VO1LFEIOONR57F210320171128_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/trimmed/VO2LFEIOONR57F210320171128_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/trimmed/VU1LFEIOONR57F210320171128_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LEONARDA F/trimmed/VU2LFEIOONR57F210320171128_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/VA1GLIIUSSC57M210320171052.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/VA2GLIIUSSC57M210320171053.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/VE1GLIIUSSC57M210320171053.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/VE2GLIIUSSC57M210320171053.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/VI1GLIIUSSC57M210320171054.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/VI2GLIIUSSC57M210320171054.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/VO1GLIIUSSC57M210320171055.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/VO2GLIIUSSC57M210320171055.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/VU1GLIIUSSC57M210320171055.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/VU2GLIIUSSC57M210320171056.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/trimmed/VA1GLIIUSSC57M210320171052_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/trimmed/VA2GLIIUSSC57M210320171053_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/trimmed/VE1GLIIUSSC57M210320171053_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/trimmed/VE2GLIIUSSC57M210320171053_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/trimmed/VI1GLIIUSSC57M210320171054_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/trimmed/VI2GLIIUSSC57M210320171054_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/trimmed/VO1GLIIUSSC57M210320171055_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/trimmed/VO2GLIIUSSC57M210320171055_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/trimmed/VU1GLIIUSSC57M210320171055_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LISCO G/trimmed/VU2GLIIUSSC57M210320171056_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/VA1LPUUITGI41M230320171111.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/VA2LPUUITGI41M230320171111.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/VE1LPUUITGI41M230320171112.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/VE2LPUUITGI41M230320171112.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/VI1LPUUITGI41M230320171113.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/VI2LPUUITGI41M230320171113.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/VO1LPUUITGI41M230320171113.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/VO2LPUUITGI41M230320171113.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/VU1LPUUITGI41M230320171114.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/VU2LPUUITGI41M230320171114.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/trimmed/VA1LPUUITGI41M230320171111_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/trimmed/VA2LPUUITGI41M230320171111_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/trimmed/VE1LPUUITGI41M230320171112_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/trimmed/VE2LPUUITGI41M230320171112_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/trimmed/VI1LPUUITGI41M230320171113_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/trimmed/VI2LPUUITGI41M230320171113_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/trimmed/VO1LPUUITGI41M230320171113_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/trimmed/VO2LPUUITGI41M230320171113_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/trimmed/VU1LPUUITGI41M230320171114_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/LUIGI P/trimmed/VU2LPUUITGI41M230320171114_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/VA1MPAERRIR56F300320171146.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/VA2MPAERRIR56F300320171146.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/VE1MPAERRIR56F300320171147.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/VE2MPAERRIR56F300320171147.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/VI1MPAERRIR56F300320171147.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/VI2MPAERRIR56F300320171148.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/VO1MPAERRIR56F300320171148.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/VO2MPAERRIR56F300320171148.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/VU1MPAERRIR56F300320171149.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/VU2MPAERRIR56F300320171149.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/trimmed/VA1MPAERRIR56F300320171146_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/trimmed/VA2MPAERRIR56F300320171146_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/trimmed/VE1MPAERRIR56F300320171147_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/trimmed/VE2MPAERRIR56F300320171147_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/trimmed/VI1MPAERRIR56F300320171147_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/trimmed/VI2MPAERRIR56F300320171148_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/trimmed/VO1MPAERRIR56F300320171148_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/trimmed/VO2MPAERRIR56F300320171148_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/trimmed/VU1MPAERRIR56F300320171149_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MARIACRISTINA P/trimmed/VU2MPAERRIR56F300320171149_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/VA1MGIACTHT49M210320170855.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/VA2MGIACTHT49M210320170856.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/VE1MGIACTHT49M210320170856.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/VE2MGIACTHT49M210320170857.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/VI1MGIACTHT49M210320170859.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/VI2MGIACTHT49M210320170859.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/VO1MGIACTHT49M210320170859.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/VO2MGIACTHT49M210320170900.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/VU1MGIACTHT49M210320170900.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/VU2MGIACTHT49M210320170901.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/trimmed/VA1MGIACTHT49M210320170855_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/trimmed/VA2MGIACTHT49M210320170856_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/trimmed/VE1MGIACTHT49M210320170856_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/trimmed/VE2MGIACTHT49M210320170857_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/trimmed/VI1MGIACTHT49M210320170859_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/trimmed/VI2MGIACTHT49M210320170859_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/trimmed/VO1MGIACTHT49M210320170859_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/trimmed/VO2MGIACTHT49M210320170900_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/trimmed/VU1MGIACTHT49M210320170900_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/MICHELE G/trimmed/VU2MGIACTHT49M210320170901_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/VA1NPIICEOR42M020420171808.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/VA2NPIICEOR42M020420171809.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/VE1NPIICEOR42M020420171810.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/VE2NPIICEOR42M020420171810.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/VI1NPIICEOR42M020420171811.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/VI2NPIICEOR42M020420171811.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/VO1NPIICEOR42M020420171811.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/VO2NPIICEOR42M020420171811.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/VU1NPIICEOR42M020420171812.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/VU2NPIICEOR42M020420171812.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/trimmed/VA1NPIICEOR42M020420171808_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/trimmed/VA2NPIICEOR42M020420171809_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/trimmed/VE1NPIICEOR42M020420171810_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/trimmed/VE2NPIICEOR42M020420171810_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/trimmed/VI1NPIICEOR42M020420171811_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/trimmed/VI2NPIICEOR42M020420171811_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/trimmed/VO1NPIICEOR42M020420171811_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/trimmed/VO2NPIICEOR42M020420171811_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/trimmed/VU1NPIICEOR42M020420171812_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/NICOLA P/trimmed/VU2NPIICEOR42M020420171812_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/VA1APNOTROC49M230320170928.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/VA2APNOTROC49M230320170929.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/VE1APNOTROC49M230320170929.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/VE2APNOTROC49M230320170930.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/VI1APNOTROC49M230320170930.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/VI2APNOTROC49M230320170930.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/VO1APNOTROC49M230320170931.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/VO2APNOTROC49M230320170931.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/VU1APNOTROC49M230320170932.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/VU2APNOTROC49M230320170932.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/trimmed/VA1APNOTROC49M230320170928_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/trimmed/VA2APNOTROC49M230320170929_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/trimmed/VE1APNOTROC49M230320170929_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/trimmed/VE2APNOTROC49M230320170930_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/trimmed/VI1APNOTROC49M230320170930_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/trimmed/VI2APNOTROC49M230320170930_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/trimmed/VO1APNOTROC49M230320170931_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/trimmed/VO2APNOTROC49M230320170931_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/trimmed/VU1APNOTROC49M230320170932_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/PORCELLI A/trimmed/VU2APNOTROC49M230320170932_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/VA1LSUUIMGM48F230320171053.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/VA2LSUUIMGM48F230320171053.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/VE1LSUUIMGM48F230320171054.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/VE2LSUUIMGM48F230320171054.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/VI1LSUUIMGM48F230320171055.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/VI2LSUUIMGM48F230320171055.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/VO1LSUUIMGM48F230320171056.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/VO2LSUUIMGM48F230320171056.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/VU1LSUUIMGM48F230320171057.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/VU2LSUUIMGM48F230320171057.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/trimmed/VA1LSUUIMGM48F230320171053_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/trimmed/VA2LSUUIMGM48F230320171053_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/trimmed/VE1LSUUIMGM48F230320171054_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/trimmed/VE2LSUUIMGM48F230320171054_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/trimmed/VI1LSUUIMGM48F230320171055_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/trimmed/VI2LSUUIMGM48F230320171055_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/trimmed/VO1LSUUIMGM48F230320171056_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/trimmed/VO2LSUUIMGM48F230320171056_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/trimmed/VU1LSUUIMGM48F230320171057_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/elderlyHealthyControl/SUMMO L/trimmed/VU2LSUUIMGM48F230320171057_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/VA1cdaopmoe67M2605161906.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/VA2cdaopmoe67M2605161907.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/VE1cdaopmoe67M2605161909.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/VE2cdaopmoe67M2605161909.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/VI1cdaopmoe67M2605161910.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/VI2cdaopmoe67M2605161911.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/VO1cdaopmoe67M2605161911.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/VO2cdaopmoe67M2605161912.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/VU1cdaopmoe67M2605161913.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/VU2cdaopmoe67M2605161913.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/trimmed/VA1cdaopmoe67M2605161906_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/trimmed/VA2cdaopmoe67M2605161907_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/trimmed/VE1cdaopmoe67M2605161909_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/trimmed/VE2cdaopmoe67M2605161909_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/trimmed/VI1cdaopmoe67M2605161910_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/trimmed/VI2cdaopmoe67M2605161911_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/trimmed/VO1cdaopmoe67M2605161911_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/trimmed/VO2cdaopmoe67M2605161912_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/trimmed/VU1cdaopmoe67M2605161913_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Domenico C/trimmed/VU2cdaopmoe67M2605161913_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/VA1cfaerlei54F2605161745.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/VA2cfaerlei54F2605161745.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/VE1cfaerlei54F2605161747.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/VE2cfaerlei54F2605161748.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/VI1cfaerlei54F2605161751.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/VI2cfaerlei54F2605161752.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/VO1cfaerlei54F2605161755.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/VO2cfaerlei54F2605161756.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/VU1cfaerlei54F2605161808.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/VU2cfaerlei54F2605161810.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VA1cfaerlei54F2605161745_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VA1cfaerlei54F2605161745_trimmed1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VA1cfaerlei54F2605161745_trimmed2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VA1cfaerlei54F2605161745_trimmed3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VA2cfaerlei54F2605161745_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VE1cfaerlei54F2605161747_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VE1cfaerlei54F2605161747_trimmed1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VE2cfaerlei54F2605161748_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VI1cfaerlei54F2605161751_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VI2cfaerlei54F2605161752_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VO1cfaerlei54F2605161755_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VO1cfaerlei54F2605161755_trimmed1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VO2cfaerlei54F2605161756_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VU1cfaerlei54F2605161808_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Felicetta C/trimmed/VU2cfaerlei54F2605161810_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/VA1GMIAOSVI44M100220170946.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/VA2GMIAOSVI44M100220170946.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/VE1GMIAOSVI44M100220170947.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/VE2GMIAOSVI44M100220170947.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/VI1GMIAOSVI44M100220170948.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/VI2GMIAOSVI44M100220170948.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/VO1GMIAOSVI44M100220170948.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/VO2GMIAOSVI44M100220170949.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/VU1GMIAOSVI44M100220170949.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/VU2GMIAOSVI44M100220170949.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/trimmed/VA1GMIAOSVI44M100220170946_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/trimmed/VA2GMIAOSVI44M100220170946_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/trimmed/VE1GMIAOSVI44M100220170947_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/trimmed/VE2GMIAOSVI44M100220170947_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/trimmed/VI1GMIAOSVI44M100220170948_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/trimmed/VI2GMIAOSVI44M100220170948_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/trimmed/VO1GMIAOSVI44M100220170948_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/trimmed/VO2GMIAOSVI44M100220170949_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/trimmed/VU1GMIAOSVI44M100220170949_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni M/trimmed/VU2GMIAOSVI44M100220170949_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/VA1GNIEOGVL47M100220171216.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/VA2GNIEOGVL47M100220171217.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/VE1GNIEOGVL47M100220171217.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/VE2GNIEOGVL47M100220171217.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/VI1GNIEOGVL47M100220171218.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/VI2GNIEOGVL47M100220171219.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/VO1GNIEOGVL47M100220171223.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/VO2GNIEOGVL47M100220171224.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/VU1GNIEOGVL47M100220171224.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/VU2GNIEOGVL47M100220171224.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/trimmed/VA1GNIEOGVL47M100220171216_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/trimmed/VA2GNIEOGVL47M100220171217_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/trimmed/VE1GNIEOGVL47M100220171217_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/trimmed/VE2GNIEOGVL47M100220171217_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/trimmed/VI1GNIEOGVL47M100220171218_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/trimmed/VI2GNIEOGVL47M100220171219_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/trimmed/VO1GNIEOGVL47M100220171223_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/trimmed/VO2GNIEOGVL47M100220171224_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/trimmed/VU1GNIEOGVL47M100220171224_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giovanni N/trimmed/VU2GNIEOGVL47M100220171224_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/VA1GLIAUDLO50F100220171301.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/VA2GLIAUDLO50F100220171301.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/VE1GLIAUDLO50F100220171302.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/VE2GLIAUDLO50F100220171302.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/VI1GLIAUDLO50F100220171303.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/VI2GLIAUDLO50F100220171303.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/VO1GLIAUDLO50F100220171304.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/VO2GLIAUDLO50F100220171304.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/VU1GLIAUDLO50F100220171305.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/VU2GLIAUDLO50F100220171306.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/trimmed/VA1GLIAUDLO50F100220171301_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/trimmed/VA2GLIAUDLO50F100220171301_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/trimmed/VE1GLIAUDLO50F100220171302_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/trimmed/VE2GLIAUDLO50F100220171302_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/trimmed/VI1GLIAUDLO50F100220171303_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/trimmed/VI2GLIAUDLO50F100220171303_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/trimmed/VO1GLIAUDLO50F100220171304_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/trimmed/VO2GLIAUDLO50F100220171304_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/trimmed/VU1GLIAUDLO50F100220171305_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia L/trimmed/VU2GLIAUDLO50F100220171306_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/VA1GPIUUGLL63F100220171023.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/VA2GPIUUGLL63F100220171024.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/VE1GPIUUGLL63F100220171024.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/VE2GPIUUGLL63F100220171025.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/VI1GPIUUGLL63F100220171025.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/VI2GPIUUGLL63F100220171026.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/VO1GPIUUGLL63F100220171026.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/VO2GPIUUGLL63F100220171027.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/VU1GPIUUGLL63F100220171027.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/VU2GPIUUGLL63F100220171027.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/trimmed/VA1GPIUUGLL63F100220171023_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/trimmed/VA2GPIUUGLL63F100220171024_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/trimmed/VE1GPIUUGLL63F100220171024_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/trimmed/VE2GPIUUGLL63F100220171025_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/trimmed/VI1GPIUUGLL63F100220171025_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/trimmed/VI2GPIUUGLL63F100220171026_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/trimmed/VO1GPIUUGLL63F100220171026_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/trimmed/VO2GPIUUGLL63F100220171027_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/trimmed/VU1GPIUUGLL63F100220171027_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Giulia P/trimmed/VU2GPIUUGLL63F100220171027_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/VA1lloeroun56F2605161926.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/VA2lloeroun56F2605161927.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/VE1lloeroun56F2605161927.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/VE2lloeroun56F2605161928.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/VI1lloeroun56F2605161929.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/VI2lloeroun56F2605161930.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/VO1lloeroun56F2605161931.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/VO2lloeroun56F2605161931.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/VU1lloeroun56F2605161932.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/VU2lloeroun56F2605161933.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/trimmed/VA1lloeroun56F2605161926_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/trimmed/VA2lloeroun56F2605161927_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/trimmed/VE1lloeroun56F2605161927_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/trimmed/VE2lloeroun56F2605161928_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/trimmed/VI1lloeroun56F2605161929_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/trimmed/VI2lloeroun56F2605161930_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/trimmed/VO1lloeroun56F2605161931_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/trimmed/VO2lloeroun56F2605161931_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/trimmed/VU1lloeroun56F2605161932_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Leonarda L/trimmed/VU2lloeroun56F2605161933_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/VA1rlouscsi77F2605161825.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/VA2rlouscsi77F2605161825.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/VE1rlouscsi77F2605161826.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/VE2rlouscsi77F2605161826.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/VI1rlouscsi77F2605161827.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/VI2rlouscsi77F2605161828.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/VO1rlouscsi77F2605161828.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/VO2rlouscsi77F2605161829.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/VU1rlouscsi77F2605161830.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/VU2rlouscsi77F2605161830.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VA1rlouscsi77F2605161825_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VA2rlouscsi77F2605161825_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VA2rlouscsi77F2605161825_trimmed1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VE1rlouscsi77F2605161826_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VE2rlouscsi77F2605161826_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VI1rlouscsi77F2605161827_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VI2rlouscsi77F2605161828_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VO1rlouscsi77F2605161828_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VO2rlouscsi77F2605161829_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VU1rlouscsi77F2605161830_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Lucia R/trimmed/VU2rlouscsi77F2605161830_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/VA1lbuairgo52M1606161813.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/VA2lbuairgo52M1606161814.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/VE1lbuairgo52M1606161815.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/VE2lbuairgo52M1606161815.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/VI1lbuairgo52M1606161816.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/VI2lbuairgo52M1606161816.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/VO1lbuairgo52M1606161817.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/VO2lbuairgo52M1606161817.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/VU1lbuairgo52M1606161819.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/VU2lbuairgo52M1606161820.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/trimmed/VA1lbuairgo52M1606161813_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/trimmed/VA2lbuairgo52M1606161814_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/trimmed/VE1lbuairgo52M1606161815_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/trimmed/VE2lbuairgo52M1606161815_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/trimmed/VI1lbuairgo52M1606161816_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/trimmed/VI2lbuairgo52M1606161816_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/trimmed/VO1lbuairgo52M1606161817_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/trimmed/VO2lbuairgo52M1606161817_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/trimmed/VU1lbuairgo52M1606161819_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Luigi B/trimmed/VU2lbuairgo52M1606161820_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/VA1MCIICLHL46M240120171830.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/VA2MCIICLHL46M240120171829.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/VE1MCIICLHL46M240120171830.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/VE2MCIICLHL46M240120171831.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/VI1MCIICLHL46M240120171831.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/VI2MCIICLHL46M240120171832.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/VO1MCIICLHL46M240120171833.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/VO2MCIICLHL46M240120171834.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/VU1MCIICLHL46M240120171834.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/VU2MCIICLHL46M240120171835.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/trimmed/VA1MCIICLHL46M240120171830_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/trimmed/VA2MCIICLHL46M240120171829_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/trimmed/VE1MCIICLHL46M240120171830_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/trimmed/VE2MCIICLHL46M240120171831_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/trimmed/VI1MCIICLHL46M240120171831_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/trimmed/VI2MCIICLHL46M240120171832_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/trimmed/VO1MCIICLHL46M240120171833_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/trimmed/VO2MCIICLHL46M240120171834_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/trimmed/VU1MCIICLHL46M240120171834_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Michele C/trimmed/VU2MCIICLHL46M240120171835_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/VA1sncihcio44M1606161720.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/VA2sncihcio44M1606161721.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/VE1sncihcio44M1606161721.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/VE2sncihcio44M1606161722.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/VI1sncihcio44M1606161722.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/VI2sncihcio44M1606161722.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/VO1sncihcio44M1606161723.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/VO2sncihcio44M1606161723.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/VU1sncihcio44M1606161724.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/VU2sncihcio44M1606161725.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/trimmed/VA1sncihcio44M1606161720_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/trimmed/VA2sncihcio44M1606161721_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/trimmed/VE1sncihcio44M1606161721_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/trimmed/VE2sncihcio44M1606161722_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/trimmed/VI1sncihcio44M1606161722_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/trimmed/VI2sncihcio44M1606161722_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/trimmed/VO1sncihcio44M1606161723_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/trimmed/VO2sncihcio44M1606161723_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/trimmed/VU1sncihcio44M1606161724_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S/trimmed/VU2sncihcio44M1606161725_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/VA1NSICCHOI44M240120171845.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/VA2NSICCHOI44M240120171846.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/VE1NSICCHOI44M240120171847.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/VE2NSICCHOI44M240120171847.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/VI1NSICCHOI44M240120171848.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/VI2NSICCHOI44M240120171848.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/VO1NSICCHOI44M240120171848.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/VO2NSICCHOI44M240120171849.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/VU1NSICCHOI44M240120171849.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/VU2NSICCHOI44M240120171850.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/trimmed/VA1NSICCHOI44M240120171845_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/trimmed/VA2NSICCHOI44M240120171846_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/trimmed/VE1NSICCHOI44M240120171847_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/trimmed/VE2NSICCHOI44M240120171847_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/trimmed/VI1NSICCHOI44M240120171848_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/trimmed/VI2NSICCHOI44M240120171848_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/trimmed/VO1NSICCHOI44M240120171848_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/trimmed/VO2NSICCHOI44M240120171849_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/trimmed/VU1NSICCHOI44M240120171849_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Nicola S2/trimmed/VU2NSICCHOI44M240120171850_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/VA1RLOABREE42M240120171947.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/VA2RLOABREE42M240120171947.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/VE1RLOABREE42M240120171948.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/VE2RLOABREE42M240120171949.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/VI1RLOABREE42M240120171949.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/VI2RLOABREE42M240120171950.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/VO1RLOABREE42M240120171950.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/VO2RLOABREE42M240120171951.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/VU1RLOABREE42M240120171951.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/VU2RLOABREE42M240120171952.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/trimmed/VA1RLOABREE42M240120171947_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/trimmed/VA2RLOABREE42M240120171947_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/trimmed/VE1RLOABREE42M240120171948_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/trimmed/VE2RLOABREE42M240120171949_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/trimmed/VI1RLOABREE42M240120171949_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/trimmed/VI2RLOABREE42M240120171950_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/trimmed/VO1RLOABREE42M240120171950_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/trimmed/VO2RLOABREE42M240120171951_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/trimmed/VU1RLOABREE42M240120171951_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto L/trimmed/VU2RLOABREE42M240120171952_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/VA1rriovbie49M2605161845.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/VA2rriovbie49M2605161845.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/VE1rriovbie49M2605161846.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/VE2rriovbie49M2605161846.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/VI1rriovbie49M2605161847.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/VI2rriovbie49M2605161848.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/VO1rriovbie49M2605161848.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/VO2rriovbie49M2605161849.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/VU1rriovbie49M2605161849.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/VU2rriovbie49M2605161850.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/trimmed/VA1rriovbie49M2605161845_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/trimmed/VA2rriovbie49M2605161845_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/trimmed/VE1rriovbie49M2605161846_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/trimmed/VE2rriovbie49M2605161846_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/trimmed/VI1rriovbie49M2605161847_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/trimmed/VI2rriovbie49M2605161848_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/trimmed/VO1rriovbie49M2605161848_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/trimmed/VO2rriovbie49M2605161849_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/trimmed/VU1rriovbie49M2605161849_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R/trimmed/VU2rriovbie49M2605161850_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/VA1RROIBVEI49M240120171904.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/VA2RROIBVEI49M240120171905.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/VE1RROIBVEI49M240120171906.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/VE2RROIBVEI49M240120171907.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/VI1RROIBVEI49M240120171908.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/VI2RROIBVEI49M240120171909.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/VO1RROIBVEI49M240120171910.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/VO2RROIBVEI49M240120171910.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/VU1RROIBVEI49M240120171911.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/VU2RROIBVEI49M240120171911.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/trimmed/VA1RROIBVEI49M240120171904_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/trimmed/VA2RROIBVEI49M240120171905_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/trimmed/VE1RROIBVEI49M240120171906_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/trimmed/VE2RROIBVEI49M240120171907_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/trimmed/VI1RROIBVEI49M240120171908_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/trimmed/VI2RROIBVEI49M240120171909_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/trimmed/VO1RROIBVEI49M240120171910_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/trimmed/VO2RROIBVEI49M240120171910_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/trimmed/VU1RROIBVEI49M240120171911_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Roberto R2/trimmed/VU2RROIBVEI49M240120171911_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/VA1ssacvhei61M1606161744.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/VA2ssacvhei61M1606161744.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/VE1ssacvhei61M1606161745.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/VE2ssacvhei61M1606161745.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/VI1ssacvhei61M1606161746.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/VI2ssacvhei61M1606161746.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/VO1ssacvhei61M1606161747.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/VO2ssacvhei61M1606161747.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/VU1ssacvhei61M1606161748.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/VU2ssacvhei61M1606161748.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/trimmed/VA1ssacvhei61M1606161744_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/trimmed/VA2ssacvhei61M1606161744_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/trimmed/VE1ssacvhei61M1606161745_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/trimmed/VE2ssacvhei61M1606161745_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/trimmed/VI1ssacvhei61M1606161746_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/trimmed/VI2ssacvhei61M1606161746_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/trimmed/VO1ssacvhei61M1606161747_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/trimmed/VO2ssacvhei61M1606161747_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/trimmed/VU1ssacvhei61M1606161748_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Saverio S/trimmed/VU2ssacvhei61M1606161748_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/VA1ubguot_t40M1606161759.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/VA2ubguot_t40M1606161759.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/VE1ubguot_t40M1606161800.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/VE2ubguot_t40M1606161801.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/VI1ubguot_t40M1606161801.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/VI2ubguot_t40M1606161802.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/VO1ubguot_t40M1606161802.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/VO2ubguot_t40M1606161803.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/VU1ubguot_t40M1606161803.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/VU2ubguot_t40M1606161804.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/trimmed/VA1ubguot_t40M1606161759_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/trimmed/VA2ubguot_t40M1606161759_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/trimmed/VE1ubguot_t40M1606161800_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/trimmed/VE2ubguot_t40M1606161801_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/trimmed/VI1ubguot_t40M1606161801_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/trimmed/VI2ubguot_t40M1606161802_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/trimmed/VO1ubguot_t40M1606161802_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/trimmed/VO2ubguot_t40M1606161803_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/trimmed/VU1ubguot_t40M1606161803_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Ugo B/trimmed/VU2ubguot_t40M1606161804_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/VA1vsiptioz46M1606161705.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/VA2vsiptioz46M1606161705.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/VE1vsiptioz46M1606161706.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/VE2vsiptioz46M1606161706.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/VI1vsiptioz46M1606161707.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/VI2vsiptioz46M1606161707.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/VO1vsiptioz46M1606161708.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/VO2vsiptioz46M1606161708.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/VU1vsiptioz46M1606161709.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/VU2vsiptioz46M1606161709.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/trimmed/VA1vsiptioz46M1606161705_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/trimmed/VA2vsiptioz46M1606161705_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/trimmed/VE1vsiptioz46M1606161706_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/trimmed/VE2vsiptioz46M1606161706_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/trimmed/VI1vsiptioz46M1606161707_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/trimmed/VI2vsiptioz46M1606161707_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/trimmed/VO1vsiptioz46M1606161708_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/trimmed/VO2vsiptioz46M1606161708_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/trimmed/VU1vsiptioz46M1606161709_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S/trimmed/VU2vsiptioz46M1606161709_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/VA1VSIPTIOZ46M240120171924.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/VA2VSIPTIOZ46M240120171925.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/VE1VSIPTIOZ46M240120171926.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/VE2VSIPTIOZ46M240120171927.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/VI1VSIPTIOZ46M240120171928.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/VI2VSIPTIOZ46M240120171928.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/VO1VSIPTIOZ46M240120171929.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/VO2VSIPTIOZ46M240120171930.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/VU1VSIPTIOZ46M240120171932.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/VU2VSIPTIOZ46M240120171932.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/trimmed/VA1VSIPTIOZ46M240120171924_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/trimmed/VA2VSIPTIOZ46M240120171925_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/trimmed/VE1VSIPTIOZ46M240120171926_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/trimmed/VE2VSIPTIOZ46M240120171927_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/trimmed/VI1VSIPTIOZ46M240120171928_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/trimmed/VI2VSIPTIOZ46M240120171928_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/trimmed/VO1VSIPTIOZ46M240120171929_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/trimmed/VO2VSIPTIOZ46M240120171930_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/trimmed/VU1VSIPTIOZ46M240120171932_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasetPeopleVowels7030/train/peopleWithParkinson/Vito S2/trimmed/VU2VSIPTIOZ46M240120171932_trimmed0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plotNetwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tikzmake.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Trimming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Trimming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioClassifier2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifier2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioClassifierCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifierCNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioClassifierML.py" beforeDir="false" afterPath="$PROJECT_DIR$/AudioClassifierML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/B1_mono_pcm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/datasetNew/elderlyHealthyControl/GiovannaAnaclerio/mono_pcm/B1_mono_pcm.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/B1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed0.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed11.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed12.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed13.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed14.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed15.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed16.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed17.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed18.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed19.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed20.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed21.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed22.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed23.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed24.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed25.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed26.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed27.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed28.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed29.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed30.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed31.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed6.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed8.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasetNew/youngHealthyControl/MireaLuisi/trimmed/B1_trimmed9.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extractFeature.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractFeature.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languageDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/languageDetection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/featureExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/featureExtraction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predictCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictCNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1104,6 +66,7 @@
     "Python.explainability.executor": "Run",
     "Python.extractFeature.executor": "Run",
     "Python.featureExtraction.executor": "Debug",
+    "Python.hello.executor": "Run",
     "Python.languageDetection.executor": "Run",
     "Python.lazy.executor": "Run",
     "Python.lexycometricAnalysis.executor": "Run",
@@ -1124,13 +87,13 @@
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/rubin/OneDrive/Desktop/Universita/Terzo_anno/Secondo_semestre/Tesi/Trimming/datasetNew/youngHealthyControl/SergioPinto",
+    "last_opened_file_path": "C:/Users/rubin/Desktop/Universita/Terzo_anno/Secondo_semestre/Parkinsons-detection",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -1150,11 +113,28 @@
       <recent name="C:\Users\rubin\OneDrive\Desktop\Universita\Terzo_anno\Secondo_semestre\Tesi\Trimming\models" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="powershell.exe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
-        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
+        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
       </set>
     </attachedChunks>
   </component>
@@ -1369,11 +349,30 @@
       <workItem from="1719942090046" duration="13000" />
       <workItem from="1721639867787" duration="1222000" />
       <workItem from="1722353281522" duration="3455000" />
+      <workItem from="1722669032228" duration="1619000" />
+      <workItem from="1722671099842" duration="2401000" />
+      <workItem from="1722679075030" duration="328000" />
+      <workItem from="1722679544785" duration="228000" />
+      <workItem from="1722679785963" duration="521000" />
+      <workItem from="1722680575499" duration="787000" />
+      <workItem from="1722682071645" duration="3615000" />
+      <workItem from="1722687538111" duration="1694000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -1395,28 +394,32 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Trimming$predict.coverage" NAME="predict Coverage Results" MODIFIED="1711659536307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$.coverage" NAME=" Coverage Results" MODIFIED="1719914460400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1713548573447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$extractFeature.coverage" NAME="extractFeature Coverage Results" MODIFIED="1715708103756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifier2.coverage" NAME="AudioClassifier2 Coverage Results" MODIFIED="1719940427295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$explainability.coverage" NAME="explainability Coverage Results" MODIFIED="1714552756661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$lexycometricAnalysis.coverage" NAME="lexycometricAnalysis Coverage Results" MODIFIED="1715016248750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1722359132849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$lazy.coverage" NAME="lazy Coverage Results" MODIFIED="1715358787019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifierML.coverage" NAME="AudioClassifierML Coverage Results" MODIFIED="1715708477985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$plotNetwork.coverage" NAME="plotNetwork Coverage Results" MODIFIED="1716285913563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$trimming.coverage" NAME="trimming Coverage Results" MODIFIED="1710154819862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$test_simple.coverage" NAME="test_simple Coverage Results" MODIFIED="1710180230176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Parkinsons_detection$hello.coverage" NAME="hello Coverage Results" MODIFIED="1722681498951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$simple.coverage" NAME="simple Coverage Results" MODIFIED="1716393523434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyexamples" />
+    <SUITE FILE_PATH="coverage/Trimming$predict2.coverage" NAME="predict2 Coverage Results" MODIFIED="1712147515353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$predict.coverage" NAME="predict Coverage Results" MODIFIED="1711659536307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$extractFeature.coverage" NAME="extractFeature Coverage Results" MODIFIED="1715708103756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$featureExtraction.coverage" NAME="featureExtraction Coverage Results" MODIFIED="1713548573447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$explainability.coverage" NAME="explainability Coverage Results" MODIFIED="1714552756661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$lexycometricAnalysis.coverage" NAME="lexycometricAnalysis Coverage Results" MODIFIED="1715016248750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1722359132849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trimming$lazy.coverage" NAME="lazy Coverage Results" MODIFIED="1715358787019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$unet.coverage" NAME="unet Coverage Results" MODIFIED="1716392500828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyexamples" />
     <SUITE FILE_PATH="coverage/Trimming$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1712136227019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$audioFileFormat.coverage" NAME="audioFileFormat Coverage Results" MODIFIED="1709991614669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Parkinsons_detection$predictCNN.coverage" NAME="predictCNN Coverage Results" MODIFIED="1722689258932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifierCNN.coverage" NAME="AudioClassifierCNN Coverage Results" MODIFIED="1715003367118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$predictLSTM.coverage" NAME="predictLSTM Coverage Results" MODIFIED="1711649414703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$languageDetection.coverage" NAME="languageDetection Coverage Results" MODIFIED="1710577290939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$main.coverage" NAME="main Coverage Results" MODIFIED="1722358840385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Trimming$AudioClassifier.coverage" NAME="AudioClassifier Coverage Results" MODIFIED="1711364716799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Trimming$simple.coverage" NAME="simple Coverage Results" MODIFIED="1716393523434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyexamples" />
-    <SUITE FILE_PATH="coverage/Trimming$predict2.coverage" NAME="predict2 Coverage Results" MODIFIED="1712147515353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Parkinsons_detection$AudioClassifierCNN.coverage" NAME="AudioClassifierCNN Coverage Results" MODIFIED="1722672448661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Parkinsons_detection$languageDetection.coverage" NAME="languageDetection Coverage Results" MODIFIED="1722687374127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -5,7 +5,7 @@ import os
 
 train = False  # Set the train flag to choose whether to train the model or not
 predict = True
-heatmap = True
+heatmap = False
 test = False
 
 model_filepath = "models/audio_classifierCNN2.pth"
@@ -21,7 +21,7 @@ else:
     # If the model file exist, load the model from the file if the train flag is set to False, otherwise train the model
     if train:
         train_and_evaluate_model(model_filepath)
-    model.load_state_dict(torch.load(model_filepath))
+    model.load_state_dict(torch.load(model_filepath, weights_only=True))
 
 if test:
     test_model(model)
