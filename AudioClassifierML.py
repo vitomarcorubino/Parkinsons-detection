@@ -11,7 +11,8 @@ from sklearn.ensemble import GradientBoostingClassifier
 # 1: vowels only shuffled and split 70/30
 # 2: vowels only people separated 70/30
 # 3: all sounds people separated 70/30
-experiment = 3
+# 4: all sounds people separated 70/30 with no vowels
+experiment = 4
 
 if experiment == 1:
     df = pd.read_csv("features/ML/vowels/features_vowels.csv")
@@ -34,6 +35,10 @@ else:
         if experiment == 3:
             df_train = pd.read_csv(r"features/ML/people7030/train_features.csv")
             df_test = pd.read_csv(r"features/ML/people7030/test_features.csv")
+        else:
+            if experiment == 4:
+                df_train = pd.read_csv(r"features/ML/people7030_noVowels/train_features.csv")
+                df_test = pd.read_csv(r"features/ML/people7030_noVowels/test_features.csv")
 
     #  drop the first column. It's the voiceID
     df_train.drop('voiceID', inplace=True, axis=1)

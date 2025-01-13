@@ -212,25 +212,25 @@ def train_and_evaluate_model(model_filepath):
         model_filepath (str): The path to the file where the trained model will be saved.
     """
     lr = 0.00009
-    n_epochs = 30
+    n_epochs = 10
     batch_size = 32
     decay = 0.005
 
     X_train, y_train, X_val, y_val = [], [], [], []
-    with open('features/DL/train_features_transposed.pkl', 'rb') as file:
+    with open('features/DL/noVowels/train_features_transposed.pkl', 'rb') as file:
         X_train = list(pickle.load(file).values())
 
         # Replace NaN values with 0 in X_train
         for i in range(len(X_train)):
             X_train[i] = np.nan_to_num(X_train[i])
 
-    with open('features/DL/train_labels_transposed.pkl', 'rb') as file:
+    with open('features/DL/noVowels/train_labels_transposed.pkl', 'rb') as file:
         y_train = pickle.load(file)
 
-    with open('features/DL/validation_features_transposed.pkl', 'rb') as file:
+    with open('features/DL/noVowels/validation_features_transposed.pkl', 'rb') as file:
         X_val = list(pickle.load(file).values())
 
-    with open('features/DL/validation_labels_transposed.pkl', 'rb') as file:
+    with open('features/DL/noVowels/validation_labels_transposed.pkl', 'rb') as file:
         y_val = pickle.load(file)
 
     # Create DataLoaders
@@ -313,10 +313,10 @@ def test_model(model):
     batch_size = 32
     X_test, y_test = [], []
 
-    with open('features/DL/test_features_transposed.pkl', 'rb') as file:
+    with open('features/DL/noVowels/test_features_transposed.pkl', 'rb') as file:
         X_test = list(pickle.load(file).values())
 
-    with open('features/DL/test_labels_transposed.pkl', 'rb') as file:
+    with open('features/DL/noVowels/test_labels_transposed.pkl', 'rb') as file:
         y_test = pickle.load(file)
 
     test_loader = DataLoader(AudioDataset(X_test, y_test), batch_size=batch_size, shuffle=False,

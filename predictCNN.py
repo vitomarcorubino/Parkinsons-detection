@@ -4,11 +4,11 @@ import glob
 import os
 
 train = False  # Set the train flag to choose whether to train the model or not
-predict = True
+predict = False
 heatmap = False
-test = False
+test = True
 
-model_filepath = "models/audio_classifierCNN2.pth"
+model_filepath = "models/audio_classifierCNN_noVowels.pth"
 
 # Load the trained model
 model = AudioClassifier()
@@ -35,9 +35,9 @@ if predict:
     # directory_path = "datasetNew/peopleWithParkinson/DonatoBruno/mono_pcm"
     # directory_path = "datasetNew/elderlyHealthyControl/MariangelaColaianni/mono_pcm"
     # directory_path = "datasetNew/youngHealthyControl/VitoMarcoRubino/mono_pcm"
-    # directory_path = "datasetPeople/test/peopleWithParkinson/Mario B"
+    directory_path = "datasetPeople/test/peopleWithParkinson/Mario B"
     # directory_path = "datasetPeople/test/elderlyHealthyControl/TERESA M"
-    directory_path = "datasetNew/youngHealthyControl/SergioPinto"
+    # directory_path = "datasetNew/youngHealthyControl/SergioPinto"
     # Get all .wav files in the directory
     audio_files = glob.glob(directory_path + '/*.wav')
 

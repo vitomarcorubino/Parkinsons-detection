@@ -12,7 +12,7 @@ if extract_trimmed:
 
 
 # Define the main dataset folder
-main_folder = "datasetPeople7030"
+main_folder = "datasetPeople7030_noVowels"
 
 # Define the subfolders
 subfolders = ["train", "test"]
@@ -45,4 +45,4 @@ for subfolder in subfolders:
     # Concatenate all the DataFrames in the list into a single DataFrame
     features_df = pd.concat(features_list)
 
-    f.convert_to_csv(features_df, f"features/ML/people7030/{trimmed_subfolder}{subfolder}_features{trimmed_filename}")
+    f.convert_to_csv(features_df, f"features/ML/people7030_noVowels/{trimmed_subfolder}{subfolder}_features{trimmed_filename}")
