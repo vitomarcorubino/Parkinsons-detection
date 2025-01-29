@@ -7,12 +7,12 @@ from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 
-# Set the experiment to 1, 2 or 3
+# Set the experiment to 1, 2, 3 or 4
 # 1: vowels only shuffled and split 70/30
 # 2: vowels only people separated 70/30
 # 3: all sounds people separated 70/30
 # 4: all sounds people separated 70/30 with no vowels
-experiment = 4
+experiment = 1
 
 if experiment == 1:
     df = pd.read_csv("features/ML/vowels/features_vowels.csv")
@@ -26,19 +26,19 @@ if experiment == 1:
     df_Y = df.iloc[:,-1].values
 
     # Split the dataset into the Training set and Test set
-    X_train, X_test, y_train, y_test = train_test_split(df_X, df_Y, test_size = 0.3, random_state = 0)
+    X_train, X_test, y_train, y_test = train_test_split(df_X, df_Y, test_size = 0.3, random_state = 123)
 else:
     if experiment == 2:
-        df_train = pd.read_csv(r"features/ML/vowelsPeople7030/train_features.csv")
-        df_test = pd.read_csv(r"features/ML/vowelsPeople7030/test_features.csv")
+        df_train = pd.read_csv(r"features/ML/vowelsPeople7030/train_features_split3.csv")
+        df_test = pd.read_csv(r"features/ML/vowelsPeople7030/test_features_split3.csv")
     else:
         if experiment == 3:
-            df_train = pd.read_csv(r"features/ML/people7030/train_features.csv")
-            df_test = pd.read_csv(r"features/ML/people7030/test_features.csv")
+            df_train = pd.read_csv(r"features/ML/people7030/train_features_split3.csv")
+            df_test = pd.read_csv(r"features/ML/people7030/test_features_split3.csv")
         else:
             if experiment == 4:
-                df_train = pd.read_csv(r"features/ML/people7030_noVowels/train_features.csv")
-                df_test = pd.read_csv(r"features/ML/people7030_noVowels/test_features.csv")
+                df_train = pd.read_csv(r"features/ML/people7030_noVowels/train_features_split3.csv")
+                df_test = pd.read_csv(r"features/ML/people7030_noVowels/test_features_split3.csv")
 
     #  drop the first column. It's the voiceID
     df_train.drop('voiceID', inplace=True, axis=1)

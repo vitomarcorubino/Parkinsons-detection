@@ -3,12 +3,13 @@ from AudioClassifierCNN import AudioClassifier, train_and_evaluate_model, predic
 import glob
 import os
 
-train = False  # Set the train flag to choose whether to train the model or not
+train = True  # Set the train flag to choose whether to train the model or not
 predict = False
 heatmap = False
 test = True
 
-model_filepath = "models/audio_classifierCNN_noVowels.pth"
+# !!! RICORDARSI DI CAMBIARE IL PERCORSO DEL MODELLO PER NON SOVRASCRIVERLO !!!
+model_filepath = "models/audio_classifierCNN_datasetPeople_split2.pth"
 
 # Load the trained model
 model = AudioClassifier()
@@ -35,7 +36,7 @@ if predict:
     # directory_path = "datasetNew/peopleWithParkinson/DonatoBruno/mono_pcm"
     # directory_path = "datasetNew/elderlyHealthyControl/MariangelaColaianni/mono_pcm"
     # directory_path = "datasetNew/youngHealthyControl/VitoMarcoRubino/mono_pcm"
-    directory_path = "datasetPeople/test/peopleWithParkinson/Mario B"
+    directory_path = "datasetPeople/train/peopleWithParkinson/Mario B"
     # directory_path = "datasetPeople/test/elderlyHealthyControl/TERESA M"
     # directory_path = "datasetNew/youngHealthyControl/SergioPinto"
     # Get all .wav files in the directory
